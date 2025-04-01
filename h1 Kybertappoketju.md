@@ -97,6 +97,22 @@ Työkaluja:
    - Työkalu näyttää nopeasti ne, mihin kannattaa priorisoida
    - Käy jokaisella sivulla, ottaa screenshotit
    - Porttiskannaus -> tekstitiedostoon -> cat ip_list.txt -> ```./EyeWitness.py --web -f ip_list.txt```
+  
+- Network vulnerability scanners
+  1. OpenVAS - Free & Open Source
+  2. Nessus - maksu
+  3. Nexpose - maksu
+  4. Qualys - maksu
+  5. Nmap - rajoitettu
+     - ```sC``` - scriptscan ```ls usr/share/nmap/scripts```
+     - Webbisivulta nopea kattoa https://nmap.org/nsedoc/
+ 
+- Web Vulnerability Scanners
+  1. Nikto - Suosituin, Helppokäyttöinen
+  2. WPScan - WordPress
+  3. SQLMap - Pentest Tietokantoihin - SQL injektioita
+  4. Burp Suite - Standardeja, erittäin suosittu, web application proxy myös
+  5. Zed Attack Proxy - -||- 
 ### Lähteet
 
 Herrasmieshakkerit, Tietoturvan Niksipirkka, vieraana Juho Rikala | 0x34, 25/09/2024, Kuunneltavissa: https://podcasts.apple.com/fi/podcast/herrasmieshakkerit/id1479000931, Kuunneltu 01/04/2025
