@@ -207,7 +207,38 @@ Työkaluja:
 - Se ei vieläkään toiminut, joten kävin poistamassa vdi:n, jonka olin aiemmin lisännyt
 - Tässä kävikin niin, ettei Oraclella ollut oikeuksia lukea kansiota. Tutkin tätä ohjetta: https://medium.com/@dangerhulk26022022/installing-metasploitable-2-in-virtual-box-for-windows-host-bf0a5b4f8375 ja hetken pohdittua ja kokeiltua noin 15 - kertaa asentaa sitä uudelleen, päätin unzipata eri kansioon ja testata, toimiiko se. Kaikki näytti hyvältä ja jopa "Starting up ... " - viestin, kunnes tajusin, että tässä tais tulla uus vika ja se syy Debian. Starting up ei siis vienyt mihinkään noin 5 - minuuttiin. Eli jos kyseessä on Ubuntu Linux, toimiiko Debian? Vähän epäilen
 - Katsoin vielä varmuuden vuoksi https://tuomasvalkamo.com/PenTestCourse/week-2/ ohjeita, mutta eipä siitä kummoista apua ollut. Metasploitable ei siis vieläkään suostu käynnistymään.
-- 
+- Harmaita hiuksia hetken haroneena, kävin tekoälylle syöttämässä tuon virheilmoituksen
+- ![image](https://github.com/user-attachments/assets/54c7c7b4-4dd3-4089-938c-6c69a7ee55e9)
+- Se ehdotti ottaa tuon pois. Lisäksi huomasin virheilmoitukset tuossa alhaalla, joten kävin ne korjaamassa niiden mukaan. Eli -> Display Graphics Controller: VMSVGA ja System -> Processors: 1
+- Ennustaminen johtaa yleensä turmioon, mutta nyt Starting up vilkkuu enemmän, kuin 5 - sekuntia. Näyttää hyvältä!
+
+Kirjoitin siis Promptiksi ChatGPT-4o minille  suurinpiirtein sen virheilmoituksen, jonka sain:
+> .MP-BIOS bug: 8242 timer not connected to IO-APIC
+7.860159 Kernel panic - not syncing : IO-APIC + timer doesn't work! Boot with apic=debug and send a report. Then try booting with the noapic option
+Kyseessä siis Oracle VM ja yritän käynnistää Metasploitable 2
+
+- Johon se vastasti:
+
+> Tämä virhe (.MP-BIOS bug: 8242 timer not connected to IO-APIC) liittyy BIOS- ja APIC (Advanced Programmable Interrupt Controller) -asetuksiin Oracle VM VirtualBoxissa, ja se voi estää virtuaalikoneen käynnistymisen oikein. Tämä virhe ilmenee erityisesti vanhemmilla käyttöjärjestelmillä ja virtuaalikoneilla, kuten Metasploitable 2:lla.
+
+> Tässä on muutama mahdollinen ratkaisu ongelmaan:
+> 1. Poista APIC käytöstä
+
+> Tämä voi ratkaista ongelman, koska Metasploitable 2 on vanhempi virtuaalikone, joka ei aina toimi oikein APIC:n kanssa. Voit poistaa APIC:n käytöstä käynnistyksen yhteydessä.
+
+    Avaa VirtualBox ja valitse virtuaalikoneesi (Metasploitable 2).
+
+    Mene Asetuksiin (Settings).
+
+    Siirry Järjestelmä-välilehdelle (System).
+
+    Valitse Emulaatio-välilehti ja poista valinta Enable IO APIC-kohdasta.
+
+    Yritä käynnistää virtuaalikone uudelleen.
+
+> Tämä poistaa APIC:n käytöstä, mikä voi ratkaista ongelman.
+
+- Ehdotti se paljon muutakin, mutta niitä ei tähän tarvittu, enkä lähtenyt edes kokeilemaan. Sen verran kryptiseltä näytti. 
 - Hetken pohdiskelin ja mietin, kunnes luin Teron ohjeita, jossa antaa hyvänä vinkkinä Kalin kahden verkkokortin hyödyntämistä ja "Host only networking" - tekemistä https://terokarvinen.com/tunkeutumistestaus/
 - ![image](https://github.com/user-attachments/assets/1dbec070-e034-4f0a-81ca-a698f1fd8b15)
 - Tuo siis Kalille tehty. Seuraavaksi Metasploitable 2 Networking - asetukset
