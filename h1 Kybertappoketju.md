@@ -127,7 +127,42 @@ Työkaluja:
 - Tämän iso - tiedoston ![image](https://github.com/user-attachments/assets/e87d54b5-f181-404e-b56a-c81d1dab3a23)
 - Osoitteesta https://www.kali.org/get-kali/#kali-live
 - Ei ongelmia, päivitykset ajettu tiivistelmien aikana
+
+## b) Irrota Kali-virtuaalikone verkosta. Todista testein, että kone ei saa yhteyttä Internetiin (esim. 'ping 8.8.8.8')
+
+- Muodon vuoksi ensin, että kaikki toimii
+
+- ![image](https://github.com/user-attachments/assets/30ec7bd7-83ed-4d71-83d8-d4b8a40ffd18)
+
+- Nopein tapa
+
+- ![image](https://github.com/user-attachments/assets/fe5bd44c-2d19-4e93-9ae7-0f50c0e4f892)
+
+- ![image](https://github.com/user-attachments/assets/b059b366-d883-48ae-b44d-71f4ea647341)
+
+- Ja tuplavarmistus
+
+- ![image](https://github.com/user-attachments/assets/4af14fce-3a00-4f36-aa45-0204ef443e86)
+
+## c) Porttiskannaa 1000 tavallisinta tcp-porttia omasta koneestasi (nmap -T4 -A localhost). Selitä komennon paramterit. Analysoi ja selitä tulokset.
+- Hyvistä muistiinpanoista johtuen, voin suoraa ylempää luntata parametrit, eli:
+      - ```nmap``` kutsuu nmappia
+       - ```-A``` OS - tunnistaminen, version tunnistaminen, skriptiskannaus ja traceroute
+      - ```-T4``` -> Timing "aggressive", eli nopeuttaa hakua todella paljon
   
+- ![image](https://github.com/user-attachments/assets/065204fc-194c-42bc-affc-e23a7ae35b86)
+1. Näkee, että Nmappi ja sen versio aktivoituu -> Mihin kellonaikaan
+2. Ei DNS - servereitä, koska ei olla verkossa
+3. Mitä tapahtui, eli scan tulokset localhostille osoitteessa 127.0.0.1
+4. Löysi Hostin 0.0000047s viiveellä
+5. Löysi myös muuta, mutta jätti yhden skannaamatta
+6. Kaikki portit ignored - statella -> Ilmeisesti palomuuri estänyt yhteyden ja ne ovat kiinni (Lähde: https://forum.hackthebox.com/t/nmap-all-ports-are-in-ignored-state/272778/8)
+7. Suljettuja portteja 1000, mutta koska reset, ne reagoivat
+8. Ei voi yksilöidä OS, joten se ei voi antaa tarkkaa tunnistetta
+9. Tehtiin samalla koneella, ei hyppyjä verkoissa
+10. Summa summarum, eli operaatio haki sen localhost IP ja skannasi sen 2.02 - sekunnissa
+
+
 ### Lähteet
 
 Herrasmieshakkerit, Tietoturvan Niksipirkka, vieraana Juho Rikala | 0x34, 25/09/2024, Kuunneltavissa: https://podcasts.apple.com/fi/podcast/herrasmieshakkerit/id1479000931, Kuunneltu 01/04/2025
