@@ -196,6 +196,18 @@ Työkaluja:
 
 - Metaspoit 2 on siis tarkoituksellisesti tehty haavoittuvaksi ja pyörii Ubuntu Linux virtuaalikoneena. Sitä käytetään testaamaan yleisiä haavoittuvuuksia. Lähde: https://docs.rapid7.com/metasploit/metasploitable-2/ 
 
+- Ei itseasiassa tähän mennessä oo tullut asenneltua muuta, kuin suoraa ISO - imagesta, joten hetken joutu tutkaileen, et mistä edetään
+- Näillä valinnoilla eteenpäin ![image](https://github.com/user-attachments/assets/59ea0a2a-5e90-40a7-807e-d0075403d9e0)
+- Tommosilla valinnoilla ![image](https://github.com/user-attachments/assets/861d6026-2865-41d4-8d39-f60bb02aca4f)
+- Piti muuttaa nimee, koska Oracle ei hyväksyny tota _
+- Tässä tuli pieni mutta vastaan, koska en pystynyt lisäämään tuota vmdk - tiedostoa, vaikka se on oikeassa formaatissa
+  ![image](https://github.com/user-attachments/assets/b850be5f-8c14-41bf-a560-b5b571ec464f)
+- Ei hätää! Se olikin eri kansiossa
+  
+- Hetken pohdiskelin ja mietin, kunnes luin Teron ohjeita, jossa antaa hyvänä vinkkinä Kalin kahden verkkokortin hyödyntämistä ja "Host only networking" - tekemistä - ![image](https://github.com/user-attachments/assets/1dbec070-e034-4f0a-81ca-a698f1fd8b15)
+- Tuo siis Kalille tehty. Seuraavaksi Metasploitable 2 Networking - asetukset
+
+
 ### Lähteet
 
 Herrasmieshakkerit, Tietoturvan Niksipirkka, vieraana Juho Rikala | 0x34, 25/09/2024, Kuunneltavissa: https://podcasts.apple.com/fi/podcast/herrasmieshakkerit/id1479000931, Kuunneltu 01/04/2025
