@@ -120,6 +120,13 @@ Työkaluja:
 - Käytännössä yritys tulkitaan suoraksi teoksi
 -  Markka-aika, joten 75 000 markkaa tuli korvauksia maksetavaksi
 -  Ei kannata leikkiä edes huvikseen.
+
+## a) Asenna Kali virtuaalikoneeseen. (Jos asennuksessa ei ole mitään ongelmia tai olet asentanut jo aiemmin, tarkkaa raporttia tästä alakohdasta ei tarvita. Kerro silloin kuitenkin, mikä versio ja millä asennustavalla. Jos on ongelmia, niin tarkka ja toistettava raportti
+
+- Asensin sen jo aikaisemmin
+- Tämän iso - tiedoston ![image](https://github.com/user-attachments/assets/e87d54b5-f181-404e-b56a-c81d1dab3a23)
+- Osoitteesta https://www.kali.org/get-kali/#kali-live
+- Ei ongelmia, päivitykset ajettu tiivistelmien aikana
   
 ### Lähteet
 
