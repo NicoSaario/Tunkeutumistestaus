@@ -253,7 +253,24 @@ Kyseessä siis Oracle VM ja yritän käynnistää Metasploitable 2
   ![image](https://github.com/user-attachments/assets/faeae678-50e7-417c-b80f-3c6bf275356f)
 
 - Nappasin kaapelin irti Oraclen asetuksista Kalilta ennen käynnistyksiä, joten kumpikaan ei pääse verkkoon. Varmistin tämän vielä molemmilta koneilta pingaamalla sitä tuttua ja turvallista 8.8.8.8
-- 
+- ![image](https://github.com/user-attachments/assets/17cc7f3c-34a2-4991-9636-e43d204bfa2a)
+- Kummallakaan ei siis ole pääsyä verkkoon
+- Käytän seuraavaksi Metasploitilla ```ifconfig```, jonka avulla pääsen näkemään sen osoitteen
+- Pingaan tätä osoitetta Kalilla, jotta näen, kommunikoivatko ne keskenään
+- ![image](https://github.com/user-attachments/assets/00d0cab6-fc7e-40e9-9858-ef9fd2d55d4a)
+
+- Pitkän taistelun tuloksena kaikki on nyt niinkuin pitää!
+
+## g) Etsi Metasploitable porttiskannaamalla (nmap -sn). Tarkista selaimella, että löysit oikean IP:n - Metasploitablen weppipalvelimen etusivulla lukee Metasploitable.
+
+- Tässä kohtaa tajusin, että olisi ehkä pitänyt jättää tuo pingaus tekemättä ja kokeilla tässä, saanko sen IP:n näkyviin, mutta ehdin jo keulimaan
+
+- ![image](https://github.com/user-attachments/assets/73af7eb6-880e-4b38-b626-45fa35d7254e)
+
+- Käsittääkseni tuo oli siis turhaa infoa ja turha komento nyt, kun IP - osoite oli jo selvillä. Olihan se toki hyvä varmistaa. Olin siis jo ennen vinkkien katsomista ehtinyt kirjautumaan sploitille ja käyttämään komennon ```ifconfig```, jolla tuon IP:n selvitin
+- Palvelin tuli siis näkyviin.
+
+
 ### Lähteet
 
 Herrasmieshakkerit, Tietoturvan Niksipirkka, vieraana Juho Rikala | 0x34, 25/09/2024, Kuunneltavissa: https://podcasts.apple.com/fi/podcast/herrasmieshakkerit/id1479000931, Kuunneltu 01/04/2025
