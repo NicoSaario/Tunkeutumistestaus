@@ -74,10 +74,29 @@ vaikka he käsittelevät suuria määriä ihmisten dataa.
 Työkaluja:
 - Porttiskannaus
 1. Nmap -> Suosituin, mukautuvuin ja vakain! -> https://nmap.org/ -> Sillä voi myös OS ja haavoittuvuuksia selvittää
-   - ```nmap -sS -vv -T4 -A 192.168.3.1``` lopuksi aina se IP - osoite ```-sS``` tarkoittaa TCP SIN - skannausta "Half-open-connection", ```-vv``` - Näkee ja tietää tasan tarkkaan, mitä skannauksessa tapahtuu ja nopeuttaa ```T4``` - nopeuttaa yhä enemmän ```A``` OS - tunnistaminen, version tunnistaminen, skriptiskannaus ja traceroute
-3. Masscan -> https://github.com/robertdavidgraham/masscan.git -> Nopein!
-4. Udpprotoscanner -> https://github.com/portcullislabs/udp-proto-scanner.git -> Nopein UDP porttiscanneri
+   - ```nmap -sS -vv -T4 -A <ip-osoite>``` lopuksi aina se IP - osoite.
+   - ```-sS``` tarkoittaa TCP SIN - skannausta "Half-open-connection"
+   -  ```-vv``` - Näkee ja tietää tasan tarkkaan, mitä skannauksessa tapahtuu ja nopeuttaa
+   -  ```T4``` - nopeuttaa yhä enemmän
+   -  ```A``` OS - tunnistaminen, version tunnistaminen, skriptiskannaus ja traceroute ```
+   -  ```-Pn``` -> Treat all host as online -- palomuurit blokkaa yleensä tietyt, joten jos tätä ei laita, skannaus saattaa skipata ne
+   -  OUTPUT -> Tärkeä! Voit tehdä siitä tiedoston, vaikka TXT
+   -  ```-p <port ranges>```tietyt portit ```-p1-66535;```skannaa kaikki portit
 
+    
+3. Masscan -> https://github.com/robertdavidgraham/masscan.git -> Nopein!
+   - ```masscan``` hyvin samantyylinen, kuin nmap
+   - ```man masscan``` - manuaali
+   - ```masscan -p80,443 <ip-osoite> --rate=10000```
+     
+5. Udpprotoscanner -> https://github.com/portcullislabs/udp-proto-scanner.git -> Nopein UDP porttiscanneri
+   ```./udp-proto-scanner.pl <ip-osoite>```
+
+-  Web service review
+1. EyeWitness https://github.com/ChrisTruncer/EyeWitness
+   - Työkalu näyttää nopeasti ne, mihin kannattaa priorisoida
+   - Käy jokaisella sivulla, ottaa screenshotit
+   - Porttiskannaus -> tekstitiedostoon -> cat ip_list.txt -> ```./EyeWitness.py --web -f ip_list.txt```
 ### Lähteet
 
 Herrasmieshakkerit, Tietoturvan Niksipirkka, vieraana Juho Rikala | 0x34, 25/09/2024, Kuunneltavissa: https://podcasts.apple.com/fi/podcast/herrasmieshakkerit/id1479000931, Kuunneltu 01/04/2025
