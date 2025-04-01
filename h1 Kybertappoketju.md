@@ -190,9 +190,17 @@ Työkaluja:
 9. Skannaus kesti yhdessä osoitteessa 8.4 sekuntia, joten "huomattavasti" kauemmin aikaisempaan verrattuna
 
 
+## e) Asenna Metasploitable 2 virtuaalikoneeseen
+
+- Tähän väliin hauska kommentti, jonka löysin ladatessani Metasploit 2 täältä: https://sourceforge.net/projects/metasploitable/reviews/
+- Metaspoit 2 on siis tarkoituksellisesti tehty haavoittuvaksi ja pyörii Ubuntu Linux virtuaalikoneena. Sitä käytetään testaamaan yleisiä haavoittuvuuksia. Lähde: https://docs.rapid7.com/metasploit/metasploitable-2/ 
+- ![image](https://github.com/user-attachments/assets/9adf8682-d492-4e2c-8f21-41bcfe3126db)
+
 ### Lähteet
 
 Herrasmieshakkerit, Tietoturvan Niksipirkka, vieraana Juho Rikala | 0x34, 25/09/2024, Kuunneltavissa: https://podcasts.apple.com/fi/podcast/herrasmieshakkerit/id1479000931, Kuunneltu 01/04/2025
 
 
 Hackthebox,  NMAP all ports are in ignored state, Comment by user "adamkirito" 2/2023, Luettavissa:  https://forum.hackthebox.com/t/nmap-all-ports-are-in-ignored-state/272778, Luettu 01/04/2025
+
+Metasploitable 2, RAPID7, Luettavissa: https://docs.rapid7.com/metasploit/metasploitable-2/
