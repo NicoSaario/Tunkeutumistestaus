@@ -113,7 +113,14 @@ Työkaluja:
   2. WPScan - WordPress
   3. SQLMap - Pentest Tietokantoihin - SQL injektioita
   4. Burp Suite - Standardeja, erittäin suosittu, web application proxy myös
-  5. Zed Attack Proxy - -||- 
+  5. Zed Attack Proxy - -||-
+ 
+### https://finlex.fi/fi/oikeuskaytanto/korkein-oikeus/ennakkopaatokset/2003/36
+- Osuuspankkikeskus-OPK tietojärjestelmiin yrittänyt tunkeutua porttiskannauksella etsien avoimia välityspalvelimia.
+- Käytännössä yritys tulkitaan suoraksi teoksi
+-  Markka-aika, joten 75 000 markkaa tuli korvauksia maksetavaksi
+-  Ei kannata leikkiä edes huvikseen.
+  
 ### Lähteet
 
 Herrasmieshakkerit, Tietoturvan Niksipirkka, vieraana Juho Rikala | 0x34, 25/09/2024, Kuunneltavissa: https://podcasts.apple.com/fi/podcast/herrasmieshakkerit/id1479000931, Kuunneltu 01/04/2025
