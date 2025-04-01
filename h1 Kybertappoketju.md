@@ -192,9 +192,9 @@ Työkaluja:
 
 ## e) Asenna Metasploitable 2 virtuaalikoneeseen
 
-- Tähän väliin hauska kommentti, jonka löysin ladatessani Metasploit 2 täältä: https://sourceforge.net/projects/metasploitable/reviews/
+- Tähän väliin hauska kommentti, jonka löysin ladatessani Metasploit 2 täältä: https://sourceforge.net/projects/metasploitable/reviews/  ![image](https://github.com/user-attachments/assets/9adf8682-d492-4e2c-8f21-41bcfe3126db)
+
 - Metaspoit 2 on siis tarkoituksellisesti tehty haavoittuvaksi ja pyörii Ubuntu Linux virtuaalikoneena. Sitä käytetään testaamaan yleisiä haavoittuvuuksia. Lähde: https://docs.rapid7.com/metasploit/metasploitable-2/ 
-- ![image](https://github.com/user-attachments/assets/9adf8682-d492-4e2c-8f21-41bcfe3126db)
 
 ### Lähteet
 
