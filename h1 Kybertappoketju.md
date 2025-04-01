@@ -202,8 +202,12 @@ Työkaluja:
 - Piti muuttaa nimee, koska Oracle ei hyväksyny tota _
 - Tässä tuli pieni mutta vastaan, koska en pystynyt lisäämään tuota vmdk - tiedostoa, vaikka se on oikeassa formaatissa
   ![image](https://github.com/user-attachments/assets/b850be5f-8c14-41bf-a560-b5b571ec464f)
-- Ei hätää! Se olikin eri kansiossa
-  
+- Ei hätää! Hetken aikaa, kun yritin sitä etsiä, päädyin Storage - kohtaan ja löysin sen Hard Disk Selectorista.
+- ![image](https://github.com/user-attachments/assets/54de2206-9fe0-440d-b730-9be88575cf49)
+- Se ei vieläkään toiminut, joten kävin poistamassa vdi:n, jonka olin aiemmin lisännyt
+- Tässä kävikin niin, ettei Oraclella ollut oikeuksia lukea kansiota. Tutkin tätä ohjetta: https://medium.com/@dangerhulk26022022/installing-metasploitable-2-in-virtual-box-for-windows-host-bf0a5b4f8375 ja hetken pohdittua ja kokeiltua noin 15 - kertaa asentaa sitä uudelleen, päätin unzipata eri kansioon ja testata, toimiiko se. Kaikki näytti hyvältä ja jopa "Starting up ... " - viestin, kunnes tajusin, että tässä tais tulla uus vika ja se syy Debian. Starting up ei siis vienyt mihinkään noin 5 - minuuttiin. Eli jos kyseessä on Ubuntu Linux, toimiiko Debian? Vähän epäilen
+- Katsoin vielä varmuuden vuoksi https://tuomasvalkamo.com/PenTestCourse/week-2/ ohjeita, mutta eipä siitä kummoista apua ollut. Metasploitable ei siis vieläkään suostu käynnistymään.
+- 
 - Hetken pohdiskelin ja mietin, kunnes luin Teron ohjeita, jossa antaa hyvänä vinkkinä Kalin kahden verkkokortin hyödyntämistä ja "Host only networking" - tekemistä https://terokarvinen.com/tunkeutumistestaus/
 - ![image](https://github.com/user-attachments/assets/1dbec070-e034-4f0a-81ca-a698f1fd8b15)
 - Tuo siis Kalille tehty. Seuraavaksi Metasploitable 2 Networking - asetukset
@@ -220,3 +224,5 @@ Herrasmieshakkerit, Tietoturvan Niksipirkka, vieraana Juho Rikala | 0x34, 25/09/
 Hackthebox,  NMAP all ports are in ignored state, Comment by user "adamkirito" 2/2023, Luettavissa:  https://forum.hackthebox.com/t/nmap-all-ports-are-in-ignored-state/272778, Luettu 01/04/2025
 
 Metasploitable 2, RAPID7, Luettavissa: https://docs.rapid7.com/metasploit/metasploitable-2/
+
+https://medium.com/@dangerhulk26022022/installing-metasploitable-2-in-virtual-box-for-windows-host-bf0a5b4f8375
