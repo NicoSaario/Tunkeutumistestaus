@@ -106,6 +106,7 @@ Työkaluja:
   5. Nmap - rajoitettu
      - ```sC``` - scriptscan ```ls usr/share/nmap/scripts```
      - Webbisivulta nopea kattoa https://nmap.org/nsedoc/
+     - Sivulta näkee suoraan ja voi ladata scriptit koneelle. Hyvät ohjeet myös
  
 - Web Vulnerability Scanners
   1. Nikto - Suosituin, Helppokäyttöinen
