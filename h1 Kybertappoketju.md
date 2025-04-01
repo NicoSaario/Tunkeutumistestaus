@@ -162,7 +162,37 @@ Työkaluja:
 9. Tehtiin samalla koneella, ei hyppyjä verkoissa
 10. Summa summarum, eli operaatio haki sen localhost IP ja skannasi sen 2.02 - sekunnissa
 
+## d) Asenna kaksi vapaavalintaista demonia ja skannaa uudelleen. Analysoi ja selitä erot.
+
+- Eli pitää kytkeä Kali takaisin verkkoon reversetyylillä, mitä aiemmin
+- Asentaa ulkomuistista ssh ja apache2
+- ```sudo apt-get -y install ssh apache2```
+- Tsekata niiden status, koska uskon, että niiden täytyy olla päällä ollakseen vaiktutusta
+- ![image](https://github.com/user-attachments/assets/b4273640-806f-4a08-9926-24a5978882e5)
+- Ja lopuksi ```sudo systemctl enable --now ssh apache2```, joka aktivoi ne päälle
+
+- Nähdään, että ne ovat päällä
+- ![image](https://github.com/user-attachments/assets/d5976410-8105-4c46-813b-f87fa440387b)
+
+- Taas verkko pois päältä -> Pingitestit ja Firefox
+
+- ![image](https://github.com/user-attachments/assets/f611d965-3721-4698-afd2-fdd758d61b6a)
+- Anteeksi jo etukäteen näistä olemattomista Gimp - taidoista
+  
+1. Sama alku, eli mitä on tapahtunut ja kellonaika ja lisäsin myös DNS - kohdan tähän
+2. Raportti mistä
+3. Kesti kauemmin
+4. Ei skannattu 1 edelleen
+5. Kaksi porttia näytetään, eli niissä on jotain
+6. Sieltä löytyi äsken aktivoitu SSH portista 22/tcp ja se portti on auki! Näkyy myös lisätietoa, eli OpenSSh versio ja millä, eli Debian 1 protocolla 2.0. Näkyy myös ssh julkiset avaimet
+7. Ja täältä puolestaan Apache2! Sen portit 80/tcp ja sekin portti on auki! Myös näkyy, miten se pyörii, missä se pyörii ja etenkin se, että se toimii "It works!"
+8. Lopuksi nyt päästiin saamaan jopa OS - tietoja. Eli että Linuxissa pyöritään 2.6.32 ja 6.2 - version välillä. Käsittääkseni se arvioi version olevan 2.6x tai 5.X. Onhan se aika iso haarukka, mutta kertoo silti jotain. 
+9. Skannaus kesti yhdessä osoitteessa 8.4 sekuntia, joten "huomattavasti" kauemmin aikaisempaan verrattuna
+
 
 ### Lähteet
 
 Herrasmieshakkerit, Tietoturvan Niksipirkka, vieraana Juho Rikala | 0x34, 25/09/2024, Kuunneltavissa: https://podcasts.apple.com/fi/podcast/herrasmieshakkerit/id1479000931, Kuunneltu 01/04/2025
+
+
+Hackthebox,  NMAP all ports are in ignored state, Comment by user "adamkirito" 2/2023, Luettavissa:  https://forum.hackthebox.com/t/nmap-all-ports-are-in-ignored-state/272778, Luettu 01/04/2025
