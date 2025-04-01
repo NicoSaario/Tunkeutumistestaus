@@ -48,13 +48,20 @@ vaikka he käsittelevät suuria määriä ihmisten dataa.
 - Jos yksikin vaihe puuttuu, ketju katkeaa ja voi keskeyttää koko prosessin
 - Tunkeutumisen tarkoituksena on se, että hyökkääjä kehittää hyötykuorman, jotta voi murtautua sisään, vakiinnuttaa asemansa, suorittaa tavoitteitaan liikkumalla ympäristössä ja vaarantamalla järjestelmän CIA (Confidentiality, Ingegrity, Availability)
         - Koostuu seuraavista vaiheista:
-              1. Reconnaisssance  (Tiedustelu) -> Tutkiminen, tunnistaminen ja valinta -> Verkkosivujen, s-postilistan selaaminen, some tai muut tiedot
-              2. Weaponization (Aseistaminen) -> Etätroijalainen, esim. PDF - ja M Office - tiedostot
-              3. Delivery (Toimitus) -> Troijalaisen toimittaminen -> S-postiliitteellä, Verkkosivulla, USB-tikulla esim.
-              4. Explotation (Hyväksikäyttö) -> Koodi aktivoituu
-              5. Installation (Asennus) -> Takaoven tai troijalaisen asentaminen järjeselmään -> Pysyvä pääsy
-              6. Command and Control, C2 (Komentoyhteys) -> Vaarantunut laite lähettää signaaleja ohjauspalvelimille -> C2 kanava -> Suora pääsy kohdeympäristöön
-              7. Actions on Objectives (Tavoitteisiin kohdistuvat toimet) -> Tavoitteiden toteuttaminen -> Tietojen varastaminen, kerääminen, salaaminen, poistaminen -> Verkossa liikkuminen, muut kohteet 
+  
+  1. Reconnaisssance  (Tiedustelu) -> Tutkiminen, tunnistaminen ja valinta -> Verkkosivujen, s-postilistan selaaminen, some tai muut tiedot
+
+  2. Weaponization (Aseistaminen) -> Etätroijalainen, esim. PDF - ja M Office - tiedostot
+
+  3. Delivery (Toimitus) -> Troijalaisen toimittaminen -> S-postiliitteellä, Verkkosivulla, USB-tikulla esim.
+    
+  4. Explotation (Hyväksikäyttö) -> Koodi aktivoituu
+
+  6. Installation (Asennus) -> Takaoven tai troijalaisen asentaminen järjeselmään -> Pysyvä pääsy
+
+  7. Command and Control, C2 (Komentoyhteys) -> Vaarantunut laite lähettää signaaleja ohjauspalvelimille -> C2 kanava -> Suora pääsy kohdeympäristöön
+
+  8. Actions on Objectives (Tavoitteisiin kohdistuvat toimet) -> Tavoitteiden toteuttaminen -> Tietojen varastaminen, kerääminen, salaaminen, poistaminen -> Verkossa liikkuminen, muut kohteet 
 
 ### Lähteet
 
