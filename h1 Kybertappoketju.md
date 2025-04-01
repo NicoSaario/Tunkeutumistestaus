@@ -211,6 +211,7 @@ Työkaluja:
 - ![image](https://github.com/user-attachments/assets/54c7c7b4-4dd3-4089-938c-6c69a7ee55e9)
 - Se ehdotti ottaa tuon pois. Lisäksi huomasin virheilmoitukset tuossa alhaalla, joten kävin ne korjaamassa niiden mukaan. Eli -> Display Graphics Controller: VMSVGA ja System -> Processors: 1
 - Ennustaminen johtaa yleensä turmioon, mutta nyt Starting up vilkkuu enemmän, kuin 5 - sekuntia. Näyttää hyvältä!
+- Olin siis surffaillut tässä kohtaa jo useita eri lähteitä etsimässä vastausta, mutta olisi pitänyt ehkä käyttää tuota virheilmoitusta haussa. No kuitenkin, turhautuneisuuttani löin sen tekoälylle.
 
 Kirjoitin siis Promptiksi ChatGPT-4o minille  suurinpiirtein sen virheilmoituksen, jonka sain:
 > .MP-BIOS bug: 8242 timer not connected to IO-APIC
@@ -238,7 +239,9 @@ Kyseessä siis Oracle VM ja yritän käynnistää Metasploitable 2
 
 > Tämä poistaa APIC:n käytöstä, mikä voi ratkaista ongelman.
 
-- Ehdotti se paljon muutakin, mutta niitä ei tähän tarvittu, enkä lähtenyt edes kokeilemaan. Sen verran kryptiseltä näytti. 
+- Ehdotti se paljon muutakin, mutta niitä ei tähän tarvittu, enkä lähtenyt edes kokeilemaan. Sen verran kryptiseltä näytti.
+
+
 - Hetken pohdiskelin ja mietin, kunnes luin Teron ohjeita, jossa antaa hyvänä vinkkinä Kalin kahden verkkokortin hyödyntämistä ja "Host only networking" - tekemistä https://terokarvinen.com/tunkeutumistestaus/
 - ![image](https://github.com/user-attachments/assets/1dbec070-e034-4f0a-81ca-a698f1fd8b15)
 - Tuo siis Kalille tehty. Seuraavaksi Metasploitable 2 Networking - asetukset
@@ -246,7 +249,11 @@ Kyseessä siis Oracle VM ja yritän käynnistää Metasploitable 2
 - Eli jos nyt oikein ymmärsin omasta päättelystä, tämän pitäisi toimia
   ![image](https://github.com/user-attachments/assets/bb0f4a6c-41ca-4bf5-99bd-727c6580f961)
 
+- Nyt ollaan niinkin kauniissa tilanteessa, että noin 1.5 - tunnin pyörittelemisen jälkeen aukesi seuraava näkymä:
+  ![image](https://github.com/user-attachments/assets/faeae678-50e7-417c-b80f-3c6bf275356f)
 
+- Nappasin kaapelin irti Oraclen asetuksista Kalilta ennen käynnistyksiä, joten kumpikaan ei pääse verkkoon. Varmistin tämän vielä molemmilta koneilta pingaamalla sitä tuttua ja turvallista 8.8.8.8
+- 
 ### Lähteet
 
 Herrasmieshakkerit, Tietoturvan Niksipirkka, vieraana Juho Rikala | 0x34, 25/09/2024, Kuunneltavissa: https://podcasts.apple.com/fi/podcast/herrasmieshakkerit/id1479000931, Kuunneltu 01/04/2025
