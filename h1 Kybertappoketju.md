@@ -204,8 +204,12 @@ Työkaluja:
   ![image](https://github.com/user-attachments/assets/b850be5f-8c14-41bf-a560-b5b571ec464f)
 - Ei hätää! Se olikin eri kansiossa
   
-- Hetken pohdiskelin ja mietin, kunnes luin Teron ohjeita, jossa antaa hyvänä vinkkinä Kalin kahden verkkokortin hyödyntämistä ja "Host only networking" - tekemistä - ![image](https://github.com/user-attachments/assets/1dbec070-e034-4f0a-81ca-a698f1fd8b15)
+- Hetken pohdiskelin ja mietin, kunnes luin Teron ohjeita, jossa antaa hyvänä vinkkinä Kalin kahden verkkokortin hyödyntämistä ja "Host only networking" - tekemistä https://terokarvinen.com/tunkeutumistestaus/
+- ![image](https://github.com/user-attachments/assets/1dbec070-e034-4f0a-81ca-a698f1fd8b15)
 - Tuo siis Kalille tehty. Seuraavaksi Metasploitable 2 Networking - asetukset
+  
+- Eli jos nyt oikein ymmärsin omasta päättelystä, tämän pitäisi toimia
+  ![image](https://github.com/user-attachments/assets/bb0f4a6c-41ca-4bf5-99bd-727c6580f961)
 
 
 ### Lähteet
