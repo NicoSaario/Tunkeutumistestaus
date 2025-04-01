@@ -47,7 +47,8 @@ vaikka he käsittelevät suuria määriä ihmisten dataa.
   6. Arvioi - Tarkastele ja arvioi vaikutus
 - Jos yksikin vaihe puuttuu, ketju katkeaa ja voi keskeyttää koko prosessin
 - Tunkeutumisen tarkoituksena on se, että hyökkääjä kehittää hyötykuorman, jotta voi murtautua sisään, vakiinnuttaa asemansa, suorittaa tavoitteitaan liikkumalla ympäristössä ja vaarantamalla järjestelmän CIA (Confidentiality, Ingegrity, Availability)
-        - Koostuu seuraavista vaiheista:
+
+- Koostuu seuraavista vaiheista:
   
   1. Reconnaisssance  (Tiedustelu) -> Tutkiminen, tunnistaminen ja valinta -> Verkkosivujen, s-postilistan selaaminen, some tai muut tiedot
 
@@ -61,7 +62,21 @@ vaikka he käsittelevät suuria määriä ihmisten dataa.
 
   7. Command and Control, C2 (Komentoyhteys) -> Vaarantunut laite lähettää signaaleja ohjauspalvelimille -> C2 kanava -> Suora pääsy kohdeympäristöön
 
-  8. Actions on Objectives (Tavoitteisiin kohdistuvat toimet) -> Tavoitteiden toteuttaminen -> Tietojen varastaminen, kerääminen, salaaminen, poistaminen -> Verkossa liikkuminen, muut kohteet 
+  8. Actions on Objectives (Tavoitteisiin kohdistuvat toimet) -> Tavoitteiden toteuttaminen -> Tietojen varastaminen, kerääminen, salaaminen, poistaminen -> Verkossa liikkuminen, muut kohteet
+ 
+ ### € Santos et al: The Art of Hacking (Video Collection): 4.3 Surveying Essential Tools for Active Reconnaissance. Sisältää porttiskannauksen. 5 videota, yhteensä noin 20 min. https://learning.oreilly.com/videos/the-art-of/9780135767849/9780135767849-SPTT_04_00
+
+- Eroaa passiivisesta siinä, että vasta aktiivisessa vaiheessa lähetetään tietoa kohteen verkkoon, eli skannataan portteja, tutkitaan haavoittuvuuksia, kuunnellaan verkkoa ja se antaa kohteelle samalla infoa ja hälytyksiä, jos joku tutkii logeja
+- Joskus tarkoituksella halutaan jäädä kiinni, sillä moni asia "lakaistaan maton alle"
+- Pitää tehdä huolellinen taustatyö ja suunnittelu laitteista ja verkoista. Muuten tulee liikaa informaatiota ja mahdollisia kohteita kerralla -> Mitä kauemmin etanoit, sitä helpommin kiinni
+- Porttiskannaus -> Halutaan nähdä, että passiivinen tiedustelu tuotti tulosta ja että ne portit ovat oikeasti auki. Luultavasti nähdään muitakin auki olevia portteja. Weppisovellusten skannaus -> Mihin halutaan hyökätä? -> Haavoittuvuuden skannaus -> Älä hypi vaiheiden ohi!
+
+Työkaluja:
+- Porttiskannaus
+1. Nmap -> Suosituin, mukautuvuin ja vakain! -> https://nmap.org/ -> Sillä voi myös OS ja haavoittuvuuksia selvittää
+   - ```nmap -sS -vv -T4 -A 192.168.3.1``` lopuksi aina se IP - osoite ```-sS``` tarkoittaa TCP SIN - skannausta "Half-open-connection", ```-vv``` - Näkee ja tietää tasan tarkkaan, mitä skannauksessa tapahtuu ja nopeuttaa ```T4``` - nopeuttaa yhä enemmän ```A``` OS - tunnistaminen, version tunnistaminen, skriptiskannaus ja traceroute
+3. Masscan -> https://github.com/robertdavidgraham/masscan.git -> Nopein!
+4. Udpprotoscanner -> https://github.com/portcullislabs/udp-proto-scanner.git -> Nopein UDP porttiscanneri
 
 ### Lähteet
 
