@@ -30,7 +30,7 @@ Tehtäviä saa aloittaa vasta, kun on hyväksynyt kurssin säännöt. Koneet on 
 vaikka he käsittelevät suuria määriä ihmisten dataa.
 - Ensimmäiset 15 - minuuttia oikeastaan käsittelee vain Keskoa, heidän palveluitaan ja merkitystä IT - maailmassa.
 - Tämän jälkeen puhutaan siitä, mitä dataa asiakkaista kerätään. Asiakas antaa itse luvan tehdä niin. Kysymyksenä oli se, että kerääkö esimerkiksi K-plussakortti asiakkaasta tietoja ja annetaan tarjouksia sekä bonuksia, jotta asiakaasta saataisiin dataa kerättyä.
-- Vähän ympäripyöreä vastaus, mutta lopputuloksena kyseessä on enemmänkin se, että saadaan asiakas pysymään Keskolla ja saamaan hyötyä kerätystä datasta.
+- Vähän ympäripyöreä vastaus, mutta lopputuloksena kyseessä on enemmänkin se, että saadaan asiakas pysymään Keskolla ja saamaan hyötyä kerätystä datasta myös ja etenkin asiakkaalle.
 - Pääpointtina se, että datamäärän ollessa hyvin laaja, sen pitää olla hyvin hajautettu ja pääsy vain rajatuilla henkilöillä.
 - Toivottavasti en ammu itseäni jalkaan, mutta kyllä tämä aika pitkälti vaikutti vain Keskon mainokselta.
 - Jätetään tää nyt tähän, mutta kuuntelen luultavasti vielä toisen podcastin.
