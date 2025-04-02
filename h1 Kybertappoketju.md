@@ -319,5 +319,7 @@ Kernel Panic when booting Metasploitable 2, by Khloe_ruby (2022), Luettavissa: h
 
 FPT server, Wikipedia (03/2022), Luettavissa: https://en.wikipedia.org/wiki/FTP_server, Luettu 01/04/2025
 
-ChatGPT-4o
+Samba (ohjelmisto), Wikipedia, Luettavissa: https://fi.wikipedia.org/wiki/Samba_(ohjelmisto), Luettu 01/04/2025
+
+ChatGPT-4o mini käytetty tehtävässä b) ja merkattu erikseen
 
