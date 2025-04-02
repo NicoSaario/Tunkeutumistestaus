@@ -274,24 +274,35 @@ Kyseessä siis Oracle VM ja yritän käynnistää Metasploitable 2
 
 - Skannauksessa meni 269.84 sekuntia ja heti ylös scrollatessa näin ensimmäisen kohdan, joka pisti silmään
 
-- ![image](https://github.com/user-attachments/assets/17f0aa6a-fc29-4362-b094-065c753e9ea4)
-
 - Tässä siis FTP Serveri joka voi suorittaa yhden tai useamman komennon __etäkäyttäjien toimesta__ tai tietokone, joka isännöi ison kasan tiedostoja. (https://en.wikipedia.org/wiki/FTP_server)
 - Siinä on Anonymous login päällä, joten käytännössä kuka tahansa pääsee siihen käsiksi. Se mahdollistaa sen, että päästään hyvinkin helposti jälkiä jättämättä tutkimaan sen sisältöä ja samalla katsomaan, onko siellä mahdollisuuksia tehdä hyökkäyksiä/päästä arkaluontoiseen dataan kiinni.
+  
+1. ![image](https://github.com/user-attachments/assets/17f0aa6a-fc29-4362-b094-065c753e9ea4)
 
+
+2. ![image](https://github.com/user-attachments/assets/c3f66e1c-c72b-4469-969f-061480d60a1d)
 - Tämän ajattelin heittää ideana ilmoille. En siis tiedä paljoa aiheesta, mutta ehkä tätä Workgrouppia pystyisi hyödyntämään jotenkin? Sambasta sain selville, että sillä jaetaan tiedostoja ja tulostimia mm. Linuxin, Windowsin ja macOS välillä. Sitä ainakin itse mielenkiinnosta tutkisin. (https://fi.wikipedia.org/wiki/Samba_(ohjelmisto))
 - Tässä myös huomaa hyvin sen aikaisemman videon sekä tiedustelun merkityksen - niin paljon tietoa, että kaikki alkaa kiinnostamaan
 
-- ![image](https://github.com/user-attachments/assets/c3f66e1c-c72b-4469-969f-061480d60a1d)
 
-
-- ![image](https://github.com/user-attachments/assets/7af99e3d-f5a5-4f24-89a5-45f911d4a4a3)
+- MySQL kiinnostaa aina sen haavoittuvuuksien vuoksi
+- Googletin tuon version ja avaamatta yhtäkään linkkiä, tuli lista haavoittuvuuksia siihen liittyen! Kyseessä siis ilmeisen vanha versio, jota voisi hyödyntää.
+- En tiedä, olenko ihan hakoteillä, mutta siinä näkyy Saltin salasana, joka on salattu ja pystyy murtamaan?
+- Update ajatuksiin: Se ei välttämättä ole niin helppoa, koska suola lisätään salasanaan https://stackoverflow.com/questions/4351702/what-is-salt-when-relating-to-mysql-sha1
+- Joka tapauksessa erittäin kiinnostava kohde!
+3. ![image](https://github.com/user-attachments/assets/7af99e3d-f5a5-4f24-89a5-45f911d4a4a3)
 
 ### Lähteet
+Tunkeutumistestaus, Tero Karvinen, 03/2025, Luettavissa: https://terokarvinen.com/tunkeutumistestaus/, Luettu 01/04/2025
+
+€ Santos et al: The Art of Hacking (Video Collection): 4.3 Surveying Essential Tools for Active Reconnaissance, Omar Santos / Ron Taylor / Jon Sternstein / Chris McCoy, Katsottavissa: https://learning.oreilly.com/videos/the-art-of/9780135767849/9780135767849-SPTT_04_03/, Katsottu 01/04/2025
+
 
 Herrasmieshakkerit, Tietoturvan Niksipirkka, vieraana Juho Rikala | 0x34, 25/09/2024, Kuunneltavissa: https://podcasts.apple.com/fi/podcast/herrasmieshakkerit/id1479000931, Kuunneltu 01/04/2025
 
+Hacking into a Target Using Metasploit, Tuomas Valkamo 11/2022, Luettavissa: https://tuomasvalkamo.com/PenTestCourse/week-2/, Luettu 01/04/2025
 
+KKO:2003:36, Finlex, Luettavissa: https://finlex.fi/fi/oikeuskaytanto/korkein-oikeus/ennakkopaatokset/2003/36#OT0_OT5, Luettu 01/04/2025
 
 Hackthebox,  NMAP all ports are in ignored state, Comment by user "adamkirito" 2/2023, Luettavissa:  https://forum.hackthebox.com/t/nmap-all-ports-are-in-ignored-state/272778, Luettu 01/04/2025
 
@@ -302,4 +313,11 @@ Metasploitable 2, RAPID7, Luettavissa: https://docs.rapid7.com/metasploit/metasp
 Installing Metasploitable 2 in virtual box for windows host, MarvinKilo, 06/2023, Luettavissa: 
 https://medium.com/@dangerhulk26022022/installing-metasploitable-2-in-virtual-box-for-windows-host-bf0a5b4f8375, Luettu: 01/04/2025
 
+What is "salt" when relating to MYSQL sha1?, Answered by cfeduke (2010), edited by Borealid (2012), Luettavissa: https://stackoverflow.com/questions/4351702/what-is-salt-when-relating-to-mysql-sha1, Luettu 01/04/2025
+
+Kernel Panic when booting Metasploitable 2, by Khloe_ruby (2022), Luettavissa: https://forums.virtualbox.org/viewtopic.php?t=106654, Luettu 01/04/2025
+
+FPT server, Wikipedia (03/2022), Luettavissa: https://en.wikipedia.org/wiki/FTP_server, Luettu 01/04/2025
+
+ChatGPT-4o
 
