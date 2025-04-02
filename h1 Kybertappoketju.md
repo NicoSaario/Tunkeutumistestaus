@@ -252,6 +252,12 @@ Kyseessä siis Oracle VM ja yritän käynnistää Metasploitable 2
 - Nyt ollaan niinkin kauniissa tilanteessa, että noin 1.5 - tunnin pyörittelemisen jälkeen aukesi seuraava näkymä:
   ![image](https://github.com/user-attachments/assets/faeae678-50e7-417c-b80f-3c6bf275356f)
 
+## f) Tee koneiden välille virtuaaliverkko. Jos säätelet VirtualBoxista (EDIT - LISÄTTY = 02/04/2025 17:38 - Kurssitoverin vinkistä olin jättänyt epähuomiossa f - kohdan merkitsemättä))
+
+    > Kali saa yhteyden Internettiin, mutta sen voi laittaa pois päältä
+    > Kalin ja Metasploitablen välillä on host-only network, niin että porttiskannatessa ym. koneet on eristetty intenetistä, mutta ne saavat yhteyden toisiinsa
+    > Vaihtoehtoisesti voit tehdä molempien koneiden asennuksen ja virtuaaliverkon vagrantilla. Silloin molemmat koneet samaan Vagrantfile:n.
+    
 - Nappasin kaapelin irti Oraclen asetuksista Kalilta ennen käynnistyksiä, joten kumpikaan ei pääse verkkoon. Varmistin tämän vielä molemmilta koneilta pingaamalla sitä tuttua ja turvallista 8.8.8.8
 - ![image](https://github.com/user-attachments/assets/17cc7f3c-34a2-4991-9636-e43d204bfa2a)
 - Kummallakaan ei siis ole pääsyä verkkoon
