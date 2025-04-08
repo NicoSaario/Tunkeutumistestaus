@@ -123,13 +123,58 @@ Miten estää?
 
 [Server-side request forgery (SSRF)](https://portswigger.net/web-security/ssrf)
 
+- Mikä? Serveripuolen sovelluksen pyyntöjä ei haluttuun paikkaan. Hyökkääjä voi saada palvelimen muodostamaan yhteyden sisäisiin, sisäverkossa tooimiviin palveluihin tai pakottaa sen ottaa yhteyden ulkoisiin järjestelmiin -> Arkaluontoisten tietojen vuotaminen
+
+- Esimerkki: Palvelimeen kohdistuvassa hyökkääjä saa sovelluksen tekemään HTTP - pyynnön Loopbackin kautta (127.0.0.1) ->
+
+$POST /product/stock HTTP/1.0
+$Content-Type: application/x-www-form-urlencoded
+$Content-Length: 118
+$stockApi=http://stock.weliketoshop.net:8080/product/stock/check%3FproductId%3D6%26storeId%3D1
+
+-> Muokataan pyyntöä
+
+$POST /product/stock HTTP/1.0
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 118
+stockApi=http://localhost/admin
+
+Mitä tutkia? 
+- Osittaisia URLeja pyynnöissä (suhteelliset polut)
+- URL - osoitteet dataformaatissa
+- SSRF Refer - otsikon kautta
 
 [Cross-site scripting](https://portswigger.net/web-security/cross-site-scripting)
 
+- Mikä? Mahdollistaa käyttäjien vuorovaikutuksen haavoittuvan sovelluksen kanssa. Voi ohittaa "same origin policy" - käytännön, joka eristää ne yleensä toisistaan
+- Tekeytyy uhriksi
+- Manipuloi ja palauttaa haitallista JavaScriptia, joka vaarantaa sovelluksen kokonaan
+- ```alert() ja print()``` - funktiot
+- Esimerkki: $https://insecure-website.com/status?message=All+is+well.
+<p>Status: All is well.</p>
+
+Sovellus ei tee mitään muuta prosessointia, joten siihen voi liittää pahoja juttuja
+
+
+$https://insecure-website.com/status?message=<script>/*+Pahoja+juttuja+tänne...+*/</script>
+<p>Status: <script>/* Pahoja juttuja tänne ...*/</script></p>
+
+Stored XSS
+- Data vastaanottaa epäluotettavasta lähteestä -> Sisällyttää myöhemiin HTTP - vastauksiin
+- Viestisovellus antaa käyttäjien lähettää viestejä ja ne näkyy muille -> $<p>Hei, tämä on minun viestini!</p>
+
+- Sitten lähetetään viesti, joka hyökkää muita käyttäjiä vastaan
+$<p><script>/* Tähän jotain pahaa... */</script></p>
+
+DOM XSS-> Javascriptiä epäluotettavasta lähteestö -> Data takaisin DOMiin -> Voi luoda haitallisen arvon, joka suorittaa scriptin
 
 [Vapaaehtoinen: Server-side template injection](https://portswigger.net/web-security/server-side-template-injection)
 
+Mikä? Hyökkääjä pystyy käyttämään mallipohjan omaa syntaksia haitallisen payloadin injektoimiseen, joka suoritetaan palvelimella.
+- Käyttäjän syöre yhdistetään suoraan mallipohjaan eikä välitetä datana -> Hyökkääjät injektoi ohjeita, mikä antaa täyden hallinnan palvelimeen
 
+
+## a) Totally Legit Sertificate. Asenna OWASP ZAP, generoi CA-sertifikaatti ja asenna se selaimeesi. Laita ZAP proxyksi selaimeesi. Laita ZAP sieppaamaan myös kuvat, niitä tarvitaan tämän kerran kotitehtävissä. Osoita, että hakupyynnöt ilmestyvät ZAP:n käyttöliittymään. (Ei toimine localhost:lla ilman Foxyproxya)
 
 
 
