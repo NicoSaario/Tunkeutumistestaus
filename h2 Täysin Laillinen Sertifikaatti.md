@@ -127,18 +127,20 @@ Miten estää?
 
 - Esimerkki: Palvelimeen kohdistuvassa hyökkääjä saa sovelluksen tekemään HTTP - pyynnön Loopbackin kautta (127.0.0.1) ->
 
+```
 $POST /product/stock HTTP/1.0
 $Content-Type: application/x-www-form-urlencoded
 $Content-Length: 118
 $stockApi=http://stock.weliketoshop.net:8080/product/stock/check%3FproductId%3D6%26storeId%3D1
+```
 
 -> Muokataan pyyntöä
-
-$POST /product/stock HTTP/1.0
+```
+POST /product/stock HTTP/1.0
 Content-Type: application/x-www-form-urlencoded
 Content-Length: 118
 stockApi=http://localhost/admin
-
+```
 Mitä tutkia? 
 - Osittaisia URLeja pyynnöissä (suhteelliset polut)
 - URL - osoitteet dataformaatissa
@@ -150,22 +152,25 @@ Mitä tutkia?
 - Tekeytyy uhriksi
 - Manipuloi ja palauttaa haitallista JavaScriptia, joka vaarantaa sovelluksen kokonaan
 - ```alert() ja print()``` - funktiot
-- Esimerkki: $https://insecure-website.com/status?message=All+is+well.
+- Esimerkki:
+```
+$https://insecure-website.com/status?message=All+is+well.
 <p>Status: All is well.</p>
-
+```
 Sovellus ei tee mitään muuta prosessointia, joten siihen voi liittää pahoja juttuja
 
-
+```
 $https://insecure-website.com/status?message=<script>/*+Pahoja+juttuja+tänne...+*/</script>
 <p>Status: <script>/* Pahoja juttuja tänne ...*/</script></p>
-
+```
 Stored XSS
 - Data vastaanottaa epäluotettavasta lähteestä -> Sisällyttää myöhemiin HTTP - vastauksiin
 - Viestisovellus antaa käyttäjien lähettää viestejä ja ne näkyy muille -> $<p>Hei, tämä on minun viestini!</p>
 
 - Sitten lähetetään viesti, joka hyökkää muita käyttäjiä vastaan
+```
 $<p><script>/* Tähän jotain pahaa... */</script></p>
-
+```
 DOM XSS-> Javascriptiä epäluotettavasta lähteestö -> Data takaisin DOMiin -> Voi luoda haitallisen arvon, joka suorittaa scriptin
 
 [Vapaaehtoinen: Server-side template injection](https://portswigger.net/web-security/server-side-template-injection)
