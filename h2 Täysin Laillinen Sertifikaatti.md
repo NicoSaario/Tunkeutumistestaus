@@ -283,7 +283,16 @@ Nyt näyttää toimivan, sillä navigoimalla sivulle ```portswigger.net``` Zappi
 
 Avasin FoxyProxyn, Zapproxyn ja portswiggerin nettisivut eikä mikään muuttunut noissa tuloksissa, joten uskon sen proxyn olevan ainoastaan päällä Portswiggerin sivuille. Varmistin tämän vielä surffailemalla lisää ties missä osoitteissa. Zapproxy ei reagoinut. Eteenpäin siis!
 
+Ainiin! Samalla, kun ollaan Zapissa, käydään laittamassa ne kuvien sieppaus päälle, eli takaisin "Options" -> Display -> Process images in HTTP requests/responses
 
+![image](https://github.com/user-attachments/assets/355913e3-eddf-4d1f-8b1b-ff4aaa4989d1)
+
+
+### PortSwigger Labs. Ratkaise tehtävät. Selitä ratkaisusi: mitä palvelimella tapahtuu, mitä eri osat tekevät, miten hyökkäys löytyi, mistä vika johtuu. Kannattaa käyttää ZAPia, vaikka malliratkaisut käyttävät harjoitusten tekijän maksullista ohjelmaa. Monet tehtävät voi ratkaista myös pelkällä selaimella. Malliratkaisun kopioiminen ZAP:n tai selaimeen ei ole vastaus tehtävään, vaan ratkaisu ja haavoittuvuuden etsiminen on selitettävä ja perusteltava.
+
+### Cross Site Scripting (XSS)
+
+c) https://portswigger.net/web-security/cross-site-scripting/reflected/lab-html-context-nothing-encoded
 
 
 ## Lähteet: 
