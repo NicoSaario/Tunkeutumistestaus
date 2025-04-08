@@ -53,6 +53,37 @@ Miten estetään?
 
 [A10:2021 – Server-Side Request Forgery (SSRF)](https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/)
 
+- Ilmenee, kun verkkosovellus hakee resursseja etänä ilman käyttäjän syöttämän URL tarkistusta/validointia. Mahdollistaa hyökkäjän pakottaa muokattu pyyntö kohteeseen palomuurin, VPN:n tai muun suojaamana.
+- Yleinen käyttäjäystävällisyyden takia
+- Pilvipalvelut ja arkkitehtuuri -> Vakavuus kasvussa
+
+Miten ehkäistä? 
+    - Verkkotasolla:
+        - Etäresurssien segmentointi erillisiin verkkoihin
+        - Käyttöön oletusarvoinen esto -> Vain välttämätön Intranet - liikenne
+        - Kaikki hyväksytyt ja estetyt verkkoliikennevirrat palomuurille -> Kirjaa
+    - Sovellustasolla:
+        - Puhdista, validoi asiakkaan syöttämä data
+        - Valvo URL, portit ja kohde sallittujen listalla
+        - Ei raw vastauksia asiakkaalle
+        - URL - osoitteiden johdonmukaisuus
+        - HTTP - uudelleenohjaus -> Pois
+        - Deny list tai säännölliset lausekkeet ei auta
+    - Verkon salaus!
+    - Paikallinen liikenne localhostina
+
+Hyökkäysesimerkit:
+    - 1. Porttiskannaus sisäisille servereille
+        - Segmentoimaton arkkitehtuuri -> Sisäiset verkot -> Portit auki vai kiinni? = Liikaa tietoa
+    - 2. Arkaluontoisen tiedon vaarantuminen
+        - Hyökkääjät pääsee paikallisiin tiedostoihin tai sisäisiin palveluihin, vaikka ```file:///etc/passwd?``` ```http://localhost:28017/```
+    - 3. Metadataan tai pilvipalveluihin pääsy
+        - Useimmilla pilvipalveluntarjoajilla on metadata "varasto", esimerkiksi osoitteessa ```http://169.254.169.254/```
+    - 4. Sisäisten palveluiden vaarantuminen
+        - Voi käyttää niitä hyväkseen ja tehdä enemmän vahinkoa (Remote Code Execution), DOS
+    
+
+
 ## PortSwigget Academy:
 [Insecure direct object references (IDOR)](https://portswigger.net/web-security/access-control/idor)
 
