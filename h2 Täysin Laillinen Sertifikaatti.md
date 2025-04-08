@@ -181,17 +181,107 @@ Mikä? Hyökkääjä pystyy käyttämään mallipohjan omaa syntaksia haitallise
 
 ## a) Totally Legit Sertificate. Asenna OWASP ZAP, generoi CA-sertifikaatti ja asenna se selaimeesi. Laita ZAP proxyksi selaimeesi. Laita ZAP sieppaamaan myös kuvat, niitä tarvitaan tämän kerran kotitehtävissä. Osoita, että hakupyynnöt ilmestyvät ZAP:n käyttöliittymään. (Ei toimine localhost:lla ilman Foxyproxya)
 
+Yhdistän nämä kaksi tehtävää
+
+## b) Kettumaista. Asenna "FoxyProxy Standard" Firefox Addon, ja lisää ZAP proxyksi siihen. Käytä FoxyProxyn "Patterns" -toimintoa, niin että vain valitsemasi weppisivut ohjataan Proxyyn. (Läksyssä ohjataan varmaankin PortSwigger Labs ja localhost.)
+
+
+Asennellaan ensin se [ZAP](https://www.zaproxy.org/download/)
+Ja sieltä Teron ohjeiden mukaan Cross Platform, koska se on paras. Itse asennan nyt Kalissa suoraa ```sudo apt-get install zaproxy```
+Asentelu vei 35 sekuntia
+Tämän jälkeen ```whereis zaproxy```
+
+![image](https://github.com/user-attachments/assets/ffe04d4d-c25e-49c2-be8a-38cf280c953a)
+
+Siitä ```cd /usr/bin``` ja ```./zaproxy```
+
+Ajelin siihen kaikki nuo päivitykset, joita se tarjos
+
+![image](https://github.com/user-attachments/assets/9f684c55-d971-433c-bf79-df148a4c7c41)
+
+
+Laitellaan tässä samalla tuo FireFoxin FoxyProxy Addon - kuntoon. Eli päästään tuolta oikealta ylhäältä lisäilemään addoneja, haetaan foxyproxy
+
+![image](https://github.com/user-attachments/assets/010fc62f-2ade-4bd2-8e43-66096dccf6df)
+
+Valitaan se
+
+![image](https://github.com/user-attachments/assets/689a446b-247f-4cba-ba6f-1caf8486ce2b)
+
+![image](https://github.com/user-attachments/assets/44844868-965d-4409-9856-627d90165649)
+
+Annetaan kivoja lupia
+
+![image](https://github.com/user-attachments/assets/b0ef2f89-9c49-41e3-81fe-806eb512d033)
+
+![image](https://github.com/user-attachments/assets/5223685a-0aea-4492-910c-6718d97d18bc)
+
+
+Koska miksi ei
+
+Ja nyt se löytyy tuolta, kun painaa "Extensions" 
+
+![image](https://github.com/user-attachments/assets/fa81cef5-2995-4112-8f3e-782fc875fb83)
+
+
+Takasin Zappiin ja sieltä Tools -> Options
+
+![image](https://github.com/user-attachments/assets/85a24a3d-58c8-4b18-991a-15426f8d9fa8)
+
+
+Voidaan manuaalisesti hakea tai sanoilla, mutta muistaakseni Certificates ei näy edes hakemalla, ennenkö on avannut "Network" - kohdan.
+Seuraavaksi mennään Server Certificates
+
+![image](https://github.com/user-attachments/assets/e8f89730-6d1c-4f3e-9e28-d9d97d6f873f)
+
+
+![image](https://github.com/user-attachments/assets/c2fd5e7f-a194-42aa-be6a-ce153bc020be)
+
+
+-> Generate
+
+Nyt, kun Certi on tehty, mennään FireFoxiin settings -> Cerfiticates -> View Certificates
+
+![image](https://github.com/user-attachments/assets/d221eec2-ad82-4dd2-add3-db9b188dbff7)
+
+![image](https://github.com/user-attachments/assets/bb3b9273-d956-4d4b-beda-a1b864a46f89)
+
+![image](https://github.com/user-attachments/assets/9a6cc706-b1c2-4ad3-9d08-c8ac322df683)
+
+
+Ja tottakai luotetaan näin turvallisen oloiseen certiin.
+![image](https://github.com/user-attachments/assets/10bd13e7-e9fe-4f70-b6c7-d6a5305ebe6e)
+
+Nyt se näkyy listassa
+
+Sitte lisätään se seuraavaks FoxyProxyyn -> Kävin samalla varmistamassa huvikseen, että localhost - osoite ei oo hypääny mihinkään taivaisiin
+
+![image](https://github.com/user-attachments/assets/d6746285-180a-4d30-b47b-3aa3cf303fc9)
+
+Zapin ohjeissa localhostin portti 8080, joten mennään sillä.
+
+![image](https://github.com/user-attachments/assets/9b0de87b-f135-4c29-a1c4-fb16088e45cf)
+
+Laitoin Proxy by Patterns ja siihen sen portswigger.net
+
+![image](https://github.com/user-attachments/assets/34375f1c-bb2c-44ce-b370-1d98fdc30ccf)
+
+Asetukset pitäis olla nyt kunnossa ja certit asennettu.
 
 
 
+Ihmettelin hetken, kun mitään ei tapahdu ja sit unohdin et se varmaan liittyy Mozillan omiin nettiasetuksiin 
+-> Settings -> General -> Ihan alas ja Network Settings
 
+![image](https://github.com/user-attachments/assets/605e00bf-b282-4f52-97ea-ef543a788e0f)
 
+Nyt tuli jopa valikko, jota ei aikaisemmin ollu:
 
+![image](https://github.com/user-attachments/assets/f2fc8b04-d500-4ae2-a882-74dc66a10d09)
 
+Nyt näyttää toimivan, sillä navigoimalla sivulle ```portswigger.net``` Zappi aktivoitui ja alkoi puuhastelemaan
 
-
-
-
+Avasin FoxyProxyn, Zapproxyn ja portswiggerin nettisivut eikä mikään muuttunut noissa tuloksissa, joten uskon sen proxyn olevan ainoastaan päällä Portswiggerin sivuille. Varmistin tämän vielä surffailemalla lisää ties missä osoitteissa. Zapproxy ei reagoinut. Eteenpäin siis!
 
 
 
@@ -211,3 +301,7 @@ Mikä? Hyökkääjä pystyy käyttämään mallipohjan omaa syntaksia haitallise
 - Cross-site scripting, PortSwigger, Luettavissa: https://portswigger.net/web-security/cross-site-scripting, Luettu: 08/04/2025
 
 - Server-side template injection, PortSwigger, Luettavissa: https://portswigger.net/web-security/server-side-template-injection, Luettu 08/04/2025
+
+- Configuring Proxies, ZAP by Checkmarx, Luettavissa: https://www.zaproxy.org/docs/desktop/start/proxies/, Luettu: 09/04/2025
+
+- URL Patterns FoxyProxy, Luettavissa: https://help.getfoxyproxy.org/index.php/knowledge-base/url-patterns/, Luettu: 09/04/2025
