@@ -73,22 +73,52 @@ Miten ehkäistä?
     - Paikallinen liikenne localhostina
 
 Hyökkäysesimerkit:
-    - 1. Porttiskannaus sisäisille servereille
-        - Segmentoimaton arkkitehtuuri -> Sisäiset verkot -> Portit auki vai kiinni? = Liikaa tietoa
-    - 2. Arkaluontoisen tiedon vaarantuminen
-        - Hyökkääjät pääsee paikallisiin tiedostoihin tai sisäisiin palveluihin, vaikka ```file:///etc/passwd?``` ```http://localhost:28017/```
-    - 3. Metadataan tai pilvipalveluihin pääsy
-        - Useimmilla pilvipalveluntarjoajilla on metadata "varasto", esimerkiksi osoitteessa ```http://169.254.169.254/```
-    - 4. Sisäisten palveluiden vaarantuminen
-        - Voi käyttää niitä hyväkseen ja tehdä enemmän vahinkoa (Remote Code Execution), DOS
+- 1. Porttiskannaus sisäisille servereille
+     
+    - Segmentoimaton arkkitehtuuri -> Sisäiset verkot -> Portit auki vai kiinni? = Liikaa tietoa
+        
+- 2. Arkaluontoisen tiedon vaarantuminen
+    
+    - Hyökkääjät pääsee paikallisiin tiedostoihin tai sisäisiin palveluihin, vaikka ```file:///etc/passwd?``` ```http://localhost:28017/```
+        
+- 3. Metadataan tai pilvipalveluihin pääsy
+    
+     - Useimmilla pilvipalveluntarjoajilla on metadata "varasto", esimerkiksi osoitteessa ```http://169.254.169.254/```
+
+- 4. Sisäisten palveluiden vaarantuminen
+     
+    - Voi käyttää niitä hyväkseen ja tehdä enemmän vahinkoa (Remote Code Execution), DOS
     
 
 
 ## PortSwigget Academy:
 [Insecure direct object references (IDOR)](https://portswigger.net/web-security/access-control/idor)
 
+- Mitä? Kun sovellus käyttää käyttäjän antamaa syöttää suoraan kohteeseen (tietokantatietueet, tiedostot).
+- Tässä tilanteessa nettisivu käyttää URLia, joka johtaa suoraan asiakkaan käyttäjäsivulle  ```https://insecure-website.com/customer_account?customer_number=132355```
+  
+    - Väärinkonfiguroituna mahdollistaa sen, että voidaan muokata pelkästään ```customer_number``` ja saada pääsy johonkin toiseen käyttäjään.
+
+ - Toisessa esimerkissä nettisivu saattaa tallentaa chättiviestit levylle käyttäen kasvavia tiedostonimiä ja sallii käyttäjien hakea niitä. Pelkkä tiedostonimen muokkaaminen riittää. ```https://insecure-website.com/static/12144.txt```
+
 
 [Path traversal](https://portswigger.net/web-security/file-path-traversal)
+
+- Mikä? Itse kutsun "polkuhyppelyksi". Mahdollistaa hyökkääjän lukea mielivaltaisia tiedostoja palvelimelta, esim. Sovelluksen koodin ja datan, credientials tai arkaluontoisia käyttöjärjeselmätiedostoja
+- Joskus voi jopa itse kirjoittaa, muokata ja ottaa koko hallinnan
+
+Miten? ```<img src="/loadImage?filename=218.png">```
+
+- LoadImage URL ottaa ```filename``` parametrin ja palauttaa sisällön siitä tiedostosta -> Ne on tallennettu /var/www/images ja sit se palauttaa hakemalla ton lopun, eli ```/var/www/images/218.png```
+- Koska siinä ei oo mitään suojausta tätä vastaan, voidaan hyppiä ja hakea salasanakin sieltä ```https://insecure-website.com/loadImage?filename=../../../etc/passwd```, jollon se lukee ja palauttaa sen salasanan tuolta kansiopolusta
+- ../ hyppii yhden ylöspäin, Winkkarilla toimii sekä ../ että ..\
+- Kolme hyppyä rootti -> ../../../etc/passwd
+- Paljon variaatioita: Absoluuttinen polku ```filename=/etc/passwd```, yhdistetty ```....//``` tai ```..../\```, Polunläpäisy-yritysten poisto syötteistä -> Burp automaatio tai URL - enkoodaus, Tietyn peruskansion vaatiminen, esim. ```/var/www/images```-> ```filename=/var/www/images/../../../etc/passwd```, tiedostopäätteen vaatiminen vaikka png -> %00 katkaisemaan tiedostopolku ```filename=../../../etc/passwd%00.png```
+- 
+
+Miten estää?
+- Jos ei voi välttyä käyttäjäsyötteestä -> Kaksi kerrosta suojausta
+- Validoi ennen käsittelyä -> Whitelist halutuista arvoista tai vain sallitut merkit
 
 
 [Server-side request forgery (SSRF)](https://portswigger.net/web-security/ssrf)
