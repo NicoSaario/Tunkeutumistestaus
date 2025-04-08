@@ -18,7 +18,37 @@ OWASP 2021: OWASP Top 10:2021
 
 [A01:2021 – Broken Access Control (IDOR ja path traversal ovat osa tätä)](https://owasp.org/Top10/A01_2021-Broken_Access_Control/)
 
-- 
+- Pääsynvalvonta mahdollistaa sen, ettei käyttäjät voi toimia lupiensa ulkopuolella
+- Pahat seuraamukset -> Arkaluontoisen tiedon leviäminen, muokkaaminen, tuhoaminen
+- Haavoittuvuudet mm.
+    - Vähimmäinen oikeus, oletusarvoinen esto rikottu -> Yleinen pääsy rajoitetun sijaan
+    - Ohittaminen URLin muokkaamisella
+    - Toisen käyttäjän näkeminen tai muokkaus
+    - API - rajapintaan pääsy ilman pääsynvalvontaa (POST, PUT, DELETE)
+    - Metadatan manipulointi (eväste, kenttä, pääsynvalvontatunniste JSON Web Token)
+    - CORS konfiguroitu väärin -> API - pääsy luvattomista lähteistä
+    - Pakotettu selaus tunnistautumista vaativiin sivuihin tunnistautumattomana käyttäjänä tai vaikka admin - sivut tavan käyttäjällä
+
+Miten estetään?
+  - Varmistetaan, ettei hyökkääjä voi muokata pääsynvalvontatarkistusta tai metadataa:
+      - Ei julkiset resurssit ->> ESTO
+      - Mekanismit kerran -> Uudelleen koko sovelluksessa
+      - Valvominen sen sijaan, että annetaan käyttäjän lukea, luoda, päivittää tai poistaa tietueita
+      - Mihin sovellusten tulisi päästä?
+      - Verkkopalvelimien hakemistolistaus pois käytöstä -> Metadata, esim. .git ei juurihakemistossa
+      - Epäonnistumiset pääsynvalvontan -> Lokit ja hälytykset!!!
+      - API - ohjainpääsyn rajoittaminen
+      - Tilalliset = Uloskirjautuminen -> Mitätöinti
+      - Tilattomat JWT - tokenit -> Lyhyet!
+      - Pitkäikäiset JWT - tokenit -> OAuth - standardeja
+   
+  Hyökkäykset melko simppelit, mutta tehokkaat:
+    - Esim. 1: SQL ``` pstmt.setString(1, request.getParameter("acct"));
+ ResultSet results = pstmt.executeQuery( );```
+    - Jos löytää käyttäjät, voi päästä minne tahansa käyttäjälle: URL/account: ```https://example.com/app/accountInfo?acct=notmyacct```
+    - Esim. 2: URL:  ```https://example.com/app/getappInfo
+ https://example.com/app/admin_getappInfo``` Jos pääsee edes käymään tavallisella käyttäjällä, on kyseessä haavoittuvuus
+
 
 
 [A10:2021 – Server-Side Request Forgery (SSRF)](https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/)
