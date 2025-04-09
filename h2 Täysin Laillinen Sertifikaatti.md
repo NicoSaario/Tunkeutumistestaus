@@ -1,6 +1,6 @@
 # Kotitehtävät
 
-Kotitehtävät ovat kurssilta "Verkkoon Tunkeutuminen ja Tiedustelu - Network Attacks and Reconnaissance" ja löytyvät osoitteesta https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/#verkkojen-perusteet 
+Kotitehtävät ovat kurssilta "Tunkeutumistestaus -Penetration Testing course - 2024 late " ja löytyvät osoitteesta https://terokarvinen.com/tunkeutumistestaus/
 
 Kotitehtävät on tehty Windows 11 - Home - käyttöjärjestelmällä, päivitykset ajettu 08/04/2025 asti.
 
@@ -397,6 +397,10 @@ Ja syynä siihen se, että käytännössä kun syöte ```.../```nähdään, se o
 ![image](https://github.com/user-attachments/assets/14198e39-6365-4531-8000-2d9b8712a936)
 
 
+--------------------------------------------------------------------------------------------------------------------------------------
+Tehtävän keskeneräinen palautus 09/04 13:20
+Jatkan tästä vielä
+--------------------------------------------------------------------------------------------------------------------------------------
 
 ## Lähteet: 
 
