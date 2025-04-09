@@ -290,10 +290,94 @@ Ainiin! Samalla, kun ollaan Zapissa, käydään laittamassa ne kuvien sieppaus p
 
 ### PortSwigger Labs. Ratkaise tehtävät. Selitä ratkaisusi: mitä palvelimella tapahtuu, mitä eri osat tekevät, miten hyökkäys löytyi, mistä vika johtuu. Kannattaa käyttää ZAPia, vaikka malliratkaisut käyttävät harjoitusten tekijän maksullista ohjelmaa. Monet tehtävät voi ratkaista myös pelkällä selaimella. Malliratkaisun kopioiminen ZAP:n tai selaimeen ei ole vastaus tehtävään, vaan ratkaisu ja haavoittuvuuden etsiminen on selitettävä ja perusteltava.
 
-### Cross Site Scripting (XSS)
+## Cross Site Scripting (XSS)
 
-c) https://portswigger.net/web-security/cross-site-scripting/reflected/lab-html-context-nothing-encoded
+### c) https://portswigger.net/web-security/cross-site-scripting/reflected/lab-html-context-nothing-encoded
 
+- Kokeilin ensin lueskella vähän lisää siitä aiheesta ja ohjeessa luki "alert" - function, joten kokeilin käyttää sitä. Se ilmeisesti tykkää syötteistä, joten kokeillaan laittaa sinne vaikka HTML - syötettä
+
+ ![image](https://github.com/user-attachments/assets/49bfa381-db00-4cfa-bb90-c4136271fb25)
+
+Ja toimiihan se. 
+
+Eli voinko lisätä vain <script>alert</script> siihen perään?
+Kappas. En itse asiassa tajunnut, että sinne sisään pitää syöttää jotain joka sen tulostaa pihalle. Kävin siis googlettamassa nopeasti mikä tuo alert() on ja sinne sisään pitää tietysti laittaa jotain... 
+Kokeilen siis ```<script>alert(123)</script>```
+
+Ja se toimii!
+![image](https://github.com/user-attachments/assets/ca5b5c92-c6df-4efc-9a45-bd88c30b28e1)
+
+- Eli tässä ei siis ole rajoitettu lainkaan sitä, mitä käyttäjä saa syöttää kenttään, suorittaa sen heti ja se mahdollistaa hyökkäyksen
+
+### d) [Stored XSS into HTML context with nothing encoded](https://portswigger.net/web-security/cross-site-scripting/stored/lab-html-context-nothing-encoded)
+
+- Selailin ensin sivua läpi ja katsoin, mitä se sisältää. Hyvin saman tyylinen, kuin aikaisempi ilman suoraa kenttää syöttää mitään. 
+
+- Jokaisen "View Post" jälkeen on kommenttikenttä, johon voi syöttää jotain ja se kiinnostaa
+
+![image](https://github.com/user-attachments/assets/9bfa96fd-1fae-45c5-835f-5f7c5bd2dc14)
+
+![image](https://github.com/user-attachments/assets/99ec8511-5149-485c-a1ab-63b0de788aff)
+
+![image](https://github.com/user-attachments/assets/382928b9-3715-4642-8c49-8f77868f91db)
+
+Kokeilen jälleen sitä <script>alert(123)</script> 
+
+![image](https://github.com/user-attachments/assets/272c825a-c816-4c4b-b5a7-d962eff09e9d)
+
+Eli kommenttikenttään syötetty scripti ajetaan käyttäjän selaimessa, kun hän menee sivulle, johon kommentti on syötetty. Palasin takasinpäin ja tuli kyseinen viesti: 
+
+![image](https://github.com/user-attachments/assets/f4cb8a8b-0c10-4e60-a2b3-7ed88f7a2cbf)
+
+
+
+- Tein ensin ihan tavallisen kommentin, jossa ei oikeastaan ollut mitään ihmeellistä. Se oli suht tarkkka s-postin ja websiten kanssa
+- Tässäkin oli ainoastaan rajoitettu Website sekä E-mail - kohdat. Ei mitenkään kommenttikenttiin muita syötteitä.
+- Kommenttikentässä se näkyy tyhjänä
+
+![image](https://github.com/user-attachments/assets/e1243107-1202-457e-9d41-e39a0d70912c)
+
+## Path traversal
+
+### e) [File path traversal, simple case](https://portswigger.net/web-security/file-path-traversal/lab-simple) Laita tarvittaessa Zapissa kuvien sieppaus päälle
+
+- Sivustolla ei näy mitään ihmeellistä. View details kiinnostaa
+
+![image](https://github.com/user-attachments/assets/cdce5c7a-6ff0-4a80-8ed6-553d29998269)
+
+- Osoiterivillä ei mitään mielenkiinnosta
+- Tässä hetken aikaa tutkinu koko sivustoa ja päätin klikata kuvan auki
+
+![image](https://github.com/user-attachments/assets/95befbb8-be6e-4752-9f83-0552230ba517)
+
+- Aikasemmin, kun käytiin noita tiivistelmiä läpi, jäi mieleen se "filename" ja siihen syötteiden lisääminen
+- Heitin suoraa syvään päätyyn ja laitoin filename=/etc/passwd
+
+![image](https://github.com/user-attachments/assets/9b1598ca-6b2f-4608-800a-549be93d9efd)
+
+Käsittääkseni ihan kiva ilmoitus. Se on siis mahdollista! 
+
+Laitoin seuraavaksi .../.../.../etc/passwd
+Sekään ei tuottanut tulosta - takaisin lukemaan
+Tulikin vähän liikaa pisteitä, eli ../../../etc/passwd
+
+![image](https://github.com/user-attachments/assets/6968883a-c1d0-4ae2-831d-0429ce5fe7b2)
+
+Hetken aikaa kokeilin vaikka ja mitä, mutta palasin takasin sivustolle ja lukee "Lab solved"
+
+![image](https://github.com/user-attachments/assets/8679197f-bcce-485b-8e5c-4055811ab936)
+
+- Eli koska pystyttiin tekemään suoraa "hakuja" hyppimällä päämäärätietoisesti kohti haluttua hakemistoa, haavoittuvuus löytyi siitä, ettei siinä ollut mitään suojaa sitä vastaan.
+
+### [f) File path traversal, traversal sequences blocked with absolute path bypass](https://portswigger.net/web-security/file-path-traversal/lab-absolute-path-bypass)
+
+- Sama homma tässä, ei mitään ihmeellistä ensinalkuun. Mennään View details
+
+  ![image](https://github.com/user-attachments/assets/2a0604b7-0c4b-49d1-911f-76c07535837e)
+
+Täällä taas. Kokeilen samoja, kun aikaisemmin.
+
+Ei toiminut itseasiassa mikään eikä myöskään ne, mitä portswiggerissä oli ohjeina
 
 ## Lähteet: 
 
