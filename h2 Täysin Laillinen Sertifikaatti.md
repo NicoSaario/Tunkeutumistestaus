@@ -445,11 +445,13 @@ Katsoin vielä tämän jälkeen esimerkkiratkaisun ja koko homman olisi pitänyt
 
 ## [Server Side Request Forgery (SSRF)](https://portswigger.net/web-security/ssrf/lab-basic-ssrf-against-localhost)
 
+Edit: Keskustelin hieman tekoälyn kanssa ja surffailin eri lähteitä näistä ongelmista ja koko harjoituksen ajan ongelma johtui nähtävästi siitä, etten ollut laittanu Zappia käyttämään HTTPS - proxyä 
+Mistä tiedän, että juuri siinä oli ongelma? Zapissa näkyi heti tehtävän oletettavasti tuleva ratkaisu. Koko POST - methodia ei ollut ennen tuota muutosta.
+
 ![image](https://github.com/user-attachments/assets/a72285c1-034b-499e-be1c-e62bb152219a)
 
 Lähti vähän räväkämmin tämä labra liikkeelle, menin heti My account - sivulle ja syötin "admin" osoiteriville. Yhden pienen väkäsen takia, joka ei tässä kohtaa enää edes käynyt mielessä, näissä meni turhan kauan aikaa.
 
-Mistä tiedän, että juuri siinä oli ongelma? Zapissa näkyi heti tehtävän oletettavasti tuleva ratkaisu. Koko POST - methodia ei ollut ennen tuota muutosta.
 
 ![image](https://github.com/user-attachments/assets/5e6a1249-bc54-447d-a06f-46c65aeb634a)
 
@@ -459,10 +461,15 @@ Eli ohjeiden mukaan käytetään stockia hyödyksi ja lyödään se http://local
 
 ![image](https://github.com/user-attachments/assets/d505f343-4009-46f7-9202-18936b727263)
 
-Carlos on poistettu.. tai ei vielä
+Carlos on poistettu.. tai ei vielä.
+Hetki meni, kun syötin sitä joka paikkaan, mutta lopulta tajusin laittaa sen itse stockAPI - kohtaan ja labra läpi!
 
 
-Edit: Keskustelin hieman tekoälyn kanssa ja surffailin eri lähteitä näistä ongelmista ja koko harjoituksen ajan ongelma johtui nähtävästi siitä, etten ollut laittanu Zappia käyttämään HTTPS - proxyä 
+![image](https://github.com/user-attachments/assets/1de7efbe-c5a1-436d-9410-1bd6c64b9f16)
+
+![image](https://github.com/user-attachments/assets/104d3333-b240-4e6f-98fa-dd75856065a4)
+
+
 ## Lähteet: 
 
 - A01:2021 – Broken Access Control, OWASP Top 10:2021, Luettavissa: https://owasp.org/Top10/A01_2021-Broken_Access_Control/, Luettu: 08/04/2025
