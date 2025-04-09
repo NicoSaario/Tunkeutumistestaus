@@ -379,6 +379,25 @@ Täällä taas. Kokeilen samoja, kun aikaisemmin.
 
 Ei toiminut itseasiassa mikään eikä myöskään ne, mitä portswiggerissä oli ohjeina
 
+Avasin sen Zapissa ja katsoin, mitä tekee kun pelkän kuvan lähettää: 
+![image](https://github.com/user-attachments/assets/84331a4f-1c76-4803-b7ba-066db025d8bc)
+
+![image](https://github.com/user-attachments/assets/81cb9b1c-ab95-4089-bc51-da6f27978a38)
+
+Kaikki siis vielä ok
+
+Yritin uudelleen ```/etc/passwd```
+
+![image](https://github.com/user-attachments/assets/a5fc951f-f887-4909-9a68-d0b8026b5b18)
+
+Ei itseasiassa enää harmainta aavistusta ja tähän on menny kohta jo tunti aikaa. Kokeilin jokaista mahdollista kohtaa, joita PortSwiggerin ohjeessa ja muiden lähteistä. Kokeilin kaiken ja jouduin lopuksi katsomaan ohjeen, miten se tehdään. Vastuas oli siis ....//....//....//....//etc/passwd
+
+Ja syynä siihen se, että käytännössä kun syöte ```.../```nähdään, se osa poistetaan, eli pitää lisätä tuplat  
+
+![image](https://github.com/user-attachments/assets/14198e39-6365-4531-8000-2d9b8712a936)
+
+
+
 ## Lähteet: 
 
 - A01:2021 – Broken Access Control, OWASP Top 10:2021, Luettavissa: https://owasp.org/Top10/A01_2021-Broken_Access_Control/, Luettu: 08/04/2025
