@@ -445,6 +445,24 @@ Katsoin vielä tämän jälkeen esimerkkiratkaisun ja koko homman olisi pitänyt
 
 ## [Server Side Request Forgery (SSRF)](https://portswigger.net/web-security/ssrf/lab-basic-ssrf-against-localhost)
 
+![image](https://github.com/user-attachments/assets/a72285c1-034b-499e-be1c-e62bb152219a)
+
+Lähti vähän räväkämmin tämä labra liikkeelle, menin heti My account - sivulle ja syötin "admin" osoiteriville. Yhden pienen väkäsen takia, joka ei tässä kohtaa enää edes käynyt mielessä, näissä meni turhan kauan aikaa.
+
+Mistä tiedän, että juuri siinä oli ongelma? Zapissa näkyi heti tehtävän oletettavasti tuleva ratkaisu. Koko POST - methodia ei ollut ennen tuota muutosta.
+
+![image](https://github.com/user-attachments/assets/5e6a1249-bc54-447d-a06f-46c65aeb634a)
+
+![image](https://github.com/user-attachments/assets/6062e50f-a5f8-4d01-9884-ff5e7a4addff)
+
+Eli ohjeiden mukaan käytetään stockia hyödyksi ja lyödään se http://localhost/admin sinne
+
+![image](https://github.com/user-attachments/assets/d505f343-4009-46f7-9202-18936b727263)
+
+Carlos on poistettu.. tai ei vielä
+
+
+Edit: Keskustelin hieman tekoälyn kanssa ja surffailin eri lähteitä näistä ongelmista ja koko harjoituksen ajan ongelma johtui nähtävästi siitä, etten ollut laittanu Zappia käyttämään HTTPS - proxyä 
 ## Lähteet: 
 
 - A01:2021 – Broken Access Control, OWASP Top 10:2021, Luettavissa: https://owasp.org/Top10/A01_2021-Broken_Access_Control/, Luettu: 08/04/2025
