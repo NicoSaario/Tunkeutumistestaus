@@ -417,6 +417,15 @@ Eli carlosin salasana pitäis löytää ja kirjautua käyttäjälle
 
   ![image](https://github.com/user-attachments/assets/eec106a8-72b0-4fc8-887a-348b1fc0b5f6)
 
+- Valehtelematta kiertelin ja kaartelin noin tunnin, painelin "Transcript" - nappia ja yritin etsiä Zapista jotain, joka näyttäisi sen, kun lataus aktivoituu. Huomasin, että Zap oli "Protected" - modella ja laitoin sen ATTACK Modeen -> Aloitin koko labran alusta ja ta-daa s**tana. Ei ihan ensimmäinen, mutta viides GET näytti siltä, miltä sen vihdoin pitää näyttää
+
+- ![image](https://github.com/user-attachments/assets/694d9f14-dd8d-4d06-82ab-09d2b93e8d0f)
+
+- Useita kertoja tätä samaa tehneenä, huomasin sen lähettävän aina vain txt - filen, joka alkaa numerolla 2. Oletan siis, että tarkoituksella hypätty jonkun yli. Muutan siihen 1 ja katsotaan, tapahtuuko mitään
+
+![image](https://github.com/user-attachments/assets/e83220e0-2b97-4fbe-85cf-2db043467e2d)
+
+- 
 
 
 ## Lähteet: 
