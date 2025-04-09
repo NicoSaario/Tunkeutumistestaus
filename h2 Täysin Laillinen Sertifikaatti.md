@@ -425,8 +425,25 @@ Eli carlosin salasana pitäis löytää ja kirjautua käyttäjälle
 
 ![image](https://github.com/user-attachments/assets/e83220e0-2b97-4fbe-85cf-2db043467e2d)
 
-- 
+- Ei mitään hajua vieläkään, miksi se ei toimi Zapissa. Laitoin saman homman selaimen osoiteriville ja se latasi tiedoston. Ilmeisesti oli jo ladannut jossain kohtaa aikaisemmin, mutta meni itseltä ohi
 
+![image](https://github.com/user-attachments/assets/562d143c-e5ad-413b-85f4-0b8229300b71)
+
+
+Sitten my account -> ![image](https://github.com/user-attachments/assets/b2af7649-3c86-463a-8135-33210d724ebd)
+
+Username - Carlos
+Salasana se, joka syötettiin löydettiin äskön ja vihdoin!
+
+![image](https://github.com/user-attachments/assets/a7ac49bc-f6f9-46b5-aba2-b8271d616520)
+
+Meinasin ratketa monesti katsomaan esimerkkituloksen, mutta joku tässä puski eteenpäin yrittämään.
+
+![image](https://github.com/user-attachments/assets/ecc02873-2cd0-4608-95f0-1b6e007c67af)
+
+Katsoin vielä tämän jälkeen esimerkkiratkaisun ja koko homman olisi pitänyt näkyä zapin kautta, mutta sain pelkkiä virheilmoituksia.
+
+## [Server Side Request Forgery (SSRF)](https://portswigger.net/web-security/ssrf/lab-basic-ssrf-against-localhost)
 
 ## Lähteet: 
 
