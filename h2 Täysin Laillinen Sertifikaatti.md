@@ -273,6 +273,8 @@ Asetukset pitäis olla nyt kunnossa ja certit asennettu.
 Ihmettelin hetken, kun mitään ei tapahdu ja sit unohdin et se varmaan liittyy Mozillan omiin nettiasetuksiin 
 -> Settings -> General -> Ihan alas ja Network Settings
 
+### EDIT: MUISTA LAITTAA HTTPS - Päälle siitä laatikosta.. säästyy paljon päänvaivaa
+
 ![image](https://github.com/user-attachments/assets/605e00bf-b282-4f52-97ea-ef543a788e0f)
 
 Nyt tuli jopa valikko, jota ei aikaisemmin ollu:
