@@ -480,6 +480,15 @@ Hetki meni, kun syötin sitä joka paikkaan, mutta lopulta tajusin laittaa sen i
 ![image](https://github.com/user-attachments/assets/104d3333-b240-4e6f-98fa-dd75856065a4)
 
 
+###     Server Side Template Injection (SSTI)
+        [j) Vapaaehtoinen, hieman haastava: Server-side template injection with information disclosure via user-supplied objects](https://portswigger.net/web-security/server-side-template-injection/exploiting/lab-server-side-template-injection-with-information-disclosure-via-user-supplied-objects)
+
+k) Vapaaehtoinen, helppo: Asenna pencode ja muunna sillä jokin merkkijono (encode a string).
+l) Vapaaehtoinen: Mitmproxy. Asenna MitmProxy. Esittele sitä terminaalissa (TUI). Ota TLS-purku käyttöön. Poimi historiasta hakupyyntö, muokkaa sitä ja lähetä uudelleen.
+m) Vapaaehtoinen: Ratkaise lisää PortSwigger Labs -tehtäviä. Kannattaa tehdä helpoimmat "Apprentice" -tason tehtävät ensin.
+
+Teen nämä kyllä melko varmasti myöhemmin, mutta tuohon säätämiseen meni niin paljon turhaa aikaa, ettei nyt riitä aika niihin.
+
 ## Lähteet: 
 
 - A01:2021 – Broken Access Control, OWASP Top 10:2021, Luettavissa: https://owasp.org/Top10/A01_2021-Broken_Access_Control/, Luettu: 08/04/2025
