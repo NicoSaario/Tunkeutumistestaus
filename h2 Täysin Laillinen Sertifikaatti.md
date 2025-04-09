@@ -443,6 +443,16 @@ Meinasin ratketa monesti katsomaan esimerkkituloksen, mutta joku tässä puski e
 
 Katsoin vielä tämän jälkeen esimerkkiratkaisun ja koko homman olisi pitänyt näkyä zapin kautta, mutta sain pelkkiä virheilmoituksia.
 
+EDIT: Tein Zapin korjaamisen jälkeen tämän uudestaan ja se näkyi heti:
+
+![image](https://github.com/user-attachments/assets/1b315c0d-b44d-4e89-a7a9-b87a2b9853ff)
+
+Nyt myös vastaus näkyi suoraan siellä. 
+
+![image](https://github.com/user-attachments/assets/f8b90520-269e-4006-9457-bda144ddacf7)
+
+Tehtävän ratkaisuun meni 15 - sekuntia. No tekemällä oppii ja muistaa seuraavalla kerralla ihmetellä vähän aikaisemmin.
+
 ## [Server Side Request Forgery (SSRF)](https://portswigger.net/web-security/ssrf/lab-basic-ssrf-against-localhost)
 
 Edit: Keskustelin hieman tekoälyn kanssa ja surffailin eri lähteitä näistä ongelmista ja koko harjoituksen ajan ongelma johtui nähtävästi siitä, etten ollut laittanu Zappia käyttämään HTTPS - proxyä 
