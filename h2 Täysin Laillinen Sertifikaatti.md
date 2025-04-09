@@ -400,7 +400,24 @@ Ja syynä siihen se, että käytännössä kun syöte ```.../```nähdään, se o
 --------------------------------------------------------------------------------------------------------------------------------------
 Tehtävän keskeneräinen palautus 09/04 13:20
 Jatkan tästä vielä
+Jatkuu 09/04/2025 19:46
 --------------------------------------------------------------------------------------------------------------------------------------
+
+## h) [Insecure direct object references (IDOR)](https://portswigger.net/web-security/access-control/lab-insecure-direct-object-references)
+
+Eli carlosin salasana pitäis löytää ja kirjautua käyttäjälle
+
+![image](https://github.com/user-attachments/assets/b5fc2306-2b45-4bc4-b50d-56c4ce49907e)
+
+- Pyörittelin sivustoja, tutkin kaikkea mitä se sisälsi ja törmäsin oikeastaan vain kolme kohtaa, johon voi tunkea syötteitä
+
+  ![image](https://github.com/user-attachments/assets/20305110-369a-48a7-a62c-53384891dca1)
+
+  Ja lopuksi erittäin huonolla huumorilla varustettu Hal Pline - botti
+
+  ![image](https://github.com/user-attachments/assets/eec106a8-72b0-4fc8-887a-348b1fc0b5f6)
+
+
 
 ## Lähteet: 
 
