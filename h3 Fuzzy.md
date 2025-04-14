@@ -236,6 +236,38 @@ Ja tän jälkeen netti taas pois päältä
 
 ![image](https://github.com/user-attachments/assets/dc191cb3-13c3-4969-9efa-fd95b6709755)
 
+Täältä löytyy se oikea komentopolku, jota suoritetaan
+
+
+![image](https://github.com/user-attachments/assets/590f1152-2746-43db-ae8f-91e1fcf17d0e)
+
+
+![image](https://github.com/user-attachments/assets/92908a05-aadf-48eb-8248-4a961b0a129d)
+
+Eli: ```ffuf -w ~/wordlists/common.txt -u http://localhost/cd/basic/FUZZ```
+
+
+
+![image](https://github.com/user-attachments/assets/8b5d0599-900c-4f28-a976-e514c62d936d)
+
+Ja sieltä löytyi class ja development.log. Homma toimii! 
+
+
+## Ratkaise ffufme harjoitukset - kaikki paitsi ei "Content Discovery - Pipes".
+
+### c) Basic Content Discovery
+
+Tämän tein jo aikaisemmassa tehtävässä, kun testasin sen toimintaa
+
+### d) Content Discovery With Recursion
+
+### e) Content Discovery With File Extensions
+### f) No 404 Status
+### g) Param Mining
+### h) Rate Limited
+### i) Subdomains - Virtual Host Enumeration
+
+
 
 
 
