@@ -52,9 +52,17 @@ wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/
 
 ### Jompi kumpi, Hoikkalan video tai teksti:
            
--  Hoikkala 2023: [ffuf README.md](https://github.com/ffuf/ffuf/blob/master/README.md), tai
+Hoikkala 2023: [ffuf README.md](https://github.com/ffuf/ffuf/blob/master/README.md), tai
+
+ - FUZZ voi käyttää missä tahansa kohdassa, URL (-u), headers (-H) tai POST data (-d)
+ - Interaktiivinen moodi, eli pauselle ja voi tehdä muutoksia [ENTER]
+ - Jotta ffuf ei aja itseään loputtomiin, voi käyttää ```-maxtime```, joka lopettaa prosessin halutussa ajassa (s)
+ - Pidän edelleen siitä rakenteesta, että komennot pystyy suurilta osin jopa päättelemään.
            
-- Hoikkala "joohoi" 2020: [Still Fuzzing Faster (U fool). In HelSec Virtual meetup #1.](https://www.youtube.com/watch?v=mbmsT3AhwWU) (Noin tunnin mittainen)
+Hoikkala "joohoi" 2020: [Still Fuzzing Faster (U fool). In HelSec Virtual meetup #1.](https://www.youtube.com/watch?v=mbmsT3AhwWU) (Noin tunnin mittainen)
+
+- Äärimmäisen mielenkiintoista seurattavaa
+- Hyvin selitetty toiminnot yksityiskohtaisemmin
 
 
 
@@ -410,6 +418,22 @@ Sieltähän paljastui redhat
 
 Luulisin siis, että pystyisin käyttämään esimerkiksi nyt redhat.ffuf.me subdomainia jos verkko olisi päällä. Tässä harjoituksessa sillä ei siis tee mitään.
 
+
+
+Lähteet:
+
+Tunkeutumistestaus, Tero Karvinen, Luettavissa: https://terokarvinen.com/tunkeutumistestaus/, Luettu 14/04/2025
+
+Find Hidden Web Directories - Fuzz URLs with ffuf, Karvinen 2023, Luettavissa: https://terokarvinen.com/2023/fuzz-urls-find-hidden-directories/, Luettu 14/04/2025
+
+Fuffme - Install Web Fuzzing Target on Debian, Karvinen 2023, Luettavissa: https://terokarvinen.com/2023/fuffme-web-fuzzing-target-debian/, Luettu 14/04/2025
+
+ffuf - Fuzz Faster U Fool, Hoikkala "joohoi" 2023, Luettavissa: https://github.com/ffuf/ffuf/blob/master/README.md, Luettu 14/04/2025
+
+0x03 Still Fuzzing Faster (U Fool) - joohoi - HelSec Virtual meetup #1, HelSec 2021, Katsottavissa: https://www.youtube.com/watch?v=mbmsT3AhwWU, Katsottu 14/04/2025
+
+
+SecLists, danielmiessler, https://github.com/danielmiessler/SecLists
 
 
 
