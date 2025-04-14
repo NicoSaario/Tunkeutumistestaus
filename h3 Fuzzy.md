@@ -56,4 +56,6 @@ wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/
            
 - Hoikkala "joohoi" 2020: [Still Fuzzing Faster (U fool). In HelSec Virtual meetup #1.](https://www.youtube.com/watch?v=mbmsT3AhwWU) (Noin tunnin mittainen)
 
-- 
+
+
+## a) Fuzzzz. Ratkaise dirfuz-1 artikkelista Karvinen 2023: Find Hidden Web Directories - Fuzz URLs with ffuf.
