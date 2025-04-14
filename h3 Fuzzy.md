@@ -20,5 +20,7 @@ Opit käyttämään maailman johtavaa weppifuzzeria: ffuf. Sen opettaa meille tu
 Karvinen 2023: [Find Hidden Web Directories - Fuzz URLs with ffuf](https://terokarvinen.com/2023/fuzz-urls-find-hidden-directories/)
 
 Jompi kumpi, Hoikkalan video tai teksti:
+           
            -  Hoikkala 2023: [ffuf README.md](https://github.com/ffuf/ffuf/blob/master/README.md), tai
+           
             - Hoikkala "joohoi" 2020: [Still Fuzzing Faster (U fool). In HelSec Virtual meetup #1.](https://www.youtube.com/watch?v=mbmsT3AhwWU) (Noin tunnin mittainen)
