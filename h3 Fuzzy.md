@@ -408,6 +408,7 @@ Sieltähän paljastui redhat
 
 ![image](https://github.com/user-attachments/assets/92749b89-4207-4e7b-999c-53fb942dfaf8)
 
+Luulisin siis, että pystyisin käyttämään esimerkiksi nyt redhat.ffuf.me subdomainia jos verkko olisi päällä. Tässä harjoituksessa sillä ei siis tee mitään.
 
 
 
