@@ -154,7 +154,12 @@ Saadaan tämän näköinen lopputulos:
 
 ![image](https://github.com/user-attachments/assets/792781bb-71cf-4933-bec8-df6d831fb301)
 
+Ja tuosta, kun syöttää ```/wp-admin``` osoiteriville, jotain pitäisi tapahtua:
 
+
+![image](https://github.com/user-attachments/assets/3c2be0be-5a46-448b-9e74-ab5ef777f8b2)
+
+Lippu löytyi: FLAG{tero-wpadmin-3364c855a2ac87341fc7bcbda955b580}
 
 
 
