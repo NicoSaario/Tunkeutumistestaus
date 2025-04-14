@@ -162,4 +162,80 @@ Ja tuosta, kun syöttää ```/wp-admin``` osoiteriville, jotain pitäisi tapahtu
 Lippu löytyi: FLAG{tero-wpadmin-3364c855a2ac87341fc7bcbda955b580}
 
 
+## b) Fuff me. Asenna FuffMe-harjoitusmaali. Karvinen 2023: [Fuffme - Install Web Fuzzing Target on Debian](https://terokarvinen.com/2023/fuffme-web-fuzzing-target-debian/)
+
+Mennään täysin tässä Teron ohjeiden mukaan noilta sivuilta, mutta ennen sitä pitää lopettaa fuffailut ja laittaa netti takasin päälle
+
+![image](https://github.com/user-attachments/assets/6d9600c1-6ebb-411a-880e-7643b621e6a8)
+
+Jälleen ollaan maailmalla. Meiltä löytyy siis jo ffuf, joten asennellaan docker.io ja git
+
+
+```
+sudo apt-get install docker.io git
+```
+
+Sitten rakennetaan harjoitusmaali Dockerkontille
+
+```
+git clone https://github.com/adamtlangley/ffufme
+cd ffufme/
+sudo docker build -t ffufme .
+```
+
+Ajetaan se
+
+```
+sudo docker run -d -p 80:80 ffufme
+$ curl localhost
+```
+
+Testataan, että toimii
+
+```
+curl -si localhost|grep title
+<title>FFUF.me</title>
+```
+
+![image](https://github.com/user-attachments/assets/b6d5c2fe-67e2-4d66-968e-492d2e00e4bb)
+
+Tähän virheilmoitukseen olikin Terolla jo vastaus, eli Apache2 pois päältä.
+Käytimme sitä toisessa kotitehtävässä, joten se siellä varmasti kummitteli
+
+
+![image](https://github.com/user-attachments/assets/be60c24f-c4a3-4a7c-9a1e-b3ba42b9d721)
+
+Ajetaan uudelleen ja tehdään ```curl localhost```
+
+![image](https://github.com/user-attachments/assets/64ebcbd4-d0d6-4e62-a073-8ad68eeaeb33)
+
+![image](https://github.com/user-attachments/assets/c31faf57-4034-4bff-ac65-2dcdc9532a12)
+
+
+Näyttää siis toimivan
+
+Tältä näyttää vielä selaimesta:
+
+
+![image](https://github.com/user-attachments/assets/f0bcf4a9-a7c2-49c1-b5e2-06f02624173a)
+
+
+Asennetaan sanalistat
+
+```
+mkdir $HOME/wordlists
+cd $HOME/wordlists
+wget http://ffuf.me/wordlist/common.txt
+wget http://ffuf.me/wordlist/parameters.txt 
+wget http://ffuf.me/wordlist/subdomains.txt
+cd -
+```
+
+Ja tän jälkeen netti taas pois päältä
+
+
+![image](https://github.com/user-attachments/assets/dc191cb3-13c3-4969-9efa-fd95b6709755)
+
+
+
 
