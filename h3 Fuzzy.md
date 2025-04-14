@@ -1,4 +1,4 @@
-# Kotitehtävät
+![image](https://github.com/user-attachments/assets/02f61b17-b895-49f1-a205-be8ec6e6aa32)# Kotitehtävät
 
 Kotitehtävät ovat kurssilta "Tunkeutumistestaus -Penetration Testing course - 2024 late " ja löytyvät osoitteesta https://terokarvinen.com/tunkeutumistestaus/
 
@@ -260,6 +260,16 @@ Ja sieltä löytyi class ja development.log. Homma toimii!
 Tämän tein jo aikaisemmassa tehtävässä, kun testasin sen toimintaa
 
 ### d) Content Discovery With Recursion
+
+
+```ffuf -w ~/wordlists/common.txt -recursion -u http://localhost/cd/recursion/FUZZ```
+
+
+![image](https://github.com/user-attachments/assets/70f45ce6-959d-4f9c-8bac-a47a93fe63f6)
+
+Tässä siis kerrotaan -r avulla ffuffille, että jos se löytää hakemiston, se aloittaa sen hakemiston sisällön skannaamisen, joka jatkuu niin pitkään, että jokainen hakemisto on skannattu ja kaikki löydetty.
+
+
 
 ### e) Content Discovery With File Extensions
 ### f) No 404 Status
