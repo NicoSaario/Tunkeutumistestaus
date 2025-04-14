@@ -147,7 +147,8 @@ Saadaan tämän näköinen lopputulos:
 
 ![image](https://github.com/user-attachments/assets/059a8e76-cb43-4fc3-b864-68e931ed8182)
 
-- Tavallaan ihan hauska, että pääsin tälläkin tyylillä vahingossa maaliin, mutta jäin ihmettelemään tota lopputulosta ja tajusin samalla, että se filtteri suodattaa pois halutut kohdat
+### Tavallaan ihan hauska, että pääsin tälläkin tyylillä vahingossa maaliin, mutta jäin ihmettelemään tota lopputulosta ja tajusin samalla, että se filtteri suodattaa pois halutut kohdat
+
 - Eli olisin vaan voinu tehdä sen suodattamalla pois ne, joita en halua. No tulipahan harjoteltua
 - Eli siis  ```./ffuf -w /home/nico/Downloads/common.txt -u http://127.0.0.2:8000/FUZZ -fs 154```, joka suodattaa pois ne 154 - koon rivit, joita ei haluta nähdä.
 
