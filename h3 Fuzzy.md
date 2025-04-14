@@ -123,5 +123,37 @@ and
 Status 200, Size 178, Words 6, Lines 11
 ```
 
+Päätin kokeilla ensimmäistä ja laitoin
+
+```
+./ffuf -w /home/nico/Downloads/common.txt -u http://127.0.0.2:8000/FUZZ -fc 301 -fw 9 -fl 10
+```
+
+Olin nähtävästi laittanut vahingossa -fw 9, vaikka sen piti olla 3 ja -fl 10, vaikka sen piti olla 3. No vähän ajatus meni ristiin, mutta eipä sillä tässä kohtaa niin suurta merkitystä. 
+
+Tuosta näkee vielä nuo filtterit
+
+![image](https://github.com/user-attachments/assets/cad8458e-5441-4ed7-83c7-61d1a726418f)
+
+Ja lopputulos oli tämä:
+
+![image](https://github.com/user-attachments/assets/65986717-8705-450a-8f93-e08700250ae5)
+
+Sieltä löytyi siis wp-admin
+
+Muokkaamalla luvut Words 6, Lines 11, Status 200  ```./ffuf -w /home/nico/Downloads/common.txt -u http://127.0.0.2:8000/FUZZ -fc 200 -fw 6 -fl 11```
+
+Saadaan tämän näköinen lopputulos:
+
+![image](https://github.com/user-attachments/assets/059a8e76-cb43-4fc3-b864-68e931ed8182)
+
+- Tavallaan ihan hauska, että pääsin tälläkin tyylillä vahingossa maaliin, mutta jäin ihmettelemään tota lopputulosta ja tajusin samalla, että se filtteri suodattaa pois halutut kohdat
+- Eli olisin vaan voinu tehdä sen suodattamalla pois ne, joita en halua. No tulipahan harjoteltua
+- Eli siis  ```./ffuf -w /home/nico/Downloads/common.txt -u http://127.0.0.2:8000/FUZZ -fs 154```, joka suodattaa pois ne 154 - koon rivit, joita ei haluta nähdä.
+
+![image](https://github.com/user-attachments/assets/792781bb-71cf-4933-bec8-df6d831fb301)
+
+
+
 
 
