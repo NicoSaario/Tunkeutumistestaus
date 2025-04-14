@@ -59,3 +59,48 @@ wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/
 
 
 ## a) Fuzzzz. Ratkaise dirfuz-1 artikkelista Karvinen 2023: Find Hidden Web Directories - Fuzz URLs with ffuf.
+
+Ensin tietysti
+
+```
+sudo apt-get update
+sudo apt-get install ffuf
+```
+
+- Kali on kyllä siitä kätevä, että suurin osa on jo valmiiksi asennettuna
+
+![image](https://github.com/user-attachments/assets/1c93e5b5-0433-4cdf-8050-ba9ab98ecb4c)
+
+Eli lähdetään hakemalla tiedosto [täältä](https://terokarvinen.com/2023/fuzz-urls-find-hidden-directories/) tai vaihtoehtoisesti aikaisemman ohjeen mukaan:
+
+```
+$ wget https://terokarvinen.com/2023/fuzz-urls-find-hidden-directories/dirfuzt-1
+$ chmod u+x dirfuzt-1
+$ ./dirfuzt-1
+```
+
+Sitten käydään hakemassa SecLististä sanakirja
+
+```
+$ wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/common.txt
+```
+
+![image](https://github.com/user-attachments/assets/23484949-b5ba-40ad-9dba-c4aa798dcbc1)
+
+Sille tui annettua noi oikeudet ja ajettua käyntiin
+
+Selaimella navigoimalla tohon ```127.0.0.2:8000``` tulee tehtävä näkyviin
+
+![image](https://github.com/user-attachments/assets/3e555159-6f62-49f2-9586-26316d71ec74)
+
+Eli maali on päällä
+
+Napataan netti pois päältä
+
+![image](https://github.com/user-attachments/assets/a1926e18-8eac-467c-bc02-539b521c1ea6)
+
+Sitten kokeillaan tota esimerkkiä, eli sanalista ja targetin url
+
+```
+./ffuf -w common.txt -u http://127.0.0.2:8000/FUZZ
+```
