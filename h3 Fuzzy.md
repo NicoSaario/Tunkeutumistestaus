@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/02f61b17-b895-49f1-a205-be8ec6e6aa32)# Kotitehtävät
+# Kotitehtävät
 
 Kotitehtävät ovat kurssilta "Tunkeutumistestaus -Penetration Testing course - 2024 late " ja löytyvät osoitteesta https://terokarvinen.com/tunkeutumistestaus/
 
