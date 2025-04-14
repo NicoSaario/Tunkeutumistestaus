@@ -269,13 +269,148 @@ Tämän tein jo aikaisemmassa tehtävässä, kun testasin sen toimintaa
 
 Tässä siis kerrotaan -r avulla ffuffille, että jos se löytää hakemiston, se aloittaa sen hakemiston sisällön skannaamisen, joka jatkuu niin pitkään, että jokainen hakemisto on skannattu ja kaikki löydetty.
 
+Ajaa sen sitten tuon /wordlist/common.txt kautta tai oman tallennetun SecListin, lopputulos on sama. Hetken kyllä mietin, onko tässä joku kompa:
+
+![image](https://github.com/user-attachments/assets/5ecf4b04-e1ab-443c-af8c-1326bbd96efb)
+
+Eli polun pitäisi olla siis ```http://localhost/cd/recursion/admin/users/96```
+
+![image](https://github.com/user-attachments/assets/d82aaa49-7d40-42a6-817c-b7d1075cb286)
+
+
 
 
 ### e) Content Discovery With File Extensions
+
+Tässä seuraavassa on /logs - hakemisto löydetty, mutta sen sisältöä ei nähdä. Oletettavasti puhutaan kuitenkin .log - päätteitä.
+-e spesifioi sen tyypin, joka laitetaan jokaisen sanan perään vaikkapa kotitehtavat.log ja hakee ne
+
+![image](https://github.com/user-attachments/assets/a6ec1a7e-c3a5-4017-ad8f-16dfce96969b)
+
+```ffuf -w ~/wordlists/common.txt -e .log -u http://localhost/cd/ext/logs/FUZZ```
+
+Sieltähän se users.log löytyi
+
+![image](https://github.com/user-attachments/assets/76dfe6c4-bb24-43c1-9a6d-06fc37dc245c)
+
+![image](https://github.com/user-attachments/assets/c8e5c082-3af2-4412-8804-abf3200a1ab0)
+
+
+
 ### f) No 404 Status
+
+Joskus on hyvä etsiä ei niin onnekkaita tuloksia, eli virheilmoituksia. Tässä tuttu 404 paljastaa salaisuuksia
+
+-fs filtteröi siis ulos kaikki tulokset, jotka ovat määritellyn pituisia
+
+![image](https://github.com/user-attachments/assets/ae3b416d-e9df-487f-aae8-5819457a84f6)
+
+Ajetaan ```ffuf -w ~/wordliste/common tyt -ll httn.//localhosticd/na404/FUZZ```
+
+
+![image](https://github.com/user-attachments/assets/b3107e68-6f02-49ba-a33b-7db052d28e66)
+
+Palauttaa liudan 669 - tavun mittaisia tiedostoja.
+
+Ajetaan siis -fs komennon kanssa -> ```ffuf -w ~/wordlists/common.txt -u http://localhost/cd/no404/FUZZ -fs 669```
+
+Löydetään secret
+
+![image](https://github.com/user-attachments/assets/0811b920-caea-4010-bffc-68566807c1df)
+
+```https://localhost/cd/no404/secret```
+
+Ja se palauttaa "Controller does not exist"
+
+![image](https://github.com/user-attachments/assets/be19dc30-f842-435d-a4e6-9af36c4f8651)
+
+Mietin taas, oliko tässä se kuuluisa kompa taustalla, mutta onhan tuo periaatteessa jo salaisuus.
+
+
+
 ### g) Param Mining
+
+Tässä haetaan parametrejä, koska 400 status koodilla tuli Bad Request ja "Required Parameter Missing". Eli käytännössä wordlistiä jälleen hyödyntämällä päästään perille
+
+![image](https://github.com/user-attachments/assets/ab5705f1-be49-4e8a-bdda-b559583b40dd)
+
+
+Ajetaan siis ```ffuf -w ~/wordlists/parameters.txt -u http://localhost/cd/param/data?FUZZ=1```
+
+![image](https://github.com/user-attachments/assets/dba3753e-553f-437c-879c-d733bc3064f8)
+
+debug sieltä löytyi!
+
+Kokeillaan jälleen, eli jos FUZZ=1 oli aikaisemmin, vaihdetaan se debug=1:
+
+![image](https://github.com/user-attachments/assets/bf729c54-9e8b-42ee-bbaa-27324bb5a076)
+
+Parametri löytyi siis!
+
+
 ### h) Rate Limited
+
+Tässä harjoituksessa rajoitetaan pyyntöjä, joka jo normaalistikin on järkevää tietyissä tilanteissa.
+Monet palvelut eivät anna tehdä montaa pyyntöä kerrallaan ja saattaa tulla vastaan 429 HTTP - ilmoitus.
+
+```
+-mc
+```
+Näyttää vain annetut http statukset
+
+![image](https://github.com/user-attachments/assets/39c13506-d307-426a-97cd-69e41c58db32)
+
+Ajetaan: ```ffuf -w ~/wordlists/common.txt -u http://ffuf.test/cd/rate/FUZZ -mc 200,429```
+
+![image](https://github.com/user-attachments/assets/610a5cc8-fe2e-4cb8-a2eb-f85d3a36f04b)
+
+
+Lisätään tuo -p arvo, joka pausettaa 0.1 sekunniksi joka pyynnön jälkeen ja -t, joka tekee 5 eri versiota fuffista. Eli tekee yhteensä 50 pyyntöä sekunnissa. Se on pidempi prosessi, mutta usein kannattava. Tämä kesti normaalilla haulla sen 5 - sekuntia, nyt noin 2 - minuuttia.
+
+Ajetaan ```ffuf -w ~/wordlists/common.txt -t 5 -p 0.1 -u http://ffuf.test/cd/rate/FUZZ -mc 200,429```
+
+Pariin kertaan ajelin tuota ja ihmettelin, kun mitään ei tapahtu ja ilmoitukset on pelkkää erroria. Ajelin kolmatta kertaa ja huomasin, ettei osoite johda oikeaan paikkaan.
+
+Sen pitäisi olla siis ```ffuf -w ~/wordlists/common.txt -t 5 -p 0.1 -u http://localhost/cd/rate/FUZZ -mc 200,429```
+Ylemmässäkin komennossa pitää siis muuttaa tuo ffuf.test localhostiksi
+
+
+![image](https://github.com/user-attachments/assets/370e339d-221e-4b28-851c-8e43e516fa47)
+
+
+Ja vihreetä valoo! 
+
+![image](https://github.com/user-attachments/assets/0a0f0917-88a6-4c0c-b6e1-8f5ef0ff833f)
+
+![image](https://github.com/user-attachments/assets/990c796f-2029-4d35-a927-7ccb1197b5c4)
+
+
+
 ### i) Subdomains - Virtual Host Enumeration
+
+
+Tässä etsitään subdomaineja käyttämällä virtuaalihostia ja vaihtamalla host headeria.
+
+Ajetaan: ```ffuf -w ~/wordlists/subdomains.txt -H "Host: FUZZ.ffuf.me" -u http://localhost```
+
+
+Jälleen palautuu tietty kuvio; 1495 tavua iso tiedosto. 
+
+![image](https://github.com/user-attachments/assets/9bc4f822-e16f-4f71-be5a-09bf8a72e376)
+
+
+
+Käytetään -fs, jotta saadaan ne ulos listalta
+
+Ajetaan: ```ffuf -w ~/wordlists/subdomains.txt -H "Host: FUZZ.ffuf.me" -u http://localhost -fs 1495```
+
+Sieltähän paljastui redhat
+
+![image](https://github.com/user-attachments/assets/92749b89-4207-4e7b-999c-53fb942dfaf8)
+
+
+
+
 
 
 
