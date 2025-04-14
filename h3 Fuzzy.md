@@ -104,3 +104,24 @@ Sitten kokeillaan tota esimerkkiä, eli sanalista ja targetin url
 ```
 ./ffuf -w common.txt -u http://127.0.0.2:8000/FUZZ
 ```
+
+Mutta! Koska ffuf olettaa, että tiedosto on samassa kansiossa, tehdään sille polku -> ```./ffuf -w /home/nico/Downloads/common.txt -u http://127.0.0.2:8000/FUZZ```
+
+Siinä lopputulema
+
+![image](https://github.com/user-attachments/assets/83123ce7-6931-49c4-bd97-6cf08aa8e923)
+
+
+![image](https://github.com/user-attachments/assets/a07d3a28-a2fe-4ca9-a0c8-a786542667f2)
+
+Tutkailin sitä hetken lisäämällä | & less - komennon loppuun, jonka jälkeen on helpompi tarkastella.
+Suurin osa oli status 200, Size 154, Words 9, Lines 10, mutta kaksi erittottui joukosta
+
+```
+Status 301, Size 41, Words 3, Lines 3
+and
+Status 200, Size 178, Words 6, Lines 11
+```
+
+
+
