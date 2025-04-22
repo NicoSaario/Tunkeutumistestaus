@@ -230,7 +230,8 @@ Esimerkkihash on siis 6b1628b016dff46e6fa35684be6acc96
 ![image](https://github.com/user-attachments/assets/0f1b9c09-7c39-44e9-bf6e-78124c694b3b)
 
 - Sitten haetaan Jumbo versio ja säästetään aikaa lataamalla vain viimeisein versio ```git clone --depth=1 https://github.com/openwall/john.git```
-- 
+- Sen jälkeen meniki koko Kali solmuun ja ei edes käynnisty.
+- Lisäsin siihen vähän muistia ja homma rokkaa jälleen... tai sitten ei
 
 
 
