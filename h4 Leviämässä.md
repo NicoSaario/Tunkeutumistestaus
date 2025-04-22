@@ -257,6 +257,16 @@ Latasin Teron esimerkkitiedoston:
 
 - Kuten aikaisemmin todettiin, kaksi vaihetta: 'Extract the hash into a new file'
 - ```zip2john tero.zip >tero.zip.hash```
+- Sit voidaan ajaa ```john tero.zip.hash```
+
+![image](https://github.com/user-attachments/assets/989a6164-7ce2-49a5-9c85-c3678e6533de)
+
+Sieltä löydettiin "butterfly" 
+
+Avaamalla ja syöttämällä salasana 'butterfly', päästään unzippaamaan se ja löydetään secretFiles
+
+![image](https://github.com/user-attachments/assets/c9a019b7-8ddb-4ebc-91a8-6adea5f7b2d0)
+
 
 
 ## Lähteet: 
