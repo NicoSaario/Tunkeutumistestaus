@@ -93,10 +93,17 @@ $HOME/john/run/john tero.zip.hash
 - Summa summarum = Windows tarvitsee Saltin
 
 - John the Ripper -> john [OPTIONS] [PASSWORD-FILES]
-- LM hashes jakaa salasanan kahden 7 merkin salasanaan, John näyttää kumman puolen se sai auki
-- 
+- LM hashes jakaa salasanan kahden 7 merkin salasanaan, John näyttää kumman puolen se sai auki ja näyttää kaikki isoina kirjaimina "FOO"
+- NT kaikki pienellä "foo" -> Tarvitsee NT kirjautumiseen
+- john.rec -> Missä kohtaa lopetit -> john.pot = kaikki kräkätyt salasanat
+
+- Parempaa suojausta = Multi auth, vahva salasana joka paikassa, saltin käyttö, ei pelkästään hash - algoritmejä, sertificate based auth, parempi randomointi!
 
 ### € [Kennedy et al 2025: Metasploit: File-Format Exploits (sivun loppuun, eli Wrapping Up loppuun)](https://www.oreilly.com/library/view/metasploit-2nd-edition/9798341620032/xhtml/chapter9.xhtml#:-:text=File-Format%20Exploits)
+
+- File-format bugit on haavoittuvuuksia tiedoston luku - ohjelmissa, kuten Adobe PDF - readerissa. Se perustuu siihen, että käyttäjä avaa jonkun haittaohjelman haavoittuneessa sovelluksessa.
+- Pätee käytännössä mihin tahansa -> Word, PDF, image jne.
+- 
 
 ### € [Singh 2025: The Ultimate Kali Linux Book: Understanding Active Directory (Vain tuo kappale, ei enää "Enumerating Active Directory")](https://learning.oreilly.com/library/view/the-ultimate-kali/9781835085806/Text/Chapter_12.xhtml#_idParaDest-272)
 
