@@ -333,8 +333,19 @@ Ja salaus siis AES-256, mutta itse salauksella ei käytännössä ole mitään t
 
 ## f) Tiiviste. Tee itse tai etsi verkosta salasanan tiiviste, jonka saat auki. Murra sen salaus. (Jokin muu formaatti kuin aiemmissa alakohdissa kokeilemasi. Voit esim. tehdä käyttäjän Linuxiin ja murtaa sen salasanan.)
 
+- Lähdin tekemään tätä lisäämällä käyttäjän
+  ```
+  sudo adduser hauki
+  sudo passwd hauki
+  ```
 
+Unohdin jo kirjoitusasun, mutta jotenkin se liittyi 'haukionkala'
 
+Tällä voidaan varmistaa, että käyttäjä tosiaan on luotu:
+
+![image](https://github.com/user-attachments/assets/e55f8151-46bf-40e5-b4b5-c2141b49518e)
+
+Kun käytetään komento ```sudo cat /etc/shadow```, nähdään salasanan hash id
 
 
 ## Lähteet: 
@@ -351,6 +362,10 @@ Cracking File Password With John, Karvinen 2022, Luettavissa: https://terokarvin
 € Metasploit: Basic Meterpreter Commands, Kennedy et al 2025, Luettavissa: https://www.oreilly.com/library/view/metasploit-2nd-edition/9798341620032/xhtml/chapter6.xhtml#toc-link_85, Luettu 21/04/2025
 
 Every Finnish Word, Kotimaisten kielten keskus (KOTUS) & Hugo van Kemenade @hugovk, Katsottavissa: https://github.com/hugovk/everyfinnishword/blob/master/kaikkisanat.txt
+
+How to Create Users in Linux with useradd (Step-by-Step), StrongDM Team, 02/2025, Luettavissa: www.strongdm.com/blog/create-users-in-linux-with-useradd-command, Luettu 23/04/2025
+
+Methods Used by Linux for Hashing Passwords, Written by: Chin Ming Jun, 02/2023, Luettavissa: https://www.baeldung.com/linux/hashing-methods-password, Luettu 23/04/2025
 
 
 
