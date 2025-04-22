@@ -296,7 +296,36 @@ Nyt huomaa, että olis pitäny antaa Kalille vähän lisää poweria aikasemmin.
 
 ![image](https://github.com/user-attachments/assets/89176fe5-8b86-4993-a2c5-982b781dc5f7)
 
-- Käskin vielä ChatGPT:n tehdä siihen haastetta, joten se teki. 
+- Käskin vielä alussa promptilla ChatGPT:n tehdä siihen haastetta, joten se teki. 
+- Tällä hetkellä kokeilussa menee ```john --wordlist=kaikkisanat.txt --rules=All salattu_sanakirja.hash```, koska epäilen sen hyvin vahvasti sisältävän numeroita ja vähän toivon, että john the manilla olisi jokin valmis asetus sille
+- Kieltämättä nyt on monttu auki tän tuloksen jälkeen
+
+  ![image](https://github.com/user-attachments/assets/00c45adf-0977-4e6c-a142-48ba80be268a)
+
+- Positiivista se, että taisin löytää oikean salasanan, mutta nyt mä mietin sitä vaihtoehtoa, että SecLististä olis voinu sekin löytyä 100x nopeammin.
+
+![image](https://github.com/user-attachments/assets/4f189752-88f5-40ae-8fe4-67e9f081c789)
+
+Avasin sen ja syötin tähän kenttään sen "koira123"
+
+![image](https://github.com/user-attachments/assets/36c62643-d509-47c2-b1c6-334ab4c31baa)
+
+Ja sehän aukesi!
+
+![image](https://github.com/user-attachments/assets/d935152b-a7bc-4882-991d-3f3ba738a4a0)
+
+
+Käsittääkseni siis kesto johtui PDF - muodosta ja sanakirjan rajallisuudesta sekä siitä, että en käyttänyt --rules heti aluksi.
+
+Hash oli
+
+```
+$pdf$5*5*128*-1028*1*16*4b1a97d041c25fd6c5a05c8d15dbdb34*32*2c56e2636e23fd03fbb87d192d77a5f2c81308a185a2a598e47a050dc1b73950*32*ae99163fc117a229f53d201e19b3cc46e99900c0a4db15239bba6029b2c832a7
+```
+
+![image](https://github.com/user-attachments/assets/8e1fbfa9-e406-48c2-89f5-41e48fbc06b2)
+
+
 
 ## Lähteet: 
 Cracking Passwords with Hashcat, Karvinen 2022, Luettavissa: https://terokarvinen.com/2022/cracking-passwords-with-hashcat/, Luettu 22/04/2025
