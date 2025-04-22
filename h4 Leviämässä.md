@@ -292,6 +292,11 @@ Nyt huomaa, että olis pitäny antaa Kalille vähän lisää poweria aikasemmin.
 
 ![image](https://github.com/user-attachments/assets/b19a2507-ac69-4df7-aea2-b8cacae17e10)
 
+- Pieni päivitys tähän väliin: annoin sen rullata noin 1.2h rauhassa ja rupesin miettimään, että se käyttää vielä sitä samaa sanalistaa, jota aikaisemmin. Jos ChatGPT on päättänyt tehdä salasanan suomeksi, vois olla helpompi kokeilla suomen sanalistaa. Tutkin ja etsin ja tutkin, kunnes löysin sanalistan. Tällä hetkellä ollaan tässä tilanteessa:
+
+![image](https://github.com/user-attachments/assets/89176fe5-8b86-4993-a2c5-982b781dc5f7)
+
+- Käskin vielä ChatGPT:n tehdä siihen haastetta, joten se teki. 
 
 ## Lähteet: 
 Cracking Passwords with Hashcat, Karvinen 2022, Luettavissa: https://terokarvinen.com/2022/cracking-passwords-with-hashcat/, Luettu 22/04/2025
