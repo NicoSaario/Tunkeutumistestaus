@@ -179,6 +179,11 @@ mkdir hashed
 cd hashed
 ```
 
+Kaliin valmiiksi asennettu
+
+![image](https://github.com/user-attachments/assets/b3f3de40-fac1-4b78-92d1-e124a628b5b9)
+
+
 Haetaan SecLististä rockyou.txt
 
 ```
@@ -188,6 +193,27 @@ rm rockyou.txt.tar.gz
 ```
 
 ![image](https://github.com/user-attachments/assets/a421584e-4be5-43ef-affa-f76a6134e83d)
+
+Esimerkkihash on siis 6b1628b016dff46e6fa35684be6acc96
+- Käytämme komentoa ```hashid -m 6b1628b016dff46e6fa35684be6acc96```
+- Se palauttaa parametrit, joita on käytetty ja joita voidaan käyttää
+- Tässä tapauksessa käytetään md5, joka on siis 0
+
+![image](https://github.com/user-attachments/assets/69a99688-0a82-4e1e-8af7-8e6c94086e42)
+
+- Crackataan se ```hashcat -m 0 '6b1628b016dff46e6fa35684be6acc96' rockyou.txt -o solved```
+- Jossa siis -m 0 on se tyyppi MD5
+- 6b... se hash id, joka halutaan auki
+- -o solved tallentaa sen
+
+![image](https://github.com/user-attachments/assets/62a72348-aa1d-409d-8d26-a740e4ee65f4)
+
+- Käsittääkseni tuo Candidates.#1 näyttää sen, mihin se vertaa tällä hetkellä. Eli ei ollut kehu tai oikea salasana tuo "sexyme"
+- Siinä näkyy, mitä sanalistaa käytettiin "rockyou.txt", kauanko kesti (2s), hash mode eli wse MD6, target se id, joka syötettiin, nopeus 3878 H/s, saatiin se 680 testauksen kohdalla eli mukavan nopeasti ja vielä aika milloin aloitettiin ja milloin lopetettiin
+- Pari kertaa ajoin sen huvin vuoksi ja lopputulos oli tässä:
+
+![image](https://github.com/user-attachments/assets/4d719ea9-ac56-44ff-9f81-1f094f837442)
+
 
 
 
