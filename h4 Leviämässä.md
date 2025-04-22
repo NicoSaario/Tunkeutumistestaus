@@ -146,7 +146,7 @@ $HOME/john/run/john tero.zip.hash
 - Hakee kaikki käyttäjätunnukset ja hashatut salasanat ```meterpreter > run post/windows/gather/smart_hashdump```
 
 *pass-the-hash*
-- Hyväksyy salasanan ilman, että se tarkistaa tietääkö lägettäjä salasanan
+- Hyväksyy salasanan ilman, että se tarkistaa tietääkö lähettäjä salasanan
 - Kuka tahansa voi esittää tiettyä käyttäjää sen salasanalla
 
 ```
@@ -166,8 +166,8 @@ Tässä siis vain esimerkistä saatu rakenne. Nuo komennot muuntuu hieman sitten
 - Sillä voi esim. juksuttaa domain controllereita verkossa jakamaan kaikki käyttäjätiedot
 - Mimikatz hakee kaikki paikat, joissa salasanat usein on tallennettu, kiinnittyy prosessiin debuggerina ja yrittää extractata käyttäjän ja salasanan
 
-- Tässä on siis erittäin hyviä komentoja ja Meterpreterin käyttöä ihan käytännön harjoituksilla. Sen verran pitkä teksti, ettei kaikkea edes kannata tiivistää
-- Näyttää sen verran mielenkiintoiselta, että ajattelin kokeilla tuota sikälimikäli jossain kohtaa riittää aika siihen
+Tässä on siis erittäin hyviä komentoja ja Meterpreterin käyttöä ihan käytännön harjoituksilla. Sen verran pitkä teksti, ettei kaikkea edes kannata tiivistää
+Näyttää sen verran mielenkiintoiselta, että ajattelin kokeilla tuota sikälimikäli jossain kohtaa riittää aika siihen
 
 ## Lähteet: 
 
