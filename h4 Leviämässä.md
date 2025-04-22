@@ -169,6 +169,28 @@ Tässä siis vain esimerkistä saatu rakenne. Nuo komennot muuntuu hieman sitten
 Tässä on siis erittäin hyviä komentoja ja Meterpreterin käyttöä ihan käytännön harjoituksilla. Sen verran pitkä teksti, ettei kaikkea edes kannata tiivistää
 Näyttää sen verran mielenkiintoiselta, että ajattelin kokeilla tuota sikälimikäli jossain kohtaa riittää aika siihen
 
+
+## a) Asenna Hashcat ja testaa sen toiminta murtamalla esimerkkisalasana.
+- Eli [Ohjeen](https://terokarvinen.com/2022/cracking-passwords-with-hashcat/) ja aikaisemman tiivistelmän mukaan:
+
+```
+sudo apt-get -y install hashid hashcat wget
+mkdir hashed
+cd hashed
+```
+
+Haetaan SecLististä rockyou.txt
+
+```
+wget https://github.com/danielmiessler/SecLists/raw/master/Passwords/Leaked-Databases/rockyou.txt.tar.gz
+tar xf rockyou.txt.tar.gz
+rm rockyou.txt.tar.gz
+```
+
+![image](https://github.com/user-attachments/assets/a421584e-4be5-43ef-affa-f76a6134e83d)
+
+
+
 ## Lähteet: 
 
 Cracking Passwords with Hashcat, Karvinen 2022, Luettavissa: https://terokarvinen.com/2022/cracking-passwords-with-hashcat/, Luettu 22/04/2025
