@@ -292,7 +292,11 @@ Nyt huomaa, että olis pitäny antaa Kalille vähän lisää poweria aikasemmin.
 
 ![image](https://github.com/user-attachments/assets/b19a2507-ac69-4df7-aea2-b8cacae17e10)
 
-- Pieni päivitys tähän väliin: annoin sen rullata noin 1.2h rauhassa ja rupesin miettimään, että se käyttää vielä sitä samaa sanalistaa, jota aikaisemmin. Jos ChatGPT on päättänyt tehdä salasanan suomeksi, vois olla helpompi kokeilla suomen sanalistaa. Tutkin ja etsin ja tutkin, kunnes löysin sanalistan. Tällä hetkellä ollaan tässä tilanteessa:
+- Pieni päivitys tähän väliin: annoin sen rullata noin 1.2h rauhassa ja rupesin miettimään, että se käyttää vielä sitä samaa sanalistaa, jota aikaisemmin. Jos ChatGPT on päättänyt tehdä salasanan suomeksi, vois olla helpompi kokeilla suomen sanalistaa. Tutkin ja etsin ja tutkin, kunnes löysin sanalistan [täältä](https://github.com/hugovk/everyfinnishword/blob/master/kaikkisanat.txt).
+- Eli ```wget https://github.com/hugovk/everyfinnishword/blob/master/kaikkisanat.txt```
+- Laitoin ```--wordlist=~/Downloads/kaikkisanat\(1\).txt```, jossa siis määritetään ensin se, mistä hakemistosta se löytyy.
+
+-  Tällä hetkellä ollaan tässä tilanteessa:
 
 ![image](https://github.com/user-attachments/assets/89176fe5-8b86-4993-a2c5-982b781dc5f7)
 
@@ -304,7 +308,6 @@ Nyt huomaa, että olis pitäny antaa Kalille vähän lisää poweria aikasemmin.
 
 - Positiivista se, että taisin löytää oikean salasanan, mutta nyt mä mietin sitä vaihtoehtoa, että SecLististä olis voinu sekin löytyä 100x nopeammin.
 
-![image](https://github.com/user-attachments/assets/4f189752-88f5-40ae-8fe4-67e9f081c789)
 
 Avasin sen ja syötin tähän kenttään sen "koira123"
 
@@ -339,6 +342,8 @@ Cracking File Password With John, Karvinen 2022, Luettavissa: https://terokarvin
 € The Ultimate Kali Linux Book: Understanding Active Directory (Vain tuo kappale, ei enää "Enumerating Active Directory"),  Singh 2025, Luettavissa: https://learning.oreilly.com/library/view/the-ultimate-kali/9781835085806/Text/Chapter_12.xhtml#_idParaDest-272, Luettu 21/04/2025
 
 € Metasploit: Basic Meterpreter Commands, Kennedy et al 2025, Luettavissa: https://www.oreilly.com/library/view/metasploit-2nd-edition/9798341620032/xhtml/chapter6.xhtml#toc-link_85, Luettu 21/04/2025
+
+Every Finnish Word, Kotimaisten kielten keskus (KOTUS) & Hugo van Kemenade @hugovk, Katsottavissa: https://github.com/hugovk/everyfinnishword/blob/master/kaikkisanat.txt
 
 
 
