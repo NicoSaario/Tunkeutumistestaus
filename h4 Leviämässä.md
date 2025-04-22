@@ -214,6 +214,23 @@ Esimerkkihash on siis 6b1628b016dff46e6fa35684be6acc96
 
 ![image](https://github.com/user-attachments/assets/4d719ea9-ac56-44ff-9f81-1f094f837442)
 
+## c) Asenna John the Ripper ja testaa sen toiminta murtamalla jonkin esimerkkitiedoston salasana.
+
+- Mennään taas [Ohjeen](https://terokarvinen.com/2023/crack-file-password-with-john/) ja tiivistelmän mukaan
+
+- Käytin siis ```sudo apt-get -y install micro bash-completion git build-essential libssl-dev zlib1g zlib1g-dev zlib-gst libbz2-1.0 libbz2-dev atool zip wget``` työkalujen ja kirjastojen asentamiseen.
+- Tuli virheilmoitus:
+
+![image](https://github.com/user-attachments/assets/61486ac8-42d7-4482-bc9d-15c11a94aa21)
+
+- Otin sen pois ja ajoin uudelleen - kaikki muut meni läpi
+- Kokeillaan ny ilman sitä ja jos joku ei toimi, palataan tähän
+- Katsoin vielä varuiksi ```apt-cache search zlib```ja selasin läpi, mutta eipä sitä näy
+
+![image](https://github.com/user-attachments/assets/0f1b9c09-7c39-44e9-bf6e-78124c694b3b)
+
+- Sitten haetaan Jumbo versio ja säästetään aikaa lataamalla vain viimeisein versio ```git clone --depth=1 https://github.com/openwall/john.git```
+- 
 
 
 
