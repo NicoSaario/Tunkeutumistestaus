@@ -36,12 +36,44 @@ $ rm rockyou.txt.tar.gz
 - -m 0 = hashin tyyppi
 - 7bhdsifjisjdfiisjifs3141-> Hash, joka halutaan auki -> Käytettävä ' alussa ja ' lopussa
 - -o solved = tallenna plain textinä uuteen "solved" - hakemistoon ja -- show = näkee suoraan, jos tulee osuma
-- 
+
 
 
 
 ### [Karvinen 2023: Crack File Password With John](https://terokarvinen.com/2023/crack-file-password-with-john/)
 
+- John the Ripperillä saa auki encryptattuja salasanoja käyttämällä sanalistahyökkäystä 'dictionary attack'
+- Tarvitaan kaikki kirjastot ja työkalut
+
+```
+$ sudo apt-get update
+$ sudo apt-get -y install micro bash-completion git build-essential libssl-dev zlib1g zlib1g-dev zlib-gst libbz2-1.0 libbz2-dev atool zip wget
+```
+
+- Jotta säästyy aikaa, ladataan Jumbo versio ja käytetään ```-depth=1```, joka kopioi vain uusimmat versiot
+
+```git clone --depth=1 https://github.com/openwall/john.git```
+
+- Useammat Linux C ja C++ ohjelmat ./configure && make
+
+```
+cd john/src/
+./configure
+```
+
+```make -s clean && make -sj4```
+
+- Zipfilen avaaminen kaksivaiheinen: ensin extractataan hash uuteen tiedostoon
+
+```
+$HOME/john/run/zip2john tero.zip >tero.zip.hash
+```
+
+- Jonka jälkeen pyöräytetään John käyntiin
+
+```
+$HOME/john/run/john tero.zip.hash
+```
 
 
 ### € [Santos et al 2017: Security Penetration Testing - The Art of Hacking Series LiveLessons: Lesson 6: Hacking User Credentials (8 videos, about 30 min)](https://www.oreilly.com/videos/security-penetration-testing/9780134833989/9780134833989-sptt_00_06_00_00/)
