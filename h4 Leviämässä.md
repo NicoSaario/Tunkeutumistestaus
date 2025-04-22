@@ -275,6 +275,20 @@ Halusin haasteen niin, että en itse tiedä salasanaa ja, että voin sitten itse
 
 [salattu_sanakirja.pdf](https://github.com/user-attachments/files/19856474/salattu_sanakirja.pdf)
 
+Se lähetti tiedoston, avasin sen ja tällainen näkymä:
+
+![image](https://github.com/user-attachments/assets/5581089b-d4d3-43dc-ac0e-f7993751fb28)
+
+Kokeilin ihan vain syöttää "kellopeli" ja kuten näkyy, se ei toimi
+
+![image](https://github.com/user-attachments/assets/4a22036c-4576-4c82-b302-34e85ee416ce)
+
+Tutkailin tuota /john/run - kansiota hetken ja etin sieltä josko PDF - tiedostoille voisi tehdä saman, kuin zipeille.
+
+Kokeilin siis 
+```pdf2john ~/Downloads/salattu_sanakirja.pdf ~/Downloads/salattu_sanakirja.hash```
+
+
 ## Lähteet: 
 Cracking Passwords with Hashcat, Karvinen 2022, Luettavissa: https://terokarvinen.com/2022/cracking-passwords-with-hashcat/, Luettu 22/04/2025
 
