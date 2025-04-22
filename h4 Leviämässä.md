@@ -286,7 +286,7 @@ Kokeilin ihan vain syöttää "kellopeli" ja kuten näkyy, se ei toimi
 Tutkailin tuota /john/run - kansiota hetken ja etin sieltä josko PDF - tiedostoille voisi tehdä saman, kuin zipeille.
 
 Kokeilin siis 
-```pdf2john ~/Downloads/salattu_sanakirja.pdf ~/Downloads/salattu_sanakirja.hash```
+```pdf2john ~/Downloads/salattu_sanakirja.pdf >~/Downloads/salattu_sanakirja.hash```
 
 Nyt huomaa, että olis pitäny antaa Kalille vähän lisää poweria aikasemmin. Puksuttaa eteenpäin, kun vanha Lada. Kohta 20 - minuuttia rullannu menemään ja jumittaa jatkuvasti. Annetaan sille nyt vielä hetki 
 
