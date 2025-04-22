@@ -267,10 +267,15 @@ Avaamalla ja syöttämällä salasana 'butterfly', päästään unzippaamaan se 
 
 ![image](https://github.com/user-attachments/assets/c9a019b7-8ddb-4ebc-91a8-6adea5f7b2d0)
 
+## e) Tiedosto. Tee itse tai etsi verkosta jokin salakirjoitettu tiedosto, jonka saat auki. Murra sen salaus. (Jokin muu formaatti kuin aiemmissa alakohdissa kokeilemasi).
 
+
+
+Halusin haasteen niin, että en itse tiedä salasanaa ja, että voin sitten itse pähkäillä sen ratkaisua. Käskin ChatGPT:n tehdä minulle Teron ohjeilla salakirjoitettu ja tehdä sen PDF - muotoon.
+
+[salattu_sanakirja.pdf](https://github.com/user-attachments/files/19856474/salattu_sanakirja.pdf)
 
 ## Lähteet: 
-
 Cracking Passwords with Hashcat, Karvinen 2022, Luettavissa: https://terokarvinen.com/2022/cracking-passwords-with-hashcat/, Luettu 22/04/2025
 
 Cracking File Password With John, Karvinen 2022, Luettavissa: https://terokarvinen.com/2023/crack-file-password-with-john/
