@@ -271,7 +271,7 @@ Avaamalla ja syöttämällä salasana 'butterfly', päästään unzippaamaan se 
 
 
 
-Halusin haasteen niin, että en itse tiedä salasanaa ja, että voin sitten itse pähkäillä sen ratkaisua. Käskin ChatGPT:n tehdä minulle Teron ohjeilla salakirjoitettu ja tehdä sen PDF - muotoon.
+Halusin haasteen niin, että en itse tiedä salasanaa ja, että voin sitten itse pähkäillä sen ratkaisua. Lisänä tietysti eettisyys, ettei nyt mitä tahansa lähdetä penkomaan. Käskin ChatGPT:n tehdä minulle Teron ohjeilla salakirjoitettu tiedosto ja tehdä sen PDF - muotoon.
 
 [salattu_sanakirja.pdf](https://github.com/user-attachments/files/19856474/salattu_sanakirja.pdf)
 
@@ -287,6 +287,10 @@ Tutkailin tuota /john/run - kansiota hetken ja etin sieltä josko PDF - tiedosto
 
 Kokeilin siis 
 ```pdf2john ~/Downloads/salattu_sanakirja.pdf ~/Downloads/salattu_sanakirja.hash```
+
+Nyt huomaa, että olis pitäny antaa Kalille vähän lisää poweria aikasemmin. Puksuttaa eteenpäin, kun vanha Lada. Kohta 20 - minuuttia rullannu menemään ja jumittaa jatkuvasti. Annetaan sille nyt vielä hetki 
+
+![image](https://github.com/user-attachments/assets/b19a2507-ac69-4df7-aea2-b8cacae17e10)
 
 
 ## Lähteet: 
