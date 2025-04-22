@@ -326,10 +326,14 @@ Hash oli
 $pdf$5*5*128*-1028*1*16*4b1a97d041c25fd6c5a05c8d15dbdb34*32*2c56e2636e23fd03fbb87d192d77a5f2c81308a185a2a598e47a050dc1b73950*32*ae99163fc117a229f53d201e19b3cc46e99900c0a4db15239bba6029b2c832a7
 ```
 
+Ja salaus siis AES-256, mutta itse salauksella ei käytännössä ole mitään tekemistä asian kanssa. Sehän arvattiin.
+
 ![image](https://github.com/user-attachments/assets/8e1fbfa9-e406-48c2-89f5-41e48fbc06b2)
 
 
 ## f) Tiiviste. Tee itse tai etsi verkosta salasanan tiiviste, jonka saat auki. Murra sen salaus. (Jokin muu formaatti kuin aiemmissa alakohdissa kokeilemasi. Voit esim. tehdä käyttäjän Linuxiin ja murtaa sen salasanan.)
+
+
 
 
 
