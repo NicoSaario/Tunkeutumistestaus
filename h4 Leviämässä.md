@@ -329,6 +329,9 @@ $pdf$5*5*128*-1028*1*16*4b1a97d041c25fd6c5a05c8d15dbdb34*32*2c56e2636e23fd03fbb8
 ![image](https://github.com/user-attachments/assets/8e1fbfa9-e406-48c2-89f5-41e48fbc06b2)
 
 
+## f) Tiiviste. Tee itse tai etsi verkosta salasanan tiiviste, jonka saat auki. Murra sen salaus. (Jokin muu formaatti kuin aiemmissa alakohdissa kokeilemasi. Voit esim. tehdä käyttäjän Linuxiin ja murtaa sen salasanan.)
+
+
 
 ## Lähteet: 
 Cracking Passwords with Hashcat, Karvinen 2022, Luettavissa: https://terokarvinen.com/2022/cracking-passwords-with-hashcat/, Luettu 22/04/2025
