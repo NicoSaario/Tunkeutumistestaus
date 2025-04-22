@@ -78,6 +78,24 @@ $HOME/john/run/john tero.zip.hash
 
 ### € [Santos et al 2017: Security Penetration Testing - The Art of Hacking Series LiveLessons: Lesson 6: Hacking User Credentials (8 videos, about 30 min)](https://www.oreilly.com/videos/security-penetration-testing/9780134833989/9780134833989-sptt_00_06_00_00/)
 
+- Useimmiten käyttäjätiedot tallennetaan tietokantaan, tekstitiedostoon, SQL - tietokantaan, omiin tietokantoihin (AD)
+- Miten siltä suojaudutaan? Kaksi tapaa: Pitää suojata ne verkon yli lähetettäessä ja tallennettaessa -> Niiden suojaus. Tavallisella käyttäjällä pitkät salasanat, multi-factor authentication
+- Ihmisten laiskuudesta sakotetaan -> Yksi salasana usein käy muihin käyttäjiin
+- Useimmilla "Free Wi-Fi" - paikoilla, esimerkiksi ravintoloilla ei ole minkäänlaista suojausta liikenteen sisällä. Sniffaus ja  MITM - hyökkäykset siis helppoja. VPN!
+- Jos kaikki muu menee mönkään -> Bruteforce! Työkaluja: Medusa, THC-Hydra, Brutus, Metasploit, Dirtbuster, wfuzz
+
+- Hashing -> Yksisuuntainen hashaus ei ole salaamista, se voi suojata salasanoja, ei mahdollista peruuttaa, laskettu nopeasti, käytä aina salttia
+- Foo -> MID5 (hash - funktio) -> hashattu versio
+- Helppo tapa: echo "Foo" | sha256sum -> 949i032489ujirmlrkejflödsfkjsdf
+- Jos sen ajaa uudestaan, saa saman tuloksen ELLEI sitä ole muokattu. Esim "Foo1" muokkaa hashiä
+
+- Miksi salasanoja on helppo avata? CPUt ja niiden nopeus kehittyy jatkuvasti, heikot algoritmit, sanalistat on kehittyneet ja erittäin kattavia aikaisemmista vuodoista, "rainbow tables"
+- Summa summarum = Windows tarvitsee Saltin
+
+- John the Ripper -> john [OPTIONS] [PASSWORD-FILES]
+- LM hashes jakaa salasanan kahden 7 merkin salasanaan, John näyttää kumman puolen se sai auki
+- 
+
 ### € [Kennedy et al 2025: Metasploit: File-Format Exploits (sivun loppuun, eli Wrapping Up loppuun)](https://www.oreilly.com/library/view/metasploit-2nd-edition/9798341620032/xhtml/chapter9.xhtml#:-:text=File-Format%20Exploits)
 
 ### € [Singh 2025: The Ultimate Kali Linux Book: Understanding Active Directory (Vain tuo kappale, ei enää "Enumerating Active Directory")](https://learning.oreilly.com/library/view/the-ultimate-kali/9781835085806/Text/Chapter_12.xhtml#_idParaDest-272)
