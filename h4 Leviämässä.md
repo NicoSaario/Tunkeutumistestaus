@@ -232,7 +232,31 @@ Esimerkkihash on siis 6b1628b016dff46e6fa35684be6acc96
 - Sitten haetaan Jumbo versio ja säästetään aikaa lataamalla vain viimeisein versio ```git clone --depth=1 https://github.com/openwall/john.git```
 - Sen jälkeen meniki koko Kali solmuun ja ei edes käynnisty.
 - Lisäsin siihen vähän muistia ja homma rokkaa jälleen... tai sitten ei
+- Koko virtuaalikone meni ihan mankeliin ja päätin jatkaa toisella väliaikaisesti (Verkkoon tunkeutuminen ja Tiedustelu). Tismalleen samasta imagesta rakennettu ja kaikki muuten samaa - eri tehtäviä vaan tehty.
+- Selkeesti jotain ongelmaa tossa virtuaaliKalissa, koska tää rupes toimiin ihan puhtaasti.
 
+```
+cd john/src/
+./configure
+```
+- Se siis ajaa scriptin, hakee ympäristön ja luo Makefileja
+
+![image](https://github.com/user-attachments/assets/5f17d69d-dd8b-4e9e-9ff4-66d19dffbfa4)
+
+Varmistetaan, että se toimii ```john```
+
+![image](https://github.com/user-attachments/assets/d8cc2663-d263-468f-b6cf-374e8aedd0b3)
+
+Latasin Teron esimerkkitiedoston:
+
+```wget https://TeroKarvinen.com/2023/crack-file-password-with-john/tero.zip```
+
+- Ei toimi unzip, sillä salasanasuojattu
+
+![image](https://github.com/user-attachments/assets/47f16754-adc6-4913-8394-a21743520149)
+
+- Kuten aikaisemmin todettiin, kaksi vaihetta: 'Extract the hash into a new file'
+- ```zip2john tero.zip >tero.zip.hash```
 
 
 ## Lähteet: 
