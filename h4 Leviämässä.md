@@ -339,7 +339,7 @@ Ja salaus siis AES-256, mutta itse salauksella ei käytännössä ole mitään t
   sudo passwd hauki
   ```
 
-Unohdin jo kirjoitusasun, mutta jotenkin se liittyi 'haukionkala'
+Unohdin jo kirjoitusasun, mutta jotenkin se liittyi 'diitcrack?'
 
 Tällä voidaan varmistaa, että käyttäjä tosiaan on luotu:
 
@@ -349,7 +349,7 @@ Kun käytetään komento ```sudo cat /etc/shadow```, nähdään salasanan hash i
 
 Sain selville, että hashina käytetään ["yescryptiä"](https://manpages.debian.org/unstable/libcrypt-dev/crypt.5.en.html) ja että se pitää kertoa johnille ```--format=crypt``` [lähde](https://www.linkedin.com/posts/chriselgee_students-recently-asked-about-cracking-yescrypt-activity-7251995659707310080-jAlR)
 - Monesta paikasta lueskelleena, ilmeisesti yescryptiä ei ole vielä suoraan implementoitu hashcattiin tai johniin
-- 
+
 
 
 ## Lähteet: 
