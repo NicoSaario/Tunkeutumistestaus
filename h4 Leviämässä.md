@@ -437,6 +437,10 @@ Uus yritys
 
 - Tehtävä siis suoritettu.
 
+## h) Vapaaehtoinen: Asenna Windows-virtuaalikone ja tee msfvenomilla ohjelma siihen. Windows-käyttäjät ovat myös usein tottuneet (paketinhallinnan puutteessa) lataamaan ohjelmia weppisivuilta.
+
+Jää vähän myöhemmälle
+
 ## Lähteet: 
 
 Kotitehtävät - Tunkeutumistestaus, Karvinen, 2025, Luettavissa: https://terokarvinen.com/tunkeutumistestaus/, Luettu 23/04/2025
