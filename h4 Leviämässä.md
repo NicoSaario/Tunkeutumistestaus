@@ -460,6 +460,13 @@ Methods Used by Linux for Hashing Passwords, Written by: Chin Ming Jun, 02/2023,
 
 Students recently asked about cracking yescrypt ($y$ in /etc/shadow) with Hashcat, Chris Elgee, 2025, Luettavissa: https://www.linkedin.com/posts/chriselgee_students-recently-asked-about-cracking-yescrypt-activity-7251995659707310080-jAlR, Luettu 23/04/2025
 
+How to Use Metasploit for Command & Control: Step-by-step, Jay Beale, 2022, Luettavissa: https://www.beyondtrust.com/blog/entry/how-to-use-metasploit-for-command-control, Luettu 23/04/2025
 
+MSFvenom, OffSec, Luettavissa: https://www.offsec.com/metasploit-unleashed/msfvenom/, Luettu 23/04/2025
 
+Generating Payloads, Generate a Payload for Metasploit, OffSec, Luettavissa: https://www.offsec.com/metasploit-unleashed/generating-payloads/, Luettu 23/04/2025
+
+Cool Tools Series: MSFvenom, By Nathan Anderson, 2024, Luettavissa: https://raxis.com/blog/cool-tools-series-msfvenom/, Luettu 23/04/2025
+
+Use Msfvenom to Create a Reverse TCP Payload, CyberOffense, 2022, Katsottavissa: https://www.youtube.com/watch?v=ZqWfDrD2WVY, Katsottu 23/04/2025
 
