@@ -372,12 +372,10 @@ Pitää vetää Kalista kaapeli irti, jotta mikään ei vahingossakaan leviä ve
 
 Hetki meni säätäessä, sillä koneet ei saaneet yhteyttä toisiinsa - Korjasin sen käymällä laittamassa Oraclessa network - asetukset kuntoon ja DHCP päälle.
 
-![image](https://github.com/user-attachments/assets/931bd08a-78fb-4fd7-9f82-816602df957e)
-
+![image](https://github.com/user-attachments/assets/2364049d-c387-4386-9ef1-03ce21500d82)
 
 Varmistetaan, ettei kummallakaan ole pääsyä ulkopuolelle ja se, että ne saavat toisiinsa yhteyden
 
-![image](https://github.com/user-attachments/assets/2364049d-c387-4386-9ef1-03ce21500d82)
 
 Oma ja Metasploitablen IP
 
