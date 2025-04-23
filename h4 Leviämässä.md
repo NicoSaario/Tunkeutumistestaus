@@ -440,6 +440,9 @@ Uus yritys
 - Tehtävä siis suoritettu.
 
 ## Lähteet: 
+
+Kotitehtävät - Tunkeutumistestaus, Karvinen, 2025, Luettavissa: https://terokarvinen.com/tunkeutumistestaus/, Luettu 23/04/2025
+
 Cracking Passwords with Hashcat, Karvinen 2022, Luettavissa: https://terokarvinen.com/2022/cracking-passwords-with-hashcat/, Luettu 22/04/2025
 
 Cracking File Password With John, Karvinen 2022, Luettavissa: https://terokarvinen.com/2023/crack-file-password-with-john/
