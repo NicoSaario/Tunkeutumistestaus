@@ -347,6 +347,10 @@ Tällä voidaan varmistaa, että käyttäjä tosiaan on luotu:
 
 Kun käytetään komento ```sudo cat /etc/shadow```, nähdään salasanan hash id
 
+Sain selville, että hashina käytetään ["yescryptiä"](https://manpages.debian.org/unstable/libcrypt-dev/crypt.5.en.html) ja että se pitää kertoa johnille ```--format=crypt``` [lähde](https://www.linkedin.com/posts/chriselgee_students-recently-asked-about-cracking-yescrypt-activity-7251995659707310080-jAlR)
+- Monesta paikasta lueskelleena, ilmeisesti yescryptiä ei ole vielä suoraan implementoitu hashcattiin tai johniin
+- 
+
 
 ## Lähteet: 
 Cracking Passwords with Hashcat, Karvinen 2022, Luettavissa: https://terokarvinen.com/2022/cracking-passwords-with-hashcat/, Luettu 22/04/2025
@@ -366,6 +370,8 @@ Every Finnish Word, Kotimaisten kielten keskus (KOTUS) & Hugo van Kemenade @hugo
 How to Create Users in Linux with useradd (Step-by-Step), StrongDM Team, 02/2025, Luettavissa: www.strongdm.com/blog/create-users-in-linux-with-useradd-command, Luettu 23/04/2025
 
 Methods Used by Linux for Hashing Passwords, Written by: Chin Ming Jun, 02/2023, Luettavissa: https://www.baeldung.com/linux/hashing-methods-password, Luettu 23/04/2025
+
+Students recently asked about cracking yescrypt ($y$ in /etc/shadow) with Hashcat, Chris Elgee, 2025, Luettavissa: https://www.linkedin.com/posts/chriselgee_students-recently-asked-about-cracking-yescrypt-activity-7251995659707310080-jAlR, Luettu 23/04/2025
 
 
 
