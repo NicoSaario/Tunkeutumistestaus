@@ -349,8 +349,18 @@ Kun käytetään komento ```sudo cat /etc/shadow```, nähdään salasanan hash i
 
 Sain selville, että hashina käytetään ["yescryptiä"](https://manpages.debian.org/unstable/libcrypt-dev/crypt.5.en.html) ja että se pitää kertoa johnille ```--format=crypt``` [lähde](https://www.linkedin.com/posts/chriselgee_students-recently-asked-about-cracking-yescrypt-activity-7251995659707310080-jAlR)
 - Monesta paikasta lueskelleena, ilmeisesti yescryptiä ei ole vielä suoraan implementoitu hashcattiin tai johniin
+- Tässä meni nyt sen verran monta tuntia, eikä näkynyt tuota salasanaa löytyvän millään
+- Tein siis sanalistan, johon laitoin allekain sanoja, pistin sen etsimään ja löysi "dog"
 
+![image](https://github.com/user-attachments/assets/3ded879e-a155-46f2-809f-8524566d3a2f)
 
+- Mutta nähtävästi tuon purku on äärimmäisen pitkäveteistä ja haastavaa. En edes uskalla arvata, kauanko siinä lopulta olisi mennyt. Yhdessä kohtaa eri salasanalla käytiin todella lähellä.
+
+## g) Tee msfvenom-työkalulla haittaohjelma, joka soittaa kotiin (reverse shell). Ota yhteys vastaan metasploitin multi/handler -työkalulla.
+
+    Haittaohjelma ei saa olla automaattisesti leviävä. Msfvenom tekee tyypillisillä asetuksilla ohjelman, joka avaa reverse shellin, kun sen ajaa, mutta joka ei leviä eikä tee muutenkaan mitään itsestään.
+    Raporttiin riittävät pelkät komennot ja raportti haitakkeen tekemisestä, itse binääriä ei ole pakko laittaa verkkoon. Mikäli laitat binäärin verkkoon, pakkaa se salakirjoitettuun zip-pakettiin ja laita salasanaksi       "infected". Latauslinkin yhteydessä on oltava selkeä varoitus siitä, että kyseessä on haittaohjelma (malware), jota ei tule ajaa tuotantokoneilla. Salasanan voit halutessasi kertoa varoitusten yhteydessä.
+    Palvelimen päässä pitää olla reikä tulimuurissa. Reverse shell tarkoittaa, että palvelin on hyökkäyskoneella.
 
 ## Lähteet: 
 Cracking Passwords with Hashcat, Karvinen 2022, Luettavissa: https://terokarvinen.com/2022/cracking-passwords-with-hashcat/, Luettu 22/04/2025
