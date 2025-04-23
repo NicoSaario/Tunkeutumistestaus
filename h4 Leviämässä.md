@@ -362,6 +362,12 @@ Sain selville, että hashina käytetään ["yescryptiä"](https://manpages.debia
     Raporttiin riittävät pelkät komennot ja raportti haitakkeen tekemisestä, itse binääriä ei ole pakko laittaa verkkoon. Mikäli laitat binäärin verkkoon, pakkaa se salakirjoitettuun zip-pakettiin ja laita salasanaksi       "infected". Latauslinkin yhteydessä on oltava selkeä varoitus siitä, että kyseessä on haittaohjelma (malware), jota ei tule ajaa tuotantokoneilla. Salasanan voit halutessasi kertoa varoitusten yhteydessä.
     Palvelimen päässä pitää olla reikä tulimuurissa. Reverse shell tarkoittaa, että palvelin on hyökkäyskoneella.
 
+- Koska työskentelen nyt eri virtuaalikoneella, pitää taas laittaa niiden välinen verkko kuntoon
+
+![image](https://github.com/user-attachments/assets/c8f7cf10-5634-4516-92f4-f83b756e96dd)
+
+
+
 ## Lähteet: 
 Cracking Passwords with Hashcat, Karvinen 2022, Luettavissa: https://terokarvinen.com/2022/cracking-passwords-with-hashcat/, Luettu 22/04/2025
 
