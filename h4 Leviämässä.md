@@ -366,6 +366,10 @@ Sain selville, että hashina käytetään ["yescryptiä"](https://manpages.debia
 
 ![image](https://github.com/user-attachments/assets/c8f7cf10-5634-4516-92f4-f83b756e96dd)
 
+Pitää vetää Kalista kaapeli irti, jotta mikään ei vahingossakaan leviä verkkoon. 
+
+![image](https://github.com/user-attachments/assets/03cdd2c2-8e1f-4d89-b47c-f98a9f20678f)
+
 
 
 ## Lähteet: 
