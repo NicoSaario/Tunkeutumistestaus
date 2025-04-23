@@ -370,6 +370,20 @@ Pitää vetää Kalista kaapeli irti, jotta mikään ei vahingossakaan leviä ve
 
 ![image](https://github.com/user-attachments/assets/03cdd2c2-8e1f-4d89-b47c-f98a9f20678f)
 
+Hetki meni säätäessä, sillä koneet ei saaneet yhteyttä toisiinsa - Korjasin sen käymällä laittamassa Oraclessa network - asetukset kuntoon ja DHCP päälle.
+
+![image](https://github.com/user-attachments/assets/931bd08a-78fb-4fd7-9f82-816602df957e)
+
+
+Varmistetaan, ettei kummallakaan ole pääsyä ulkopuolelle ja se, että ne saavat toisiinsa yhteyden
+
+![image](https://github.com/user-attachments/assets/2364049d-c387-4386-9ef1-03ce21500d82)
+
+Oma ja Metasploitablen IP
+
+![image](https://github.com/user-attachments/assets/e09db6d2-f70a-49ff-a7af-fb71a87872b9)
+
+
 
 
 ## Lähteet: 
