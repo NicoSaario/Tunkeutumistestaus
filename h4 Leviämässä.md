@@ -433,6 +433,11 @@ set LPORT
 
 Uus yritys
 
+- Jos nyt testataan, mitä tapahtuu kun sen ajaa, nähdään että multi/handler ja serveri näkee sen ja metasploitable pystyy sen avaamaan
+
+  ![image](https://github.com/user-attachments/assets/c07bfbd0-855b-4df1-acd9-c3e365e64665)
+
+- Tehtävä siis suoritettu.
 
 ## Lähteet: 
 Cracking Passwords with Hashcat, Karvinen 2022, Luettavissa: https://terokarvinen.com/2022/cracking-passwords-with-hashcat/, Luettu 22/04/2025
