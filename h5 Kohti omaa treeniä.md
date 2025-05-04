@@ -22,6 +22,20 @@ Kaikissa testaukseen liittyvässä: Oracle VM VirtualBox ja Kali Linux Point rel
 
 ## a) HTB Dancing. Ratkaise HackTheBox.com: Starting Point: Tier 0: Dancing.
 
+- Tein sinne käyttäjän ja vinkkien mukaan yhdistän OpenVPN - kautta Kalista.
+- Eli siis HackTheBoxin sivuille -> Haluttuun labraan, siitä valitaan "OpenVPN" ja mennään ohjeiden mukaan
+- Serveriksi vaihdoin Eu
+
+![image](https://github.com/user-attachments/assets/5a58d7f6-466b-4dc5-98b4-a669403258ed)
+
+- Eli ladataan ovpn - tiedosto -> CLI ->  ```openvpn + tiedostopolku``` ja pari kertaa testattua, se heittää erroria, jos ei aja roottina, eli lisätään siihen vielä ```sudo openvpn + tiedostopolku/tiedosto```
+
+- Piti päivittää sivu, jotta tulee vihreää valoa HTB - kautta, että yhteys on luotu
+- Starting - Point - labroja saa vapaasti jakaa [sääntöjen](https://app.hackthebox.com/rules) mukaan, joten siitä ei pelkoa
+
+- Teen tästä muut alta pois ennen tuota tehtävää, jotta saan vähän pohjaa näiden suorittamiseen.
+- Ekassa piti vastailla kysymyksiin, skannata portit ja ottaa telnet - yhteys roottikäyttäjällä, jonka jälkeen sai lipun
 
 
-        
+
+
