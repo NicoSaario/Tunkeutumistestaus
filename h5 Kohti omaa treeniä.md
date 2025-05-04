@@ -20,4 +20,8 @@ Kaikissa testaukseen liittyvässä: Oracle VM VirtualBox ja Kali Linux Point rel
         Jos artikkeli on pitkä, yli 4 sivua, voit perustaa tiivistelmäsi silmäilyyn, kunhan mainitset tästä tiivistelmässäsi.
 
 
+## a) HTB Dancing. Ratkaise HackTheBox.com: Starting Point: Tier 0: Dancing.
+
+
+
         
