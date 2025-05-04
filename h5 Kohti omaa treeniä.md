@@ -35,6 +35,7 @@ Kaikissa testaukseen liittyvässä: Oracle VM VirtualBox ja Kali Linux Point rel
 
 - Teen tästä muut alta pois ennen tuota tehtävää, jotta saan vähän pohjaa näiden suorittamiseen.
 - Ekassa piti vastailla kysymyksiin, skannata portit ja ottaa telnet - yhteys roottikäyttäjällä, jonka jälkeen sai lipun
+- Tokassa käyttää aukinaisena olevaa ftp - porttia ja hakea sieltä flägitiedosto
 
 
 
