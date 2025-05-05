@@ -32,6 +32,7 @@ Eli siis HackTheBoxin sivuille -> Haluttuun labraan, siitä valitaan "OpenVPN" j
 - Tässä meni aika paljon aikaa selvitellä, miten saan järkevästi tehtyä yhteyden vain ja ainoastaan HTB ja VPN välille ja niin, ettei paketit leviä muualle. Päädyin lopulta [tämän](https://www.linode.com/docs/guides/vpn-firewall-killswitch-for-linux-and-macos-clients/#vpn-firewall-using-iptables) ja ChatGPT:n avustuksella tekemään Firewall Killswitchin.
 - Lopputuloksena tein scriptin, joka määrittää ufw - säännöt niin, että dns - kyselyt menevät vain HTB omalle palvelimelle ja liikenne kulkee ainoastaan tun0 - vpn - yhteyden kautta.
 - Testasin vielä ja lopputuloksena mihinkään muualle ei saa yhteyttä, paitsi HTB.
+- Sitä pystyy nyt ajamaan ```sudo ./ufw-vpn.sh``` aina tarvittaessa
 
 ![image](https://github.com/user-attachments/assets/41d13b4a-405f-4a1c-a43c-f0ba599244c7)
 
@@ -40,4 +41,15 @@ Eli siis HackTheBoxin sivuille -> Haluttuun labraan, siitä valitaan "OpenVPN" j
 > Ekassa piti vastailla kysymyksiin, skannata portit ja ottaa telnet - yhteys roottikäyttäjällä, jonka jälkeen sai lipun
 > Tokassa käyttää aukinaisena olevaa ftp - porttia ja hakea sieltä flägitiedosto
 
+
+Vihdoin itse tehtävän pariin!
+
+Eli VPN yhdistetty, Target Machine käynnissä ja aletaan hommiin!
+
+Pari helppoa kyssäriä alta pois - eli SMB on Server Message Block ja sijaitsee portissa 445
+Sit pitää porttiskannata ja löytää versio
+
+Painin jo aikaisemmin tuon version löytämisen kanssa, joten komento oli helppo -> ```nmap -Pn -sV p445 <ip>``` ja tuon portin laitoin vain, koska tiedetään, missä se sijaitsee ja skannaus nopeutuu
+
+![image](https://github.com/user-attachments/assets/e6a3fa9b-09ee-4b91-8681-12d850dc7e17)
 
