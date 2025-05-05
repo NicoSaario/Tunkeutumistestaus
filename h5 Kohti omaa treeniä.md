@@ -25,8 +25,8 @@ Kaikissa testaukseen liittyvässä: Oracle VM VirtualBox ja Kali Linux Point rel
 - Tein sinne käyttäjän ja vinkkien mukaan yhdistän OpenVPN - kautta Kalista.
 - Eli siis HackTheBoxin sivuille -> Haluttuun labraan, siitä valitaan "OpenVPN" ja mennään ohjeiden mukaan
 - Serveriksi vaihdoin Eu
+- Pitää vielä selvitellä, ettei paketit leviä mihinkään
 
-![image](https://github.com/user-attachments/assets/5a58d7f6-466b-4dc5-98b4-a669403258ed)
 
 - Eli ladataan ovpn - tiedosto -> CLI ->  ```openvpn + tiedostopolku``` ja pari kertaa testattua, se heittää erroria, jos ei aja roottina, eli lisätään siihen vielä ```sudo openvpn + tiedostopolku/tiedosto```
 
@@ -37,6 +37,5 @@ Kaikissa testaukseen liittyvässä: Oracle VM VirtualBox ja Kali Linux Point rel
 - Ekassa piti vastailla kysymyksiin, skannata portit ja ottaa telnet - yhteys roottikäyttäjällä, jonka jälkeen sai lipun
 - Tokassa käyttää aukinaisena olevaa ftp - porttia ja hakea sieltä flägitiedosto
 
-
-
+- Jäi tästä tosiaan aika paljon raporotoimatta, kun leikin noiden starttilabrojen kanssa. Mutta selvittelin tosiaan, että miten saa simppelisti ratkaistua sen, ettei paketit leviä mihin sattuu. 
 
