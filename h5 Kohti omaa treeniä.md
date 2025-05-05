@@ -22,20 +22,22 @@ Kaikissa testaukseen liittyvässä: Oracle VM VirtualBox ja Kali Linux Point rel
 
 ## a) HTB Dancing. Ratkaise HackTheBox.com: Starting Point: Tier 0: Dancing.
 
-- Tein sinne käyttäjän ja vinkkien mukaan yhdistän OpenVPN - kautta Kalista.
-- Eli siis HackTheBoxin sivuille -> Haluttuun labraan, siitä valitaan "OpenVPN" ja mennään ohjeiden mukaan
+> Tein sinne käyttäjän ja vinkkien mukaan yhdistän OpenVPN - kautta Kalista.
+Eli siis HackTheBoxin sivuille -> Haluttuun labraan, siitä valitaan "OpenVPN" ja mennään ohjeiden mukaan
 - Serveriksi vaihdoin Eu
 - Pitää vielä selvitellä, ettei paketit leviä mihinkään
-
-
 - Eli ladataan ovpn - tiedosto -> CLI ->  ```openvpn + tiedostopolku``` ja pari kertaa testattua, se heittää erroria, jos ei aja roottina, eli lisätään siihen vielä ```sudo openvpn + tiedostopolku/tiedosto```
-
-- Piti päivittää sivu, jotta tulee vihreää valoa HTB - kautta, että yhteys on luotu
 - Starting - Point - labroja saa vapaasti jakaa [sääntöjen](https://app.hackthebox.com/rules) mukaan, joten siitä ei pelkoa
 
-- Teen tästä muut alta pois ennen tuota tehtävää, jotta saan vähän pohjaa näiden suorittamiseen.
-- Ekassa piti vastailla kysymyksiin, skannata portit ja ottaa telnet - yhteys roottikäyttäjällä, jonka jälkeen sai lipun
-- Tokassa käyttää aukinaisena olevaa ftp - porttia ja hakea sieltä flägitiedosto
+- Tässä meni aika paljon aikaa selvitellä, miten saan järkevästi tehtyä yhteyden vain ja ainoastaan HTB ja VPN välille ja niin, ettei paketit leviä muualle. Päädyin lopulta [tämän](https://www.linode.com/docs/guides/vpn-firewall-killswitch-for-linux-and-macos-clients/#vpn-firewall-using-iptables) ja ChatGPT:n avustuksella tekemään Firewall Killswitchin.
+- Lopputuloksena tein scriptin, joka määrittää ufw - säännöt niin, että dns - kyselyt menevät vain HTB omalle palvelimelle ja liikenne kulkee ainoastaan tun0 - vpn - yhteyden kautta.
+- Testasin vielä ja lopputuloksena mihinkään muualle ei saa yhteyttä, paitsi HTB.
 
-- Jäi tästä tosiaan aika paljon raporotoimatta, kun leikin noiden starttilabrojen kanssa. Mutta selvittelin tosiaan, että miten saa simppelisti ratkaistua sen, ettei paketit leviä mihin sattuu. 
+![image](https://github.com/user-attachments/assets/41d13b4a-405f-4a1c-a43c-f0ba599244c7)
+
+
+> Teen tästä muut alta pois ennen tuota tehtävää, jotta saan vähän pohjaa näiden suorittamiseen.
+> Ekassa piti vastailla kysymyksiin, skannata portit ja ottaa telnet - yhteys roottikäyttäjällä, jonka jälkeen sai lipun
+> Tokassa käyttää aukinaisena olevaa ftp - porttia ja hakea sieltä flägitiedosto
+
 
