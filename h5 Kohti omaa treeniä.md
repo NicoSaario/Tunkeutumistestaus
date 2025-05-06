@@ -101,6 +101,13 @@ Laitoin siis vain ```more flag.txt```ja lippu löytyi!
 ![image](https://github.com/user-attachments/assets/b0f5d781-1cd2-4c9e-a7fc-27bbe989b88b)
 
 
+## Lähteet
+
+Linux smbclient command, Updated: 09/10/2024 by Computer Hope, Luettavissa: https://www.computerhope.com/unix/smbclien.htm, Luettu 06/05/2025
 
 
+
+Smbclient - vmware LINUX guest and windows Host - error opening local file, answered Aug 11, 2022 at 10:06, JINX's, Luettavissa: JINXhttps://stackoverflow.com/questions/69887956/smbclient-vmware-linux-guest-and-windows-host-error-opening-local-file, Luettu 06/05/2025
+
+Smbclient command, Mar 20, 2023, ibrahim atasoy, Luettavissa: https://medium.com/@ibo1916a/smbclient-command-2803de274e46, Luettu 06/05/2025
 
