@@ -72,5 +72,35 @@ Ja yhdistin VPN uudestaan.
 
 ![image](https://github.com/user-attachments/assets/b02ca2a6-2c0e-4670-bbab-a1ce53dea556)
 
-- Nyt vihdoin homma rullaa! 
+- Nyt vihdoin homma rullaa!
+
+- Katsoin man smbclient komennon, joka listaa sharet -> ```smbclient -L <ip>```
+
+![image](https://github.com/user-attachments/assets/633ebb84-931a-45e6-ac6e-d7e7df63cae9)
+
+- Huomataan, että siellä on 4 eri kohtaa
+- Löysin [täältä](https://www.computerhope.com/unix/smbclien.htm) komennon, jolla laitan ```smbclient //ip/ShareName```ja sillä pitäisi päästä sisään
+- Tässä kysyttiin, että mihin pääsee ja vastauksena on itseasiassa kaksi kohtaa: IPC$ ja WorkShares
+- Salasanana käy nähtävästi mikä vain (lähdin keulimaan ja syötin ls, meni läpi)
+  
+  ![image](https://github.com/user-attachments/assets/83829eed-3d2e-45b8-a37f-494f6df2d3e7)
+
+![image](https://github.com/user-attachments/assets/74279c89-1af2-49b9-afa3-e0c292fdea93)
+
+Sisältö oli tässä WorkSharessa mielenkiintoisempi. Huomataan, että siellä on 2 Directorya. James ja Amy. Navigoidaan niihin ja katsotaan sisältö.
+
+![image](https://github.com/user-attachments/assets/85a7f01a-a059-4f45-8068-1c498f1d3332)
+
+Sieltä löytyi Jamesilta flag.txt. Yritin käyttää ```get flag.txt ja get "flag.txt"```, mutta se ei antanut.
+Löysin kuitenkin tähän [täältä](https://stackoverflow.com/questions/69887956/smbclient-vmware-linux-guest-and-windows-host-error-opening-local-file) vinkin, jolla saan sen auki.
+
+Laitoin siis vain ```more flag.txt```ja lippu löytyi!
+
+![image](https://github.com/user-attachments/assets/574e4ee3-f92c-4d23-ad8f-8fe803b50c18)
+
+![image](https://github.com/user-attachments/assets/b0f5d781-1cd2-4c9e-a7fc-27bbe989b88b)
+
+
+
+
 
