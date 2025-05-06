@@ -112,6 +112,11 @@ Sieltä löytyi portit 80/tcp -> http ja 5985/tcp -> wsman
 
 ![image](https://github.com/user-attachments/assets/a4a15097-f290-4104-b3f0-ebc36a48a938)
 
+Hetken ihmettelin ja mietin, kunnes päätin palata takaisin curlin pariin. Muistaakseni sillä pywstyi saamaan jotain tietoja kaivettua enemmän. Tutkin manualia ja ```curl --help```, jonka jälkeen käytin komentoa ```curl -i -d -v http://10.129.102.98```. -i näyttää headerit, -d näyttää HTTP POST datan, -v selkeyttää
+
+![image](https://github.com/user-attachments/assets/b8f689b6-d22a-4053-a2e8-95ad75f49999)
+
+- Eli se pyörii Apache - palvelimen kautta, OpenSSL salauksella ja PHP scriptikielenä
 
 ## Lähteet
 
