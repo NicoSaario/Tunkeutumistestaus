@@ -100,6 +100,8 @@ Laitoin siis vain ```more flag.txt```ja lippu löytyi!
 
 ![image](https://github.com/user-attachments/assets/b0f5d781-1cd2-4c9e-a7fc-27bbe989b88b)
 
+## b) HTB Responder. Ratkaise HackTheBox.com: Starting Point: Tier 1: Responder.
+
 
 ## Lähteet
 
