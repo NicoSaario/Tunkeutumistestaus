@@ -53,3 +53,24 @@ Painin jo aikaisemmin tuon version löytämisen kanssa, joten komento oli helppo
 
 ![image](https://github.com/user-attachments/assets/e6a3fa9b-09ee-4b91-8681-12d850dc7e17)
 
+- Sitten pitäisi ottaa smb - yhteys -> Asennetaan ```sudo apt-get install smbclient```
+- Se ei mennyt läpi, joten vianselvitystä tässä tehnyt
+- Huomasin, että olin avannut suoritusten välillä useamman vpn - yhteyden ja niistä tun1, tun2 avoinna. Ehkä siinä syy?
+- Korjasin siis sen näin
+
+```
+ip a
+sudo pkill openvpn
+ip a
+sudo ip link delete tun0
+sudo ip link delete tun1
+sudo ip link delete tun2
+```
+Ja yhdistin VPN uudestaan.
+
+- Näytti olevan, sillä ensimmäistä kertaa meni pingi suorilta läpi
+
+![image](https://github.com/user-attachments/assets/b02ca2a6-2c0e-4670-bbab-a1ce53dea556)
+
+- Nyt vihdoin homma rullaa! 
+
