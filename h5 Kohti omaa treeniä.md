@@ -102,6 +102,16 @@ Laitoin siis vain ```more flag.txt```ja lippu löytyi!
 
 ## b) HTB Responder. Ratkaise HackTheBox.com: Starting Point: Tier 1: Responder.
 
+- Tässä syötetään ensin target - koneen IP - osoite hakukenttään ja saadaan ```unika.htb``` auki
+
+![image](https://github.com/user-attachments/assets/d96e7358-75f6-4325-b812-633262046758)
+
+Yritin myös curlata sitä, mutta siitä ei ollut hyötyä. Aloitan porttiskannauksen sille ja katsotaan, mitä se on syönyt. 
+
+Sieltä löytyi portit 80/tcp -> http ja 5985/tcp -> wsman
+
+![image](https://github.com/user-attachments/assets/a4a15097-f290-4104-b3f0-ebc36a48a938)
+
 
 ## Lähteet
 
