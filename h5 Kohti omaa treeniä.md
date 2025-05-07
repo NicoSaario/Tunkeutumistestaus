@@ -199,8 +199,13 @@ Gopalsamy, M. and Dastageer, K.B., 2025. The Role of Ethical Hacking and AI in P
 Linux smbclient command, Updated: 09/10/2024 by Computer Hope, Luettavissa: https://www.computerhope.com/unix/smbclien.htm, Luettu 06/05/2025
 
 
+Using 'get' to transfer contents of folders using smbclient, answered Dec 22, 2022 at 0:01, Marcus Müller, Luettavissa: unix.stackexchange.com/questions/729265/using-get-to-transfer-contents-of-folders-using-smbclient, Luettu 06/05/2025
+
+
 
 Smbclient - vmware LINUX guest and windows Host - error opening local file, answered Aug 11, 2022 at 10:06, JINX's, Luettavissa: JINXhttps://stackoverflow.com/questions/69887956/smbclient-vmware-linux-guest-and-windows-host-error-opening-local-file, Luettu 06/05/2025
 
 Smbclient command, Mar 20, 2023, ibrahim atasoy, Luettavissa: https://medium.com/@ibo1916a/smbclient-command-2803de274e46, Luettu 06/05/2025
+
+HTB Walkthrough
 
