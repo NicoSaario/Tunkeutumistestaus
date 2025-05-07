@@ -12,7 +12,16 @@ Kaikissa testaukseen liittyvässä: Oracle VM VirtualBox ja Kali Linux Point rel
 
 ## x) Lue/katso ja tiivistä. (Tässä x-alakohdassa ei tarvitse tehdä testejä tietokoneella, vain lukeminen tai kuunteleminen ja tiivistelmä riittää. Tiivistämiseen riittää muutama ranskalainen viiva kustakin artikkelista. Kannattaa lisätä myös jokin oma ajatus, idea, huomio tai kysymys.)
 
-    Karvinen 2025: Start Your Research with a Review Article
+### [Karvinen 2025: Start Your Research with a Review Article](https://terokarvinen.com/review-article/)
+
+- Perusohje katsausartikkeleihin (JUFO). Joku siis on tutkinut kirjallisuutta ja kirjoittanut iiitä artikkelin
+- Yksi hyvä paikka löytää on Google Scholar
+- Haku aihe + sana "review", myös suodatin löytyy
+- Artikkelit, joilla on luokitus 1,2 ja 3, on hyviä
+- Linkki koko tekstiin PDF - muodossa yleensä hakutulosten oikealla puolella
+- Asetukset -> Kirjastolinkit --> Lisää yliopisto
+
+
     Review. Etsi vapaavalintainen review eli katsausartikkeli, joka liittyy kurssin aiheisiin.
         Artikkelin pitää olla JUFO-arvioidusta julkaisusta eli jufo-taso 1, 2 tai 3.
         Mieluiten tuore, julkaisusta alle 2 vuotta.
