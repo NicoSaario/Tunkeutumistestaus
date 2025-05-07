@@ -22,11 +22,24 @@ Kaikissa testaukseen liittyvässä: Oracle VM VirtualBox ja Kali Linux Point rel
 - Asetukset -> Kirjastolinkit --> Lisää yliopisto
 
 
-    Review. Etsi vapaavalintainen review eli katsausartikkeli, joka liittyy kurssin aiheisiin.
+## Review. Etsi vapaavalintainen review eli katsausartikkeli, joka liittyy kurssin aiheisiin.
         Artikkelin pitää olla JUFO-arvioidusta julkaisusta eli jufo-taso 1, 2 tai 3.
         Mieluiten tuore, julkaisusta alle 2 vuotta.
         Artikkeleita löytyy scholar.google.com/ncr
         Jos artikkeli on pitkä, yli 4 sivua, voit perustaa tiivistelmäsi silmäilyyn, kunhan mainitset tästä tiivistelmässäsi.
+
+
+Gopalsamy, M. and Dastageer, K.B., 2025. The Role of Ethical Hacking and AI in Proactive Cyber Defense: Current Approaches and Future Perspectives. Int. J. Innov. Sci. Res. Technol, 10(2). 
+
+[Linkki PDF - tiedostoon](https://www.researchgate.net/profile/Mani-Gopalsamy-2/publication/390283997_The_Role_of_Ethical_Hacking_and_AI_in_Proactive_Cyber_Defense_Current_Approaches_and_Future_Perspectives/links/67e764e249e91c0feac44ef8/The-Role-of-Ethical-Hacking-and-AI-in-Proactive-Cyber-Defense-Current-Approaches-and-Future-Perspectives.pdf)
+
+The Role of Ethical Hacking and AI in Proactive Cyber Defense: Current Approaches and Future Perspectives
+
+- Tutkimus käsittelee eettisen hakkeroinnin ja tekoälyn roolia ennakoivassa kyberturvallisuudessa
+- Tavoitteena ennakoida, tunnistaa ja vähentää tietoturvariskejä
+- Eettiset hakkerit simuloivat todellisia hyökkäyksiä, kun tekoäly taas pyrkii tarjoammaan reaaliaikaisen uhkien tunnistamisen, ennakoivan tiedon ja poikkeamien analysoinnin
+- Ihmisten asiantuntemuksen ja tekoälyn laskentateho yhdistämällä, saavutetaan usean kerroksen puolustusstrategia jatkuvasti kehittyvää uhkaa vastaan.
+- Sinällään mielenkiintoista lukea. Tässä usein pohtinut tekoälyn merkitystä nimenomaan niissä automaatioprosesseissa, joissa ihminen on joko yksinkertaisesti hidas tai virhemarginaali on suuri. Yksi iso kysymys tietysti on aina eettisyys AI:n kanssa - mihin tieto tallennetaan, miten sitä hyödynnetään ja missä. 
 
 
 ## a) HTB Dancing. Ratkaise HackTheBox.com: Starting Point: Tier 0: Dancing.
@@ -178,6 +191,10 @@ Syöttämällä osoiteriville sen aikaisemman taskin vastauksen, eli ```//10.10.
 
 Tämä varmaan pitäisi Johnilla availla. Tallensin hashin ```micro hash```ja copypastesin sen sisään. Nyt etsin vähän aikaisemmasta raportista, mitenn se tehtiin Johnilla.
 ## Lähteet
+
+Karvinen 2025: Start Your Research with a Review Article, Luettavissa: https://terokarvinen.com/review-article/, Luettu 06/05/2025
+
+Gopalsamy, M. and Dastageer, K.B., 2025. The Role of Ethical Hacking and AI in Proactive Cyber Defense: Current Approaches and Future Perspectives. Int. J. Innov. Sci. Res. Technol, 10(2), Luettavissa: https://www.researchgate.net/profile/Mani-Gopalsamy-2/publication/390283997_The_Role_of_Ethical_Hacking_and_AI_in_Proactive_Cyber_Defense_Current_Approaches_and_Future_Perspectives/links/67e764e249e91c0feac44ef8/The-Role-of-Ethical-Hacking-and-AI-in-Proactive-Cyber-Defense-Current-Approaches-and-Future-Perspectives.pdf, Luettu: 06/05/2025
 
 Linux smbclient command, Updated: 09/10/2024 by Computer Hope, Luettavissa: https://www.computerhope.com/unix/smbclien.htm, Luettu 06/05/2025
 
