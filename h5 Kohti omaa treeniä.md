@@ -28,6 +28,7 @@ Kaikissa testaukseen liittyvässä: Oracle VM VirtualBox ja Kali Linux Point rel
         Artikkeleita löytyy scholar.google.com/ncr
         Jos artikkeli on pitkä, yli 4 sivua, voit perustaa tiivistelmäsi silmäilyyn, kunhan mainitset tästä tiivistelmässäsi.
 
+EDIT = Huomasin hetki sitten, ettei tuo olekkaan jufo- tasoa eli tarvitsee artikkeli vaihtaa vielä toiseen.
 
 Gopalsamy, M. and Dastageer, K.B., 2025. The Role of Ethical Hacking and AI in Proactive Cyber Defense: Current Approaches and Future Perspectives. Int. J. Innov. Sci. Res. Technol, 10(2). 
 
