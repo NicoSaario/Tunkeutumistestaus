@@ -191,6 +191,9 @@ Syöttämällä osoiteriville sen aikaisemman taskin vastauksen, eli ```//10.10.
 ![image](https://github.com/user-attachments/assets/373e450c-3a37-4f60-96f6-10ef04a765f1)
 
 Tämä varmaan pitäisi Johnilla availla. Tallensin hashin ```micro hash```ja copypastesin sen sisään. Nyt etsin vähän aikaisemmasta raportista, mitenn se tehtiin Johnilla.
+
+Pieni päivitys: Kohta 2 - päivää yrittäny sitä avata, mutta ei tulosta. Menee deadlinen yli huolella, joten luon seuraavaksi uuden virtuaalikoneen ja testailen sillä, mutta toistaiseksi lopetan tämän tähän.
+
 ## Lähteet
 
 Karvinen 2025: Start Your Research with a Review Article, Luettavissa: https://terokarvinen.com/review-article/, Luettu 06/05/2025
