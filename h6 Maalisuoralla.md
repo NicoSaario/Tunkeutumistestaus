@@ -37,6 +37,9 @@ Kotitehtävät ovat kurssilta "Tunkeutumistestaus - Penetration Testing course" 
 - Jotta kaikki menee mahdollisimman sujuvasti, asensin Rufus - työkalua käyttäen USBitikulle Kali - Linuxin, jotta voin tarvittaessa hyödyntää Livetikkua ongelmien sattuessa. On kuitenkin kahden kurssin lipunryöstöt putkeen, niin ongelmia voi syntyä hyvinkin nopeasti.
 - Asentelin uuden Kalin Oracle VM ja annoin sille 50gb muistia, Base memory 4700MB ja 6 Prossua. Siihen on toistaiseksi ainoastaan asennettu ```kali-tools-wireless``` 
 
+- Tein vielä lopuksi pienen cheat - sheetin, kun kertailin kurssilla tehtyjä tehtäviä
+
+https://github.com/NicoSaario/Tunkeutumistestaus/blob/main/Oma_Cheat_Sheet.md
 
 ## b) Oma korkki. Demonstroi tunkeutumista itse valitsemallasi luvallisella maalilla.
 - Olisin halunnut tähän demota jotain oikeata, fyysistä laitetta, mutta sen kanssa leikin enemmän sitten omalla ajalla. Haluan kuitenkin varmistua siitä, että kaikki menee eettisesti, joten se vaatii paljon enemmän vielä taustatyötä.
