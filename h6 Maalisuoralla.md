@@ -112,6 +112,12 @@ Siinä itseasiassa näkyy sudo-oikeuksien omaava käyttäjä, jonka testimieless
 
 Tulos ei paljoa muuttunut, eli neljä käyttäjää salasanoineen sieltä löytyi
 
+----------------------------------------------------------------------------------------------------------------
+Tässä kohtaa tein kotitehtäväpalautuksen, homma jatkuu yhä
+----------------------------------------------------------------------------------------------------------------
+
+
+
 ## Lähteet
 
 Kotitehtävät - Tunkeutumistestaus, Tero Karvinen, https://terokarvinen.com/tunkeutumistestaus/
