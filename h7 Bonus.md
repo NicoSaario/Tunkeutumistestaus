@@ -27,7 +27,7 @@ h5 Kohti omaa treeniä
 
 ## b) Ristiinarvioinnin jälkeen olennaisesti parannetut tehtävät
 
-H5 ei ole yhtäkään arviointia, joten se kokonaan
+H5 ei ole yhtäkään arviointia, joten se kokonaan https://github.com/NicoSaario/Tunkeutumistestaus/blob/main/h5%20Kohti%20omaa%20treeni%C3%A4.md
 
 H4 g) - kohdasta osa
 https://github.com/NicoSaario/Tunkeutumistestaus/blob/main/h4%20Levi%C3%A4m%C3%A4ss%C3%A4.md#g-tee-msfvenom-ty%C3%B6kalulla-haittaohjelma-joka-soittaa-kotiin-reverse-shell-ota-yhteys-vastaan-metasploitin-multihandler--ty%C3%B6kalulla
