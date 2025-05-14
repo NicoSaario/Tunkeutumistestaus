@@ -28,7 +28,28 @@ Kaikissa testaukseen liittyvässä: Oracle VM VirtualBox ja Kali Linux Point rel
         Artikkeleita löytyy scholar.google.com/ncr
         Jos artikkeli on pitkä, yli 4 sivua, voit perustaa tiivistelmäsi silmäilyyn, kunhan mainitset tästä tiivistelmässäsi.
 
-EDIT = Huomasin hetki sitten, ettei tuo olekkaan jufo- tasoa eli tarvitsee artikkeli vaihtaa vielä toiseen.
+EDIT 15/05/2025, korjattu ei JUFO - tasolla oleva JUFO - tasolle
+
+Gaber, M.G., Ahmed, M. and Janicke, H., 2024. Malware detection with artificial intelligence: A systematic literature review. ACM Computing Surveys, 56(6), pp.1-33, https://dl.acm.org/doi/full/10.1145/3638552
+
+![image](https://github.com/user-attachments/assets/945a90c4-db49-4d91-858a-79f8c07d5037)
+
+Ja tällä siis JUFO - taso 3
+
+![image](https://github.com/user-attachments/assets/6df0a11c-6b46-4f85-bce7-1e2c0e290210)
+
+
+- Artikkeli on äärimmäisen pitkä, mutta käsittelee viittä kriittistä aluetta tekoälyä käytettäessä haittaohjelmien tunnistamisessa sekä niistä ilmeentyviä haasteita:
+  1. Haittaohjelmien kehittyneisyyttä
+  2. Analyysitekniikoita
+  3. Tietoaineistoja je repoja
+  4. Piirteiden laatua ja tekoälymallien suorituskykyä
+  5. ML ja DL vertailua (koneoppiminen ja syväoppiminen)
+
+
+
+
+### EDIT = Huomasin hetki sitten, ettei tuo olekkaan jufo- tasoa eli tarvitsee artikkeli vaihtaa vielä toiseen. Jätän kuitenkin näkyviin, onhan siinä luettavaa.
 
 Gopalsamy, M. and Dastageer, K.B., 2025. The Role of Ethical Hacking and AI in Proactive Cyber Defense: Current Approaches and Future Perspectives. Int. J. Innov. Sci. Res. Technol, 10(2). 
 
@@ -211,7 +232,7 @@ Linux smbclient command, Updated: 09/10/2024 by Computer Hope, Luettavissa: http
 
 Using 'get' to transfer contents of folders using smbclient, answered Dec 22, 2022 at 0:01, Marcus Müller, Luettavissa: unix.stackexchange.com/questions/729265/using-get-to-transfer-contents-of-folders-using-smbclient, Luettu 06/05/2025
 
-
+Gaber, M.G., Ahmed, M. and Janicke, H., 2024. Malware detection with artificial intelligence: A systematic literature review. ACM Computing Surveys, 56(6), pp.1-33, Luettavissa: https://dl.acm.org/doi/full/10.1145/3638552, Luettu 15/05/2025
 
 Smbclient - vmware LINUX guest and windows Host - error opening local file, answered Aug 11, 2022 at 10:06, JINX's, Luettavissa: JINXhttps://stackoverflow.com/questions/69887956/smbclient-vmware-linux-guest-and-windows-host-error-opening-local-file, Luettu 06/05/2025
 
