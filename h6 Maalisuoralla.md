@@ -105,6 +105,11 @@ Metasploitable - näkymä
 Pari sieltä jo availtu
 ![image](https://github.com/user-attachments/assets/23abbc2e-0fe2-4042-97b6-f717ae452cce)
 
+Siinä itseasiassa näkyy sudo-oikeuksien omaava käyttäjä, jonka testimielessä loin hetki sitten eli tuo "hiding", jolla salasana myös "hiding".
+
+![Uploading image.png…]()
+
+Tulos ei paljoa muuttunut, eli neljä käyttäjää salasanoineen sieltä löytyi
 
 ## Lähteet
 
