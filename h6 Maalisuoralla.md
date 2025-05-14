@@ -122,6 +122,7 @@ Tässä kohtaa tein kotitehtäväpalautuksen, homma jatkuu yhä
 
 ![image](https://github.com/user-attachments/assets/e4869c89-92b5-44c9-b062-e632bc3bb952)
 
+![image](https://github.com/user-attachments/assets/d0f634aa-5b2d-4840-8805-accb1fdc3918)
 
 
 
