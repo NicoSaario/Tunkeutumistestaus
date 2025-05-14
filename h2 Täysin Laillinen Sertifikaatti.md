@@ -499,8 +499,14 @@ Sillä tosiaan on väliä, montako funktiota laittaa ja mitä käyttää
 
 
 
-l) Vapaaehtoinen: Mitmproxy. Asenna MitmProxy. Esittele sitä terminaalissa (TUI). Ota TLS-purku käyttöön. Poimi historiasta hakupyyntö, muokkaa sitä ja lähetä uudelleen.
-m) Vapaaehtoinen: Ratkaise lisää PortSwigger Labs -tehtäviä. Kannattaa tehdä helpoimmat "Apprentice" -tason tehtävät ensin.
+## l) Vapaaehtoinen: Mitmproxy. Asenna MitmProxy. Esittele sitä terminaalissa (TUI). Ota TLS-purku käyttöön. Poimi historiasta hakupyyntö, muokkaa sitä ja lähetä uudelleen.
+
+- Asennettu on, toimintaan pitää vielä perehtyä myöhemmin
+
+![image](https://github.com/user-attachments/assets/dc021454-f9c5-4638-8099-2786c1c0769c)
+
+
+## m) Vapaaehtoinen: Ratkaise lisää PortSwigger Labs -tehtäviä. Kannattaa tehdä helpoimmat "Apprentice" -tason tehtävät ensin.
 
 Teen nämä kyllä melko varmasti myöhemmin, mutta tuohon säätämiseen meni niin paljon turhaa aikaa, ettei nyt riitä aika niihin.
 
@@ -523,3 +529,5 @@ Teen nämä kyllä melko varmasti myöhemmin, mutta tuohon säätämiseen meni n
 - Configuring Proxies, ZAP by Checkmarx, Luettavissa: https://www.zaproxy.org/docs/desktop/start/proxies/, Luettu: 09/04/2025
 
 - URL Patterns FoxyProxy, Luettavissa: https://help.getfoxyproxy.org/index.php/knowledge-base/url-patterns/, Luettu: 09/04/2025
+
+- pencode - complex payload encoder, joohoi, Luettavissa: https://github.com/ffuf/pencode, Luettu 14/05/2025
