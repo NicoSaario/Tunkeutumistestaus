@@ -1,8 +1,12 @@
-h6 Maalisuoralla
+# Kotitehtävät
 
-Olet kohta läpäissyt yhden koulumme vaikeimmista kursseista. Tsemppiä loppumetreille!
+Kotitehtävät ovat kurssilta "Tunkeutumistestaus - Penetration Testing course" ja löytyvät osoitteesta https://terokarvinen.com/tunkeutumistestaus/.
 
-Rosvot menevät ali siitä, missä aita on matalin. Työkalupakista löytyy social engineering, fyysinen tunkeutuminen, jopa tiirikointi. Siksi meidänkin pitää tuntea nämä tekniikat.
+> h6 Maalisuoralla
+
+> Olet kohta läpäissyt yhden koulumme vaikeimmista kursseista. Tsemppiä loppumetreille!
+
+> Rosvot menevät ali siitä, missä aita on matalin. Työkalupakista löytyy social engineering, fyysinen tunkeutuminen, jopa tiirikointi. Siksi meidänkin pitää tuntea nämä tekniikat.
 
     x) Lue/katso ja tiivistä. (Tässä x-alakohdassa ei tarvitse tehdä testejä tietokoneella, vain lukeminen tai kuunteleminen ja tiivistelmä riittää. Tiivistämiseen riittää muutama ranskalainen viiva kustakin artikkelista. Kannattaa lisätä myös jokin oma ajatus, idea, huomio tai kysymys.)
         Deviant Ollam. Vapaavalintainen esitys tai esitelmä esiintyjältä Deviant Ollam.
