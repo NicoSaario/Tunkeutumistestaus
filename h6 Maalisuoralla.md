@@ -66,8 +66,16 @@ Kotitehtävät ovat kurssilta "Tunkeutumistestaus - Penetration Testing course" 
 
 - Käytän sitä metasploitablen ip:tä ja teen porttiskannauksen ```nmap -A -T4 -sN ip```
 - Paljon löytyy haavoittuvuuksia, jota hyödyntää. Pähkäilen tässä jotain mielenkiintoista, mihin tarttua kiinni
+- Hetken selailtua, päädyin lopulta tähän
 
+![image](https://github.com/user-attachments/assets/c771ea9d-463d-400d-86f2-b328a3f0ba57)
 
+- Nyt pitää hetki surffailla, miten siihen pääsee kiinni. Olettaisin, että ihan vain tcp tai käyttämällä vaikkapa Ncattia, joka on siis intergoitu nmappiin. 
+- Ajattelin kokeilla kepillä jäätä ja Ncatin manuaalista lueskeltuani löin vaan suoraan ```nc ip portti```
+
+![image](https://github.com/user-attachments/assets/91663d98-712f-41c7-b1ff-a8a10d42dea3)
+
+- Ollaan siis heti roottina siellä kiinni. Tutkin vähän kansioita tässä välissä.
 
 ## Lähteet
 
