@@ -83,7 +83,7 @@ Kotitehtävät ovat kurssilta "Tunkeutumistestaus - Penetration Testing course" 
 
 - Päätin tehdä seuraavaa -> Vien tiedostot passwd ja shadow Kalille. Aloitan JohnTheRipperillä availemaan niitä ja jatkan Metasploitilla tutkimista. Mietin jonkun kivan haittaohjelman tekemistä sinne.
 
-Käytännössähän en tarvitse edes kauheasti noita salasanoja, sillä on jo muutenkin roottikäyttäjän oikeudet ja voin tehdä mitä vain järjestelmässä, mutta halusin harjoituksen muodossa niitä availla
+Käytännössähän en tarvitse edes kauheasti noita salasanoja, sillä on jo muutenkin roottikäyttäjän oikeudet ja voin tehdä mitä vain järjestelmässä, mutta halusin harjoituksen muodossa niitä availla. Onhan siitä se hyöty, että jos tämä ovi sulkeutuu, jää muita auki. 
 
 - Säästääkseni vähän aikaa, raportoin tässä kohtaa vähän jäljessä. Eli loin Python HTTP - palvelimen, jolla hain Kalilla tiedostot. Ensin tietysti ```cp molemmat tiedostot haluttuun kansioon```
 
