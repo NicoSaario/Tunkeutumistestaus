@@ -124,7 +124,7 @@ Tässä kohtaa tein kotitehtäväpalautuksen, homma jatkuu yhä
 
 ![image](https://github.com/user-attachments/assets/d0f634aa-5b2d-4840-8805-accb1fdc3918)
 
-
+- Joudun itseasiassa toistaiseksi lopettamaan tähän ja valmistautumaan noihin lipunryöstöihin. Mukava kurssi ja antaa kyllä eväitä harjoitella näitä jatkossa itsenäisesti lisää!
 
 ## Lähteet
 
