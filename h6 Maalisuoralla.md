@@ -77,6 +77,35 @@ Kotitehtävät ovat kurssilta "Tunkeutumistestaus - Penetration Testing course" 
 
 - Ollaan siis heti roottina siellä kiinni. Tutkin vähän kansioita tässä välissä.
 
+- Löysin tiedoston passwd-, jossa kätevästi näkyi jokainen käyttäjä ja salasanan sijainti
+
+![image](https://github.com/user-attachments/assets/e901ce56-41e1-4c88-aa8e-fe4358d78034)
+
+- Päätin tehdä seuraavaa -> Vien tiedostot passwd ja shadow Kalille. Aloitan JohnTheRipperillä availemaan niitä ja jatkan Metasploitilla tutkimista. Mietin jonkun kivan haittaohjelman tekemistä sinne.
+
+Käytännössähän en tarvitse edes kauheasti noita salasanoja, sillä on jo muutenkin roottikäyttäjän oikeudet ja voin tehdä mitä vain järjestelmässä, mutta halusin harjoituksen muodossa niitä availla
+
+- Säästääkseni vähän aikaa, raportoin tässä kohtaa vähän jäljessä. Eli loin Python HTTP - palvelimen, jolla hain Kalilla tiedostot. Ensin tietysti ```cp molemmat tiedostot haluttuun kansioon```
+
+- Kalilla navigoin selaimella Metasploitablen osoitteeseen ja latasin tiedostot
+
+- Tein tiedostoista yhtenäisen komennolla ```unshadow passwd shadow-file > john.input.txt```ja aloitin skannauksen ```john --wordlist=/usr/share/wordlists/rockyou.txt```
+
+- Koska uusi Kali, rockyou.txt piti ```gunzip rockyou.txt```
+
+
+Tiedostot selaimesta
+![image](https://github.com/user-attachments/assets/84b6da26-de4d-4e4b-abf2-121a361bc829)
+
+
+Metasploitable - näkymä
+![image](https://github.com/user-attachments/assets/e9cc6309-ac98-4e26-ad73-133c26229ff8)
+
+
+Pari sieltä jo availtu
+![image](https://github.com/user-attachments/assets/23abbc2e-0fe2-4042-97b6-f717ae452cce)
+
+
 ## Lähteet
 
 Hacker Fun with Traffic Controls and Crosswalk Buttons, DeviantOllam, 2024, Katsottavissa: https://www.youtube.com/watch?v=mvvVSTlbqEI, Katsottu 14/05/2025
