@@ -107,7 +107,8 @@ Pari sieltä jo availtu
 
 Siinä itseasiassa näkyy sudo-oikeuksien omaava käyttäjä, jonka testimielessä loin hetki sitten eli tuo "hiding", jolla salasana myös "hiding".
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/c658f9fe-5ed6-4c34-a769-9a274472cdbc)
+
 
 Tulos ei paljoa muuttunut, eli neljä käyttäjää salasanoineen sieltä löytyi
 
