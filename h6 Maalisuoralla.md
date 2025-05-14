@@ -22,10 +22,20 @@ Kotitehtävät ovat kurssilta "Tunkeutumistestaus - Penetration Testing course" 
 
 ## x) Deviant Ollam
 
+- Sen verran täytyy heti myöntää, että katsoin ensimmäisenä [tämän](https://www.youtube.com/watch?v=mvvVSTlbqEI) videon suojatiepainikkeen "hakkeroimisesta" ja se oli jokseenkin niin viihdyttävä, että jäin tutkimaan muita videoita vähän liiankin pitkäksi aikaa.
+
 
 
 ## b) Lippuvalmistelu
 
 - Jotta kaikki menee mahdollisimman sujuvasti, asensin Rufus - työkalua käyttäen USBitikulle Kali - Linuxin, jotta voin tarvittaessa hyödyntää Livetikkua ongelmien sattuessa. On kuitenkin kahden kurssin lipunryöstöt putkeen, niin ongelmia voi syntyä hyvinkin nopeasti.
-- Asentelin uuden Kalin Oracle VM ja annoin sille 50gb muistia, 6 Prossua ja 4mb Ramia. Siihen on toistaiseksi ainoastaan asennettu ```kali-tools-wireless``` 
+- Asentelin uuden Kalin Oracle VM ja annoin sille 50gb muistia ja 6 Prossua. Siihen on toistaiseksi ainoastaan asennettu ```kali-tools-wireless``` 
 - 
+
+
+
+
+
+## Lähteet
+
+Hacker Fun with Traffic Controls and Crosswalk Buttons, DeviantOllam, 2024, Katsottavissa: https://www.youtube.com/watch?v=mvvVSTlbqEI, Katsottu 14/05/2025
