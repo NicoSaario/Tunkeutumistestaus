@@ -24,7 +24,13 @@ Kotitehtävät ovat kurssilta "Tunkeutumistestaus - Penetration Testing course" 
 
 - Sen verran täytyy heti myöntää, että katsoin ensimmäisenä [tämän](https://www.youtube.com/watch?v=mvvVSTlbqEI) videon suojatiepainikkeen "hakkeroimisesta" ja se oli jokseenkin niin viihdyttävä, että jäin tutkimaan muita videoita vähän liiankin pitkäksi aikaa.
 
+- Kanava on hyvin pitkälti painottunut lukkojen toimintaan, niiden murtamiseen ja murtamisen estämiseen, mutta törmäsin videoon joka liittyy niin jokapäiväiseen arkeen kun myös itse hakkerointiin.
 
+- [Videossa](https://www.youtube.com/watch?v=k86UdUN6YlA) painotetaan yksinkertaisuuden merkitystä ja sitä, että yleensä ajattelemme asiat liian monimutkaisesti. Joskus ajaudumme urille, joissa uppoamme yhä syvemmälle ja syvemmälle kuiluun etsiessämme mitä monimutkaisempaa ratkaisua yksinkertaiseen asiaan. 
+
+- Lähes kaikkea voi tehdä monimutkaisesti ja yksinkertaisen fiksusti. Jos käytetään tässä juuri nimenomaan hakkerin näkökulmasta, jotkut simppelit ratkaisut ovat jopa usein tehokkaampia, kuin monimutkaiset tavat hoitaa asioita. Kuvitellaan esimerkiksi vanha kunnon ```strings``` työkalu, jota käytin aikaisemmalla kurssilla enemmän; Voihan tiedoston viedä debuggeriin, lukea rivi riviltä ja yrittää selvittää haluttua asiaa, mutta saman voi usein ratkaista yksinkertaisesti ja nopeasti vain muutaman sekunnin työllä.
+
+- Videossa siis käytetään esimerkkinä sitä, kun Deviant uppoutui yksinkertaiseen ongelmaan, jossa haluttiin helpottaa johtojen viemistä maan pintaa vasten eräänlaisilla "puutarhaniiteillä". Ensin hän mietti ratkaisua pitkään, mietti 3D - printtausta, mekanismien rakentamista ja hyvin monimutkaista rakennelmaa -> Lopulta hän keksi yksinkertaisen ratkaisun ja teki harjan varresta sekä "binder clips", eli paperiklipsistä yksinkertaisen viritelmän, jolla ongelma ratkesi kahdessa minuutissa ja kustannustehokkaasti.
 
 ## b) Lippuvalmistelu
 
