@@ -34,5 +34,5 @@ https://github.com/NicoSaario/Tunkeutumistestaus/blob/main/h4%20Levi%C3%A4m%C3%A
 
 H2 h) - kohdasta eteenpäin https://github.com/NicoSaario/Tunkeutumistestaus/blob/main/h2%20T%C3%A4ysin%20Laillinen%20Sertifikaatti.md#teht%C3%A4v%C3%A4n-keskener%C3%A4inen-palautus-0904-1320jatkan-t%C3%A4st%C3%A4-viel%C3%A4jatkuu-09042025-1946
 
-H6 kokonaan, koska yritin aennella toisen kurssin ympäristöä niin pitkään, että se venähti *EDIT = Oli siellä yksi ristiinarviointi
+H6 kokonaan, koska yritin asennella toisen kurssin ympäristöä niin pitkään, että se venähti *EDIT = Oli siellä yksi ristiinarviointi
 https://github.com/NicoSaario/Tunkeutumistestaus/blob/main/h6%20Maalisuoralla.md
