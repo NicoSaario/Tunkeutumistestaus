@@ -38,7 +38,10 @@ Kotitehtävät ovat kurssilta "Tunkeutumistestaus - Penetration Testing course" 
 - Asentelin uuden Kalin Oracle VM ja annoin sille 50gb muistia, Base memory 4700MB ja 6 Prossua. Siihen on toistaiseksi ainoastaan asennettu ```kali-tools-wireless``` 
 
 
+## b) Oma korkki. Demonstroi tunkeutumista itse valitsemallasi luvallisella maalilla.
+- Olisin halunnut tähän demota jotain oikeata, fyysistä laitetta, mutta sen kanssa leikin enemmän sitten omalla ajalla. Haluan kuitenkin varmistua siitä, että kaikki menee eettisesti, joten se vaatii paljon enemmän vielä taustatyötä.
 
+- Valitsin siis maaliksi jälleen Metasploitable 2, jota aikaisemmissakin harjoituksissa on käytetty. Tällä kertaa ei kuitenkaan ole minkäänlaista kohdehaavoittuvuutta, joten seulon, tutkin ja etsin sellaisen itse.
 
 
 
