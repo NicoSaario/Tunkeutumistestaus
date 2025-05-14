@@ -28,7 +28,7 @@ Kaikissa testaukseen liittyvässä: Oracle VM VirtualBox ja Kali Linux Point rel
         Artikkeleita löytyy scholar.google.com/ncr
         Jos artikkeli on pitkä, yli 4 sivua, voit perustaa tiivistelmäsi silmäilyyn, kunhan mainitset tästä tiivistelmässäsi.
 
-EDIT 15/05/2025, korjattu ei JUFO - tasolla oleva JUFO - tasolle
+EDIT 15/05/2025, korjattu ei JUFO - tasolla oleva artikkeli ja lisätty JUFO - tasoinen tilalle
 
 Gaber, M.G., Ahmed, M. and Janicke, H., 2024. Malware detection with artificial intelligence: A systematic literature review. ACM Computing Surveys, 56(6), pp.1-33, https://dl.acm.org/doi/full/10.1145/3638552
 
