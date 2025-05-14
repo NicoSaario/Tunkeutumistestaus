@@ -114,6 +114,8 @@ Tulos ei paljoa muuttunut, eli neljä käyttäjää salasanoineen sieltä löyty
 
 ## Lähteet
 
+Kotitehtävät - Tunkeutumistestaus, Tero Karvinen, https://terokarvinen.com/tunkeutumistestaus/
+
 Hacker Fun with Traffic Controls and Crosswalk Buttons, DeviantOllam, 2024, Katsottavissa: https://www.youtube.com/watch?v=mvvVSTlbqEI, Katsottu 14/05/2025
 
 The Importance of Solving Problems in Smart But Also Dumb Ways, 2023, DeviantOllam, Katsottavissa: https://www.youtube.com/watch?v=k86UdUN6YlA, Katsottu 14/05/2025
