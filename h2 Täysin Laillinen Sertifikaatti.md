@@ -485,7 +485,20 @@ Hetki meni, kun syötin sitä joka paikkaan, mutta lopulta tajusin laittaa sen i
 ###     Server Side Template Injection (SSTI)
         [j) Vapaaehtoinen, hieman haastava: Server-side template injection with information disclosure via user-supplied objects](https://portswigger.net/web-security/server-side-template-injection/exploiting/lab-server-side-template-injection-with-information-disclosure-via-user-supplied-objects)
 
-k) Vapaaehtoinen, helppo: Asenna pencode ja muunna sillä jokin merkkijono (encode a string).
+### k) Vapaaehtoinen, helppo: Asenna pencode ja muunna sillä jokin merkkijono (encode a string). EDIT= Tämän toteutus alkoi 14/05/2025
+
+Ensin piti asentaa ```sudo apt-get install golang-go``` ja sen jäleen [ohjeiden](https://github.com/ffuf/pencode) mukaan ```go install github.com/ffuf/pencode/cmd/pencode@latest```
+
+Katselin tuota ohjetta ja manuaalia hieman ja tein sitten ```micro kynäkoodi``` ja ```echo kynäkoodi | pencode b64encode sha224```
+
+![image](https://github.com/user-attachments/assets/94df9bfd-588a-4a65-87b7-ce9d1a3f1123)
+
+Sillä tosiaan on väliä, montako funktiota laittaa ja mitä käyttää
+
+![image](https://github.com/user-attachments/assets/52e613bf-4341-4239-92ec-9bbfb954176c)
+
+
+
 l) Vapaaehtoinen: Mitmproxy. Asenna MitmProxy. Esittele sitä terminaalissa (TUI). Ota TLS-purku käyttöön. Poimi historiasta hakupyyntö, muokkaa sitä ja lähetä uudelleen.
 m) Vapaaehtoinen: Ratkaise lisää PortSwigger Labs -tehtäviä. Kannattaa tehdä helpoimmat "Apprentice" -tason tehtävät ensin.
 
