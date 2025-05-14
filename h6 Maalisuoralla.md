@@ -116,6 +116,13 @@ Tulos ei paljoa muuttunut, eli neljä käyttäjää salasanoineen sieltä löyty
 Tässä kohtaa tein kotitehtäväpalautuksen, homma jatkuu yhä
 ----------------------------------------------------------------------------------------------------------------
 
+- Eli siis ideana tässä itselläni oli se, että sikälimikäli tuo bind shell backdoor suljetaan, pystyn käyttämään vaihtoehtoisia tapoja sisälle pääsyyn. Avasin ftp:n servicellä. Se toimii hyvin. Tämän jälkeen testasin sitä hiding - käyttäjää, jonka loin ja sekin toimi.
+
+![image](https://github.com/user-attachments/assets/e60898bb-bca6-415c-86fc-6505b312f27a)
+
+![image](https://github.com/user-attachments/assets/e4869c89-92b5-44c9-b062-e632bc3bb952)
+
+
 
 
 ## Lähteet
