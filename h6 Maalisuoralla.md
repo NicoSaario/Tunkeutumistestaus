@@ -64,7 +64,8 @@ Kotitehtävät ovat kurssilta "Tunkeutumistestaus - Penetration Testing course" 
 
 - Käydään nyt vielä varuiksi varmistamassa se Metasploitablella, koska ollaan kuitenkin jo maaliin päästy -> ```ifconfig``` ![image](https://github.com/user-attachments/assets/5cc52202-03c7-4beb-b077-e46562aab179)
 
-- 
+- Käytän sitä metasploitablen ip:tä ja teen porttiskannauksen ```nmap -A -T4 -sN ip```
+- Paljon löytyy haavoittuvuuksia, jota hyödyntää. Pähkäilen tässä jotain mielenkiintoista, mihin tarttua kiinni
 
 
 
