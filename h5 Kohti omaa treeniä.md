@@ -194,6 +194,12 @@ Tämä varmaan pitäisi Johnilla availla. Tallensin hashin ```micro hash```ja co
 
 Pieni päivitys: Kohta 2 - päivää yrittäny sitä avata, mutta ei tulosta. Menee deadlinen yli huolella, joten luon seuraavaksi uuden virtuaalikoneen ja testailen sillä, mutta toistaiseksi lopetan tämän tähän.
 
+## d) Vapaaehtoinen: HTB Academy. Kokeile HackTheBox Academyn ilmaista sisältöä.
+
+![image](https://github.com/user-attachments/assets/28ba509e-571f-4002-9cb5-e48f81c93f4f)
+
+Ajattelin kyllä ehdottomasti jatkaa näiden parissa kesän mittaan!
+
 ## Lähteet
 
 Karvinen 2025: Start Your Research with a Review Article, Luettavissa: https://terokarvinen.com/review-article/, Luettu 06/05/2025
