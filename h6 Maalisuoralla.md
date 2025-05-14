@@ -43,6 +43,29 @@ Kotitehtävät ovat kurssilta "Tunkeutumistestaus - Penetration Testing course" 
 
 - Valitsin siis maaliksi jälleen Metasploitable 2, jota aikaisemmissakin harjoituksissa on käytetty. Tällä kertaa ei kuitenkaan ole minkäänlaista kohdehaavoittuvuutta, joten seulon, tutkin ja etsin sellaisen itse.
 
+- Nappasin koneet verkosta pois
+
+![image](https://github.com/user-attachments/assets/4439a857-2e26-40b8-8577-1a67206b7795)
+
+- Pitää testata niiden välinen yhteys
+
+- Lähdin siis selvittämään sen Metasploitablen IP - osoitetta. Haluan tehdä tämän niin, kuin pääsyä koko laitteelle ei olisi.
+- Haen ensin ```ip a``` - komennolla kaikkien interfacejen IP - osoitteet
+
+![image](https://github.com/user-attachments/assets/277b3c7d-abdb-4979-81be-bda8ca36c086)
+
+- Löydetään eth1, joka on aktiivisena ja sen IP
+- Seuraavaksi skannaillaan ja yritetään selvittää Metasploitable2 ip -> ```nmap -sn 192.168.118.5/24```
+- Paljastuu kolme laitetta -> Unknown oletettavasti on se Gateway, jota pitkin tässä mennään, sillä .5 - loppuinen (3) on host eli Kali ja .4 (2) on se metasploitablen IP.
+
+![image](https://github.com/user-attachments/assets/6ed149e5-104f-40a2-8528-0a59062802a0)
+
+- Se siis löytyi!
+
+- Käydään nyt vielä varuiksi varmistamassa se Metasploitablella, koska ollaan kuitenkin jo maaliin päästy -> ```ifconfig``` ![image](https://github.com/user-attachments/assets/5cc52202-03c7-4beb-b077-e46562aab179)
+
+- 
+
 
 
 ## Lähteet
